@@ -1,1 +1,0 @@
-"""Official calendar source adapters."""
