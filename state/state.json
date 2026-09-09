@@ -1,10 +1,10 @@
 {
  "version": 1,
- "exported_at": "2026-09-09T05:29:34.302857+00:00",
+ "exported_at": "2026-09-09T12:06:33.097984+00:00",
  "provider_cache": [
   {
    "provider": "markets",
-   "updated_at": "2026-09-08T14:02:51.805508+00:00",
+   "updated_at": "2026-09-09T12:05:49.822642+00:00",
    "payload": {
     "provider": "markets",
     "events": [],
@@ -14984,6 +14984,42 @@
        "https://www.nyse.com/trade/hours-calendars"
       ],
       "confirmed": true
+     },
+     {
+      "market": "JP",
+      "date": "2027-10-14",
+      "status": "open",
+      "reason": "정상 개장",
+      "open_at": "2027-10-14T09:00:00+09:00",
+      "close_at": "2027-10-14T15:30:00+09:00",
+      "sources": [
+       "https://www.jpx.co.jp/english/corporate/about-jpx/calendar/"
+      ],
+      "confirmed": true
+     },
+     {
+      "market": "KR",
+      "date": "2027-10-14",
+      "status": "open",
+      "reason": "정상 개장",
+      "open_at": "2027-10-14T09:00:00+09:00",
+      "close_at": "2027-10-14T15:30:00+09:00",
+      "sources": [
+       "https://open.krx.co.kr/contents/MKD/01/0110/01100305/MKD01100305.jsp"
+      ],
+      "confirmed": true
+     },
+     {
+      "market": "US",
+      "date": "2027-10-14",
+      "status": "open",
+      "reason": "정상 개장",
+      "open_at": "2027-10-14T09:30:00-04:00",
+      "close_at": "2027-10-14T16:00:00-04:00",
+      "sources": [
+       "https://www.nyse.com/trade/hours-calendars"
+      ],
+      "confirmed": true
      }
     ],
     "sources": [
@@ -14992,24 +15028,46 @@
      "https://www.jpx.co.jp/english/corporate/about-jpx/calendar/",
      "https://open.krx.co.kr/contents/MKD/01/0110/01100305/MKD01100305.jsp"
     ],
-    "warnings": [],
+    "warnings": [
+     "현재 확인 실패 항목 3개에 이전의 공식 확인값을 유지했습니다."
+    ],
     "successful_scopes": [
      "US",
      "JP",
      "KR"
     ],
     "failed_scopes": [],
-    "coverage_start": "2026-08-24",
-    "coverage_end": "2027-10-13",
-    "fetched_at": "2026-09-08T14:02:49.850856+00:00"
+    "coverage_start": "2026-08-25",
+    "coverage_end": "2027-10-14",
+    "fetched_at": "2026-09-09T12:05:47.976077+00:00"
    }
   },
   {
    "provider": "monetary",
-   "updated_at": "2026-09-08T14:14:08.779671+00:00",
+   "updated_at": "2026-09-09T12:06:14.166588+00:00",
    "payload": {
     "provider": "monetary",
     "events": [
+     {
+      "id": "bok:2026-08-27",
+      "category": "bok",
+      "title": "한국은행 기준금리 결정회의",
+      "market": "KR",
+      "trade_date": "2026-08-27",
+      "slot": "morning",
+      "phase": "rate_decision",
+      "occurs_at": null,
+      "details": [
+       "통화정책방향 결정회의 · 발표 시각은 당일 한국은행 공지 확인"
+      ],
+      "sources": [
+       "https://www.bok.or.kr/portal/singl/crncyPolicyDrcMtg/listYear.do?menuNo=200755&mtgSe=A&year=2026"
+      ],
+      "confirmed": true,
+      "announcement_date": null,
+      "implementation_date": null,
+      "effective_date": null
+     },
      {
       "id": "fomc:2026-09-16",
       "category": "fomc",
@@ -15034,6 +15092,26 @@
       "effective_date": null
      },
      {
+      "id": "bok:2026-10-22",
+      "category": "bok",
+      "title": "한국은행 기준금리 결정회의",
+      "market": "KR",
+      "trade_date": "2026-10-22",
+      "slot": "morning",
+      "phase": "rate_decision",
+      "occurs_at": null,
+      "details": [
+       "통화정책방향 결정회의 · 발표 시각은 당일 한국은행 공지 확인"
+      ],
+      "sources": [
+       "https://www.bok.or.kr/portal/singl/crncyPolicyDrcMtg/listYear.do?menuNo=200755&mtgSe=A&year=2026"
+      ],
+      "confirmed": true,
+      "announcement_date": null,
+      "implementation_date": null,
+      "effective_date": null
+     },
+     {
       "id": "fomc:2026-10-28",
       "category": "fomc",
       "title": "FOMC 금리 결정",
@@ -15050,6 +15128,49 @@
       "sources": [
        "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
        "https://www.federalreserve.gov/newsevents/2026-october.htm"
+      ],
+      "confirmed": true,
+      "announcement_date": null,
+      "implementation_date": null,
+      "effective_date": null
+     },
+     {
+      "id": "dst:2026:end",
+      "category": "dst",
+      "title": "미국 서머타임 종료",
+      "market": "US",
+      "trade_date": "2026-11-01",
+      "slot": "morning",
+      "phase": "event",
+      "occurs_at": "2026-11-01T15:00:00+09:00",
+      "details": [
+       "오늘 15:00 KST 뉴욕 시계 변경 예정",
+       "다음 미국 정규 거래일부터 한국시간 22:30–다음 날 05:00 → 23:30–다음 날 06:00",
+       "조기폐장·임시 거래시간 변경은 해당일 시장 안내 우선"
+      ],
+      "sources": [
+       "https://www.nist.gov/pml/time-and-frequency-division/popular-links/daylight-saving-time-dst",
+       "https://www.nyse.com/trade/hours-calendars"
+      ],
+      "confirmed": true,
+      "announcement_date": null,
+      "implementation_date": null,
+      "effective_date": null
+     },
+     {
+      "id": "bok:2026-11-26",
+      "category": "bok",
+      "title": "한국은행 기준금리 결정회의",
+      "market": "KR",
+      "trade_date": "2026-11-26",
+      "slot": "morning",
+      "phase": "rate_decision",
+      "occurs_at": null,
+      "details": [
+       "통화정책방향 결정회의 · 발표 시각은 당일 한국은행 공지 확인"
+      ],
+      "sources": [
+       "https://www.bok.or.kr/portal/singl/crncyPolicyDrcMtg/listYear.do?menuNo=200755&mtgSe=A&year=2026"
       ],
       "confirmed": true,
       "announcement_date": null,
@@ -15094,6 +15215,29 @@
       ],
       "sources": [
        "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+      ],
+      "confirmed": true,
+      "announcement_date": null,
+      "implementation_date": null,
+      "effective_date": null
+     },
+     {
+      "id": "dst:2027:start",
+      "category": "dst",
+      "title": "미국 서머타임 시작",
+      "market": "US",
+      "trade_date": "2027-03-14",
+      "slot": "morning",
+      "phase": "event",
+      "occurs_at": "2027-03-14T16:00:00+09:00",
+      "details": [
+       "오늘 16:00 KST 뉴욕 시계 변경 예정",
+       "다음 미국 정규 거래일부터 한국시간 23:30–다음 날 06:00 → 22:30–다음 날 05:00",
+       "조기폐장·임시 거래시간 변경은 해당일 시장 안내 우선"
+      ],
+      "sources": [
+       "https://www.nist.gov/pml/time-and-frequency-division/popular-links/daylight-saving-time-dst",
+       "https://www.nyse.com/trade/hours-calendars"
       ],
       "confirmed": true,
       "announcement_date": null,
@@ -15204,112 +15348,6 @@
       "announcement_date": null,
       "implementation_date": null,
       "effective_date": null
-     },
-     {
-      "id": "bok:2026-08-27",
-      "category": "bok",
-      "title": "한국은행 기준금리 결정회의",
-      "market": "KR",
-      "trade_date": "2026-08-27",
-      "slot": "morning",
-      "phase": "rate_decision",
-      "occurs_at": null,
-      "details": [
-       "통화정책방향 결정회의 · 발표 시각은 당일 한국은행 공지 확인"
-      ],
-      "sources": [
-       "https://www.bok.or.kr/portal/singl/crncyPolicyDrcMtg/listYear.do?menuNo=200755&mtgSe=A&year=2026"
-      ],
-      "confirmed": true,
-      "announcement_date": null,
-      "implementation_date": null,
-      "effective_date": null
-     },
-     {
-      "id": "bok:2026-10-22",
-      "category": "bok",
-      "title": "한국은행 기준금리 결정회의",
-      "market": "KR",
-      "trade_date": "2026-10-22",
-      "slot": "morning",
-      "phase": "rate_decision",
-      "occurs_at": null,
-      "details": [
-       "통화정책방향 결정회의 · 발표 시각은 당일 한국은행 공지 확인"
-      ],
-      "sources": [
-       "https://www.bok.or.kr/portal/singl/crncyPolicyDrcMtg/listYear.do?menuNo=200755&mtgSe=A&year=2026"
-      ],
-      "confirmed": true,
-      "announcement_date": null,
-      "implementation_date": null,
-      "effective_date": null
-     },
-     {
-      "id": "bok:2026-11-26",
-      "category": "bok",
-      "title": "한국은행 기준금리 결정회의",
-      "market": "KR",
-      "trade_date": "2026-11-26",
-      "slot": "morning",
-      "phase": "rate_decision",
-      "occurs_at": null,
-      "details": [
-       "통화정책방향 결정회의 · 발표 시각은 당일 한국은행 공지 확인"
-      ],
-      "sources": [
-       "https://www.bok.or.kr/portal/singl/crncyPolicyDrcMtg/listYear.do?menuNo=200755&mtgSe=A&year=2026"
-      ],
-      "confirmed": true,
-      "announcement_date": null,
-      "implementation_date": null,
-      "effective_date": null
-     },
-     {
-      "id": "dst:2026:end",
-      "category": "dst",
-      "title": "미국 서머타임 종료",
-      "market": "US",
-      "trade_date": "2026-11-01",
-      "slot": "morning",
-      "phase": "event",
-      "occurs_at": "2026-11-01T15:00:00+09:00",
-      "details": [
-       "오늘 15:00 KST 뉴욕 시계 변경 예정",
-       "다음 미국 정규 거래일부터 한국시간 22:30–다음 날 05:00 → 23:30–다음 날 06:00",
-       "조기폐장·임시 거래시간 변경은 해당일 시장 안내 우선"
-      ],
-      "sources": [
-       "https://www.nist.gov/pml/time-and-frequency-division/popular-links/daylight-saving-time-dst",
-       "https://www.nyse.com/trade/hours-calendars"
-      ],
-      "confirmed": true,
-      "announcement_date": null,
-      "implementation_date": null,
-      "effective_date": null
-     },
-     {
-      "id": "dst:2027:start",
-      "category": "dst",
-      "title": "미국 서머타임 시작",
-      "market": "US",
-      "trade_date": "2027-03-14",
-      "slot": "morning",
-      "phase": "event",
-      "occurs_at": "2027-03-14T16:00:00+09:00",
-      "details": [
-       "오늘 16:00 KST 뉴욕 시계 변경 예정",
-       "다음 미국 정규 거래일부터 한국시간 23:30–다음 날 06:00 → 22:30–다음 날 05:00",
-       "조기폐장·임시 거래시간 변경은 해당일 시장 안내 우선"
-      ],
-      "sources": [
-       "https://www.nist.gov/pml/time-and-frequency-division/popular-links/daylight-saving-time-dst",
-       "https://www.nyse.com/trade/hours-calendars"
-      ],
-      "confirmed": true,
-      "announcement_date": null,
-      "implementation_date": null,
-      "effective_date": null
      }
     ],
     "sessions": [],
@@ -15334,14 +15372,14 @@
     "failed_scopes": [
      "bok"
     ],
-    "coverage_start": "2026-08-24",
-    "coverage_end": "2027-10-13",
-    "fetched_at": "2026-09-08T14:13:44.189363+00:00"
+    "coverage_start": "2026-08-25",
+    "coverage_end": "2027-10-14",
+    "fetched_at": "2026-09-09T12:05:49.832810+00:00"
    }
   },
   {
    "provider": "options",
-   "updated_at": "2026-09-08T14:03:27.678904+00:00",
+   "updated_at": "2026-09-09T12:06:20.840767+00:00",
    "payload": {
     "provider": "options",
     "events": [
@@ -16005,6 +16043,28 @@
       "announcement_date": null,
       "implementation_date": null,
       "effective_date": null
+     },
+     {
+      "id": "kr_options:2027-10-14",
+      "category": "kr_options",
+      "title": "국장 옵션 만기",
+      "market": "KR",
+      "trade_date": "2027-10-14",
+      "slot": "morning",
+      "phase": "last_trading_day",
+      "occurs_at": "2027-10-14T15:20:00+09:00",
+      "details": [
+       "KOSPI 200 월간 정기 옵션 최종거래일",
+       "최종거래일 거래시간 08:45–15:20 KST · 현금결제",
+       "위클리 옵션은 기본 알림에서 제외"
+      ],
+      "sources": [
+       "https://global.krx.co.kr/contents/GLB/02/0201/0201040202/GLB0201040202.jsp"
+      ],
+      "confirmed": true,
+      "announcement_date": null,
+      "implementation_date": null,
+      "effective_date": null
      }
     ],
     "sessions": [],
@@ -16026,14 +16086,14 @@
     "failed_scopes": [
      "us_options"
     ],
-    "coverage_start": "2026-08-24",
-    "coverage_end": "2027-10-13",
-    "fetched_at": "2026-09-08T14:03:16.060535+00:00"
+    "coverage_start": "2026-08-25",
+    "coverage_end": "2027-10-14",
+    "fetched_at": "2026-09-09T12:06:14.167797+00:00"
    }
   },
   {
    "provider": "rebalances",
-   "updated_at": "2026-09-08T14:10:50.433009+00:00",
+   "updated_at": "2026-09-09T12:06:33.090044+00:00",
    "payload": {
     "provider": "rebalances",
     "events": [
@@ -16382,6 +16442,11 @@
      "https://www.msci.com/eqb/pressreleases/archive/MSCI_Feb25_QIRPR.pdf",
      "https://indexes.nasdaq.com/docs/Methodology_NDX.pdf",
      "https://ir.nasdaq.com/rss/news-releases.xml",
+     "https://ir.nasdaq.com/news-and-events/press-releases",
+     "https://ir.nasdaq.com/news-and-events/press-releases?page=0",
+     "https://ir.nasdaq.com/news-and-events/press-releases?page=1",
+     "https://ir.nasdaq.com/news-and-events/press-releases?page=2",
+     "https://ir.nasdaq.com/news-releases/news-release-details/nasdaq-100-indexr-june-2026-quarterly-changes",
      "https://press.spglobal.com/",
      "https://press.spglobal.com/index.php?s=2429&o=10",
      "https://press.spglobal.com/index.php?s=2429&o=20",
@@ -16390,17 +16455,27 @@
     ],
     "warnings": [
      "sp500 방법론: 수집 또는 해석 실패 (FetchError). 일정 없음으로 판단할 수 없습니다.",
-     "nasdaq 공식 공지 목록: 수집 또는 해석 실패 (FetchError). 일정 없음으로 판단할 수 없습니다.",
-     "nasdaq: 공개 뉴스 목록에서 대상 공지를 찾지 못했습니다. 수시 편출입·특별 리밸런싱 부재를 확인한 것은 아닙니다.",
+     "nasdaq 개별 공지 pdf: 수집 또는 해석 실패 (ValueError). 일정 없음으로 판단할 수 없습니다.",
+     "nasdaq 개별 공지 space-exploration-technologies-corporation-join-nasdaq-100: 수집 또는 해석 실패 (ValueError). 일정 없음으로 판단할 수 없습니다.",
+     "nasdaq 개별 공지 pdf: 수집 또는 해석 실패 (ValueError). 일정 없음으로 판단할 수 없습니다.",
+     "nasdaq 개별 공지 pdf: 수집 또는 해석 실패 (ValueError). 일정 없음으로 판단할 수 없습니다.",
+     "nasdaq 개별 공지 nasdaq-issues-statement-regarding-nasdaq-100r-index-linked: 수집 또는 해석 실패 (ValueError). 일정 없음으로 판단할 수 없습니다.",
+     "nasdaq 개별 공지 pdf: 수집 또는 해석 실패 (ValueError). 일정 없음으로 판단할 수 없습니다.",
+     "nasdaq 개별 공지 nasdaq-concludes-public-consultation-nasdaq-100-indexr: 수집 또는 해석 실패 (ValueError). 일정 없음으로 판단할 수 없습니다.",
      "sp500 개별 공지 2026-08-13-Reddit-Set-to-Join-S-P-500-and-Sun-Communities-to-Join-S-P-MidCap-400: 수집 또는 해석 실패 (ValueError). 일정 없음으로 판단할 수 없습니다.",
      "sp500 개별 공지 2026-07-31-Ferguson-Enterprises-Set-to-Join-S-P-500-and-ADI-Global-Distribution-to-Join-S-: 수집 또는 해석 실패 (ValueError). 일정 없음으로 판단할 수 없습니다.",
      "리밸런싱 확인범위: MSCI 공개 정기 리뷰 자료와 Nasdaq/S&P 공개 최신 뉴스 및 최대 3개 추가 페이지입니다. 향후 미발표 일정·수시 편출입·특별 변경 전체의 부재는 보장하지 않습니다."
     ],
-    "successful_scopes": [],
-    "failed_scopes": [],
+    "successful_scopes": [
+     "msci",
+     "nasdaq"
+    ],
+    "failed_scopes": [
+     "sp500"
+    ],
     "coverage_start": null,
     "coverage_end": null,
-    "fetched_at": "2026-09-08T14:09:18.914299+00:00"
+    "fetched_at": "2026-09-09T12:06:20.842568+00:00"
    }
   }
  ],
