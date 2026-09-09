@@ -1,0 +1,101 @@
+name: market-calendar-bot
+
+on:
+  schedule:
+    - cron: '0 23 * * *'
+    - cron: '20 23 * * *'
+    - cron: '0 12 * * *'
+    - cron: '20 12 * * *'
+  workflow_dispatch:
+    inputs:
+      command:
+        description: '수동으로 실행할 작업'
+        type: choice
+        default: once
+        options:
+          - once
+          - chat-id
+          - bot-info
+          - test-message
+          - refresh
+          - status
+          - render-morning
+          - render-evening
+
+permissions:
+  contents: write
+
+concurrency:
+  group: market-calendar-bot
+  cancel-in-progress: false
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    env:
+      MARKET_BOT_TOKEN: ${{ secrets.MARKET_BOT_TOKEN }}
+      MARKET_BOT_CHAT_ID: ${{ secrets.MARKET_BOT_CHAT_ID }}
+      MARKET_BOT_DB: data/marketbot.sqlite3
+      MARKET_BOT_STATE: state/state.json
+      MARKET_BOT_LOG: data/marketbot.log
+      TZ: Asia/Seoul
+      PYTHONUTF8: '1'
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: 라이브러리 설치
+        run: pip install -r requirements.txt
+
+      - name: 실행
+        run: |
+          CMD="${{ github.event.inputs.command }}"
+          CMD="${CMD:-once}"
+          TODAY="$(date +%F)"
+          EXTRA=""
+          case "${{ github.event.schedule }}" in
+            "20 23 * * *"|"20 12 * * *") EXTRA="--no-refresh" ;;
+          esac
+          case "$CMD" in
+            once)
+              python -m marketbot once --slot auto $EXTRA
+              ;;
+            refresh)
+              python -m marketbot state-import
+              python -m marketbot refresh
+              python -m marketbot state-export
+              ;;
+            status)
+              python -m marketbot state-import
+              python -m marketbot status
+              ;;
+            render-morning)
+              python -m marketbot state-import
+              python -m marketbot render --date "$TODAY" --slot morning
+              ;;
+            render-evening)
+              python -m marketbot state-import
+              python -m marketbot render --date "$TODAY" --slot evening
+              ;;
+            *)
+              python -m marketbot "$CMD"
+              ;;
+          esac
+
+      - name: 일정 상태 저장
+        if: always()
+        run: |
+          if [ -n "$(git status --porcelain state)" ]; then
+            git config user.name  "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add state
+            git commit -m "state: $(date '+%Y-%m-%d %H:%M KST')"
+            git pull --rebase --autostash
+            git push
+          else
+            echo "변경된 상태 없음"
+          fi
