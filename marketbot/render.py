@@ -33,18 +33,28 @@ def _event_lines(event: Event) -> list[str]:
     return lines
 
 
+def _delay_note(day: date, hour: int, minute: int) -> str:
+    """예정 시각보다 20분 넘게 늦게 보내면 실제 발송 시각을 덧붙인다."""
+    now = datetime.now(KST)
+    if now.date() != day:
+        return ''
+    scheduled = now.replace(hour=hour, minute=minute, second=0, microsecond=0)
+    late = (now - scheduled).total_seconds()
+    return f' · 실제 발송 {now:%H:%M}' if late > 20 * 60 else ''
+
+
 def render(results: list[Result], day: date, slot: str) -> str:
     if slot not in ('morning', 'evening'):
         raise ValueError('slot은 morning 또는 evening이어야 합니다')
     sessions = {(s.market, s.date): s for r in results for s in r.sessions}
     events = [e for r in results for e in r.events
               if e.confirmed and e.trade_date == day.isoformat() and e.slot == slot]
-    lines = ([f'[증시 일정 | {day.isoformat()} 08:00 KST]',
+    lines = ([f'[증시 일정 | {day.isoformat()} 08:00 KST{_delay_note(day, 8, 0)}]',
               _session_line('한국', sessions.get(('KR', day.isoformat()))),
               _session_line('일본', sessions.get(('JP', day.isoformat()))),
               _session_line(f'오늘 밤 미국 ({day.isoformat()} 현지)', sessions.get(('US', day.isoformat())))]
              if slot == 'morning' else
-             [f'[미국장 일정 | {day.isoformat()} 21:00 KST]',
+             [f'[미국장 일정 | {day.isoformat()} 21:00 KST{_delay_note(day, 21, 0)}]',
               f'대상 미국 거래일: {day.isoformat()}',
               _session_line('미국', sessions.get(('US', day.isoformat())))])
     for event in sorted(events, key=lambda e: (e.category, e.id)):
