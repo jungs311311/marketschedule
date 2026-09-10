@@ -15,6 +15,9 @@ from .storage import Store
 from .telegram import Telegram
 
 KST = ZoneInfo('Asia/Seoul')
+# 알림을 실제로 보내도 되는 한국시간 구간. 예정 시각(08:00 / 21:00)에서
+# GitHub 스케줄러가 늦어지는 정도는 허용하고, 엉뚱한 시각의 발송은 막는다.
+SEND_WINDOW = {'morning': (7, 13), 'evening': (20, 24)}
 
 
 def state_path() -> Path:
@@ -44,6 +47,7 @@ def parser() -> argparse.ArgumentParser:
     once = commands.add_parser('once', help='갱신·발송·상태저장을 한 번에 (GitHub Actions용)')
     once.add_argument('--slot', choices=('auto', 'morning', 'evening'), default='auto')
     once.add_argument('--no-refresh', action='store_true', help='갱신을 건너뛰고 저장된 일정으로 발송')
+    once.add_argument('--force', action='store_true', help='시간 확인 없이 강제로 발송')
     commands.add_parser('state-import', help='state.json을 로컬 DB로 불러오기')
     commands.add_parser('state-export', help='로컬 DB를 state.json으로 저장')
     commands.add_parser('chat-id', help='/start를 보낸 채팅의 CHAT_ID 확인')
@@ -115,6 +119,11 @@ def main() -> None:
         elif args.command == 'once':
             now = datetime.now(KST)
             slot = resolve_slot(args.slot, now)
+            start, end = SEND_WINDOW[slot]
+            if not args.force and not (start <= now.hour < end):
+                print(f'지금은 {now:%H:%M} KST입니다. {slot} 알림 시간대'
+                      f'({start:02d}:00~{end:02d}:00)가 아니라 발송하지 않습니다.')
+                return
             imported = import_state(store.db, state_path())
             logging.getLogger('marketbot').info(
                 'once: date=%s slot=%s state_loaded=%s', now.date(), slot, imported)
