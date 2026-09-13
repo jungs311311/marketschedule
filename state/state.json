@@ -1,10 +1,10 @@
 {
  "version": 1,
- "exported_at": "2026-09-13T01:04:49.377711+00:00",
+ "exported_at": "2026-09-13T13:43:43.215537+00:00",
  "provider_cache": [
   {
    "provider": "markets",
-   "updated_at": "2026-09-13T00:37:46.422177+00:00",
+   "updated_at": "2026-09-13T13:42:58.737209+00:00",
    "payload": {
     "provider": "markets",
     "events": [],
@@ -15108,14 +15108,14 @@
      {
       "market": "KR",
       "date": "2027-10-17",
-      "status": "unknown",
-      "reason": "공식 연간 일정 미발표 또는 수집 실패",
+      "status": "closed",
+      "reason": "주말",
       "open_at": null,
       "close_at": null,
       "sources": [
        "https://open.krx.co.kr/contents/MKD/01/0110/01100305/MKD01100305.jsp"
       ],
-      "confirmed": false
+      "confirmed": true
      },
      {
       "market": "US",
@@ -15144,52 +15144,51 @@
      {
       "market": "KR",
       "date": "2027-10-18",
-      "status": "unknown",
-      "reason": "공식 연간 일정 미발표 또는 수집 실패",
-      "open_at": null,
-      "close_at": null,
+      "status": "open",
+      "reason": "정상 개장",
+      "open_at": "2027-10-18T09:00:00+09:00",
+      "close_at": "2027-10-18T15:30:00+09:00",
       "sources": [
        "https://open.krx.co.kr/contents/MKD/01/0110/01100305/MKD01100305.jsp"
       ],
-      "confirmed": false
+      "confirmed": true
      },
      {
       "market": "US",
       "date": "2027-10-18",
-      "status": "unknown",
-      "reason": "공식 연간 일정 미발표 또는 수집 실패",
-      "open_at": null,
-      "close_at": null,
+      "status": "open",
+      "reason": "정상 개장",
+      "open_at": "2027-10-18T09:30:00-04:00",
+      "close_at": "2027-10-18T16:00:00-04:00",
       "sources": [
        "https://www.nyse.com/trade/hours-calendars"
       ],
-      "confirmed": false
+      "confirmed": true
      }
     ],
     "sources": [
-     "https://www.jpx.co.jp/english/corporate/about-jpx/calendar/"
+     "https://www.nyse.com/trade/hours-calendars",
+     "https://www.nasdaqtrader.com/Trader.aspx?id=Calendar",
+     "https://www.jpx.co.jp/english/corporate/about-jpx/calendar/",
+     "https://open.krx.co.kr/contents/MKD/01/0110/01100305/MKD01100305.jsp"
     ],
     "warnings": [
-     "미국시장 일정 수집 실패: FetchError: Source request failed (HTTPError)",
-     "한국시장 2026년 일정 수집 실패: FetchError: Source request failed (HTTPError)",
-     "한국시장 2027년 일정 수집 실패: FetchError: Source request failed (HTTPError)",
-     "현재 확인 실패 항목 844개에 이전의 공식 확인값을 유지했습니다."
+     "현재 확인 실패 항목 15개에 이전의 공식 확인값을 유지했습니다."
     ],
     "successful_scopes": [
-     "JP"
-    ],
-    "failed_scopes": [
      "US",
+     "JP",
      "KR"
     ],
+    "failed_scopes": [],
     "coverage_start": "2026-08-29",
     "coverage_end": "2027-10-18",
-    "fetched_at": "2026-09-13T00:37:35.229845+00:00"
+    "fetched_at": "2026-09-13T13:42:56.596996+00:00"
    }
   },
   {
    "provider": "monetary",
-   "updated_at": "2026-09-13T00:38:10.244900+00:00",
+   "updated_at": "2026-09-13T13:43:23.028565+00:00",
    "payload": {
     "provider": "monetary",
     "events": [
@@ -15520,12 +15519,12 @@
     ],
     "coverage_start": "2026-08-29",
     "coverage_end": "2027-10-18",
-    "fetched_at": "2026-09-13T00:37:46.432279+00:00"
+    "fetched_at": "2026-09-13T13:42:58.748775+00:00"
    }
   },
   {
    "provider": "options",
-   "updated_at": "2026-09-13T00:38:20.078535+00:00",
+   "updated_at": "2026-09-13T13:43:30.847087+00:00",
    "payload": {
     "provider": "options",
     "events": [
@@ -16244,6 +16243,7 @@
     ],
     "sessions": [],
     "sources": [
+     "https://global.krx.co.kr/contents/GLB/02/0201/0201040202/GLB0201040202.jsp",
      "https://www.optionseducation.org/optionsoverview/options-basics",
      "https://www.optionseducation.org/referencelibrary/faq/options-exercise",
      "https://www.optionseducation.org/advancedconcepts/equity-vs-index-options",
@@ -16252,23 +16252,22 @@
      "https://cdn.cboe.com/resources/options/Cboe2026OPTIONSCalendar.pdf"
     ],
     "warnings": [
-     "KRX 옵션 명세 수집 실패: FetchError: Source request failed (HTTPError)",
-     "미국 옵션 2027년 일정 검증 실패: FetchError: Source request failed (HTTPError)",
-     "현재 확인 실패 항목 14개에 이전의 공식 확인값을 유지했습니다."
+     "미국 옵션 2027년 일정 검증 실패: FetchError: Source request failed (HTTPError)"
     ],
-    "successful_scopes": [],
+    "successful_scopes": [
+     "kr_options"
+    ],
     "failed_scopes": [
-     "kr_options",
      "us_options"
     ],
     "coverage_start": "2026-08-29",
     "coverage_end": "2027-10-18",
-    "fetched_at": "2026-09-13T00:38:10.246343+00:00"
+    "fetched_at": "2026-09-13T13:43:23.029766+00:00"
    }
   },
   {
    "provider": "rebalances",
-   "updated_at": "2026-09-13T00:38:33.961475+00:00",
+   "updated_at": "2026-09-13T13:43:41.758402+00:00",
    "payload": {
     "provider": "rebalances",
     "events": [
@@ -16650,7 +16649,7 @@
     ],
     "coverage_start": null,
     "coverage_end": null,
-    "fetched_at": "2026-09-13T00:38:20.080369+00:00"
+    "fetched_at": "2026-09-13T13:43:30.849338+00:00"
    }
   }
  ],
@@ -16674,6 +16673,10 @@
   {
    "idempotency_key": "2026-09-13:morning",
    "sent_at": "2026-09-13T00:38:34.751952+00:00"
+  },
+  {
+   "idempotency_key": "2026-09-13:evening",
+   "sent_at": "2026-09-13T13:43:43.213179+00:00"
   }
  ],
  "changes": []
