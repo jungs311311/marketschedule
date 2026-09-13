@@ -1,10 +1,10 @@
 {
  "version": 1,
- "exported_at": "2026-09-12T14:49:29.063683+00:00",
+ "exported_at": "2026-09-13T00:38:34.754086+00:00",
  "provider_cache": [
   {
    "provider": "markets",
-   "updated_at": "2026-09-12T14:48:24.840626+00:00",
+   "updated_at": "2026-09-13T00:37:46.422177+00:00",
    "payload": {
     "provider": "markets",
     "events": [],
@@ -15128,33 +15128,68 @@
        "https://www.nyse.com/trade/hours-calendars"
       ],
       "confirmed": true
+     },
+     {
+      "market": "JP",
+      "date": "2027-10-18",
+      "status": "open",
+      "reason": "정상 개장",
+      "open_at": "2027-10-18T09:00:00+09:00",
+      "close_at": "2027-10-18T15:30:00+09:00",
+      "sources": [
+       "https://www.jpx.co.jp/english/corporate/about-jpx/calendar/"
+      ],
+      "confirmed": true
+     },
+     {
+      "market": "KR",
+      "date": "2027-10-18",
+      "status": "unknown",
+      "reason": "공식 연간 일정 미발표 또는 수집 실패",
+      "open_at": null,
+      "close_at": null,
+      "sources": [
+       "https://open.krx.co.kr/contents/MKD/01/0110/01100305/MKD01100305.jsp"
+      ],
+      "confirmed": false
+     },
+     {
+      "market": "US",
+      "date": "2027-10-18",
+      "status": "unknown",
+      "reason": "공식 연간 일정 미발표 또는 수집 실패",
+      "open_at": null,
+      "close_at": null,
+      "sources": [
+       "https://www.nyse.com/trade/hours-calendars"
+      ],
+      "confirmed": false
      }
     ],
     "sources": [
-     "https://www.nyse.com/trade/hours-calendars",
-     "https://www.nasdaqtrader.com/Trader.aspx?id=Calendar",
      "https://www.jpx.co.jp/english/corporate/about-jpx/calendar/"
     ],
     "warnings": [
+     "미국시장 일정 수집 실패: FetchError: Source request failed (HTTPError)",
      "한국시장 2026년 일정 수집 실패: FetchError: Source request failed (HTTPError)",
      "한국시장 2027년 일정 수집 실패: FetchError: Source request failed (HTTPError)",
-     "현재 확인 실패 항목 427개에 이전의 공식 확인값을 유지했습니다."
+     "현재 확인 실패 항목 844개에 이전의 공식 확인값을 유지했습니다."
     ],
     "successful_scopes": [
-     "US",
      "JP"
     ],
     "failed_scopes": [
+     "US",
      "KR"
     ],
-    "coverage_start": "2026-08-28",
-    "coverage_end": "2027-10-17",
-    "fetched_at": "2026-09-12T14:48:15.820207+00:00"
+    "coverage_start": "2026-08-29",
+    "coverage_end": "2027-10-18",
+    "fetched_at": "2026-09-13T00:37:35.229845+00:00"
    }
   },
   {
    "provider": "monetary",
-   "updated_at": "2026-09-12T14:48:49.029219+00:00",
+   "updated_at": "2026-09-13T00:38:10.244900+00:00",
    "payload": {
     "provider": "monetary",
     "events": [
@@ -15483,14 +15518,14 @@
     "failed_scopes": [
      "bok"
     ],
-    "coverage_start": "2026-08-28",
-    "coverage_end": "2027-10-17",
-    "fetched_at": "2026-09-12T14:48:24.849287+00:00"
+    "coverage_start": "2026-08-29",
+    "coverage_end": "2027-10-18",
+    "fetched_at": "2026-09-13T00:37:46.432279+00:00"
    }
   },
   {
    "provider": "options",
-   "updated_at": "2026-09-12T14:49:02.719490+00:00",
+   "updated_at": "2026-09-13T00:38:20.078535+00:00",
    "payload": {
     "provider": "options",
     "events": [
@@ -16226,14 +16261,14 @@
      "kr_options",
      "us_options"
     ],
-    "coverage_start": "2026-08-28",
-    "coverage_end": "2027-10-17",
-    "fetched_at": "2026-09-12T14:48:49.030698+00:00"
+    "coverage_start": "2026-08-29",
+    "coverage_end": "2027-10-18",
+    "fetched_at": "2026-09-13T00:38:10.246343+00:00"
    }
   },
   {
    "provider": "rebalances",
-   "updated_at": "2026-09-12T14:49:27.613126+00:00",
+   "updated_at": "2026-09-13T00:38:33.961475+00:00",
    "payload": {
     "provider": "rebalances",
     "events": [
@@ -16615,7 +16650,7 @@
     ],
     "coverage_start": null,
     "coverage_end": null,
-    "fetched_at": "2026-09-12T14:49:02.721087+00:00"
+    "fetched_at": "2026-09-13T00:38:20.080369+00:00"
    }
   }
  ],
@@ -16635,6 +16670,10 @@
   {
    "idempotency_key": "2026-09-12:evening",
    "sent_at": "2026-09-12T14:49:29.061643+00:00"
+  },
+  {
+   "idempotency_key": "2026-09-13:morning",
+   "sent_at": "2026-09-13T00:38:34.751952+00:00"
   }
  ],
  "changes": []
