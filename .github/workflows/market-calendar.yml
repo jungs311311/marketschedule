@@ -2,10 +2,12 @@ name: market-calendar-bot
 
 on:
   schedule:
-    - cron: '0 23 * * *'
-    - cron: '20 23 * * *'
-    - cron: '0 12 * * *'
-    - cron: '20 12 * * *'
+    # UTC 기준. 한국시간 = UTC + 9시간.
+    # 예약이 밀릴 것을 감안해 일찍 깨우고, 아래 '대기' 단계에서 정각을 맞춘다.
+    - cron: '0 20 * * *'   # 05:00 KST → 08:00 발송
+    - cron: '0 23 * * *'   # 08:00 KST → 예비
+    - cron: '0 9 * * *'    # 18:00 KST → 21:00 발송
+    - cron: '0 12 * * *'   # 21:00 KST → 예비
   workflow_dispatch:
     inputs:
       command:
@@ -32,7 +34,7 @@ concurrency:
 jobs:
   run:
     runs-on: ubuntu-latest
-    timeout-minutes: 25
+    timeout-minutes: 340
     env:
       MARKET_BOT_TOKEN: ${{ secrets.MARKET_BOT_TOKEN }}
       MARKET_BOT_CHAT_ID: ${{ secrets.MARKET_BOT_CHAT_ID }}
@@ -56,13 +58,25 @@ jobs:
           CMD="${{ github.event.inputs.command }}"
           CMD="${CMD:-once}"
           TODAY="$(date +%F)"
-          EXTRA=""
-          case "${{ github.event.schedule }}" in
-            "20 23 * * *"|"20 12 * * *") EXTRA="--no-refresh" ;;
-          esac
           case "$CMD" in
             once)
-              python -m marketbot once --slot auto $EXTRA
+              # 1) 먼저 공식 일정을 갱신해 둔다
+              python -m marketbot state-import
+              python -m marketbot refresh || echo "갱신 실패 — 저장된 일정으로 진행"
+              python -m marketbot state-export
+              # 2) 예약이 밀렸어도 정해진 시각에 보내도록 기다린다
+              if [ "${{ github.event_name }}" = "schedule" ]; then
+                if [ "$(date +%-H)" -lt 15 ]; then TARGET="08:00"; else TARGET="21:00"; fi
+                WAIT=$(( $(date -d "$(date +%F) $TARGET" +%s) - $(date +%s) ))
+                if [ "$WAIT" -gt 0 ] && [ "$WAIT" -le 18000 ]; then
+                  echo "지금 $(date '+%H:%M') KST → $TARGET KST까지 $((WAIT/60))분 대기"
+                  sleep "$WAIT"
+                else
+                  echo "대기 없이 진행 ($(date '+%H:%M') KST, 목표 $TARGET)"
+                fi
+              fi
+              # 3) 발송 (갱신은 이미 했으므로 생략)
+              python -m marketbot once --slot auto --no-refresh
               ;;
             refresh)
               python -m marketbot state-import
