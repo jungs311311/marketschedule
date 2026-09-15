@@ -1,10 +1,10 @@
 {
  "version": 1,
- "exported_at": "2026-09-15T14:29:13.596168+00:00",
+ "exported_at": "2026-09-15T15:18:09.718553+00:00",
  "provider_cache": [
   {
    "provider": "markets",
-   "updated_at": "2026-09-15T14:28:23.270889+00:00",
+   "updated_at": "2026-09-15T15:17:19.364999+00:00",
    "payload": {
     "provider": "markets",
     "events": [],
@@ -15236,6 +15236,42 @@
        "https://www.nyse.com/trade/hours-calendars"
       ],
       "confirmed": true
+     },
+     {
+      "market": "JP",
+      "date": "2027-10-21",
+      "status": "open",
+      "reason": "정상 개장",
+      "open_at": "2027-10-21T09:00:00+09:00",
+      "close_at": "2027-10-21T15:30:00+09:00",
+      "sources": [
+       "https://www.jpx.co.jp/english/corporate/about-jpx/calendar/"
+      ],
+      "confirmed": true
+     },
+     {
+      "market": "KR",
+      "date": "2027-10-21",
+      "status": "open",
+      "reason": "정상 개장",
+      "open_at": "2027-10-21T09:00:00+09:00",
+      "close_at": "2027-10-21T15:30:00+09:00",
+      "sources": [
+       "https://open.krx.co.kr/contents/MKD/01/0110/01100305/MKD01100305.jsp"
+      ],
+      "confirmed": true
+     },
+     {
+      "market": "US",
+      "date": "2027-10-21",
+      "status": "open",
+      "reason": "정상 개장",
+      "open_at": "2027-10-21T09:30:00-04:00",
+      "close_at": "2027-10-21T16:00:00-04:00",
+      "sources": [
+       "https://www.nyse.com/trade/hours-calendars"
+      ],
+      "confirmed": true
      }
     ],
     "sources": [
@@ -15245,7 +15281,7 @@
      "https://open.krx.co.kr/contents/MKD/01/0110/01100305/MKD01100305.jsp"
     ],
     "warnings": [
-     "현재 확인 실패 항목 21개에 이전의 공식 확인값을 유지했습니다."
+     "현재 확인 실패 항목 24개에 이전의 공식 확인값을 유지했습니다."
     ],
     "successful_scopes": [
      "US",
@@ -15253,14 +15289,14 @@
      "KR"
     ],
     "failed_scopes": [],
-    "coverage_start": "2026-08-31",
-    "coverage_end": "2027-10-20",
-    "fetched_at": "2026-09-15T14:28:20.499476+00:00"
+    "coverage_start": "2026-09-01",
+    "coverage_end": "2027-10-21",
+    "fetched_at": "2026-09-15T15:17:16.262556+00:00"
    }
   },
   {
    "provider": "monetary",
-   "updated_at": "2026-09-15T14:28:53.194890+00:00",
+   "updated_at": "2026-09-15T15:17:45.300282+00:00",
    "payload": {
     "provider": "monetary",
     "events": [
@@ -15589,14 +15625,14 @@
     "failed_scopes": [
      "bok"
     ],
-    "coverage_start": "2026-08-31",
-    "coverage_end": "2027-10-20",
-    "fetched_at": "2026-09-15T14:28:23.299712+00:00"
+    "coverage_start": "2026-09-01",
+    "coverage_end": "2027-10-21",
+    "fetched_at": "2026-09-15T15:17:19.376220+00:00"
    }
   },
   {
    "provider": "options",
-   "updated_at": "2026-09-15T14:29:00.501827+00:00",
+   "updated_at": "2026-09-15T15:17:54.644354+00:00",
    "payload": {
     "provider": "options",
     "events": [
@@ -16332,57 +16368,17 @@
     "failed_scopes": [
      "us_options"
     ],
-    "coverage_start": "2026-08-31",
-    "coverage_end": "2027-10-20",
-    "fetched_at": "2026-09-15T14:28:53.197296+00:00"
+    "coverage_start": "2026-09-01",
+    "coverage_end": "2027-10-21",
+    "fetched_at": "2026-09-15T15:17:45.301563+00:00"
    }
   },
   {
    "provider": "rebalances",
-   "updated_at": "2026-09-15T14:29:13.255898+00:00",
+   "updated_at": "2026-09-15T15:18:09.513660+00:00",
    "payload": {
     "provider": "rebalances",
     "events": [
-     {
-      "id": "msci:KR:2026-08-31",
-      "category": "msci",
-      "title": "MSCI 정기 리뷰 종가 반영",
-      "market": "KR",
-      "trade_date": "2026-08-31",
-      "slot": "morning",
-      "phase": "implementation",
-      "occurs_at": "2026-08-31T15:30:00+09:00",
-      "details": [
-       "MSCI 공식 발표문의 종가 반영일입니다. 개별 종목 편출입 내역은 원문에서 확인하세요."
-      ],
-      "sources": [
-       "https://www.msci.com/eqb/pressreleases/archive/MSCI_Aug26_QIRPR.pdf"
-      ],
-      "confirmed": true,
-      "announcement_date": "2026-08-12",
-      "implementation_date": "2026-08-31",
-      "effective_date": null
-     },
-     {
-      "id": "msci:US:2026-08-31",
-      "category": "msci",
-      "title": "MSCI 정기 리뷰 종가 반영",
-      "market": "US",
-      "trade_date": "2026-08-31",
-      "slot": "evening",
-      "phase": "implementation",
-      "occurs_at": "2026-08-31T16:00:00-04:00",
-      "details": [
-       "MSCI 공식 발표문의 종가 반영일입니다. 개별 종목 편출입 내역은 원문에서 확인하세요."
-      ],
-      "sources": [
-       "https://www.msci.com/eqb/pressreleases/archive/MSCI_Aug26_QIRPR.pdf"
-      ],
-      "confirmed": true,
-      "announcement_date": "2026-08-12",
-      "implementation_date": "2026-08-31",
-      "effective_date": null
-     },
      {
       "id": "nasdaq:US:2026-09-21",
       "category": "nasdaq",
@@ -16721,7 +16717,7 @@
     ],
     "coverage_start": null,
     "coverage_end": null,
-    "fetched_at": "2026-09-15T14:29:00.503254+00:00"
+    "fetched_at": "2026-09-15T15:17:54.646165+00:00"
    }
   }
  ],
