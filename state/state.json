@@ -1,10 +1,10 @@
 {
  "version": 1,
- "exported_at": "2026-09-15T01:11:24.047627+00:00",
+ "exported_at": "2026-09-15T13:56:53.884828+00:00",
  "provider_cache": [
   {
    "provider": "markets",
-   "updated_at": "2026-09-15T01:10:37.921942+00:00",
+   "updated_at": "2026-09-15T13:56:03.207756+00:00",
    "payload": {
     "provider": "markets",
     "events": [],
@@ -15239,28 +15239,28 @@
      }
     ],
     "sources": [
-     "https://www.nyse.com/trade/hours-calendars",
-     "https://www.nasdaqtrader.com/Trader.aspx?id=Calendar",
      "https://www.jpx.co.jp/english/corporate/about-jpx/calendar/",
      "https://open.krx.co.kr/contents/MKD/01/0110/01100305/MKD01100305.jsp"
     ],
     "warnings": [
-     "현재 확인 실패 항목 21개에 이전의 공식 확인값을 유지했습니다."
+     "미국시장 일정 수집 실패: FetchError: Source request failed (HTTPError)",
+     "현재 확인 실패 항목 437개에 이전의 공식 확인값을 유지했습니다."
     ],
     "successful_scopes": [
-     "US",
      "JP",
      "KR"
     ],
-    "failed_scopes": [],
+    "failed_scopes": [
+     "US"
+    ],
     "coverage_start": "2026-08-31",
     "coverage_end": "2027-10-20",
-    "fetched_at": "2026-09-15T01:10:35.423694+00:00"
+    "fetched_at": "2026-09-15T13:55:56.883667+00:00"
    }
   },
   {
    "provider": "monetary",
-   "updated_at": "2026-09-15T01:11:03.285038+00:00",
+   "updated_at": "2026-09-15T13:56:29.370056+00:00",
    "payload": {
     "provider": "monetary",
     "events": [
@@ -15591,12 +15591,12 @@
     ],
     "coverage_start": "2026-08-31",
     "coverage_end": "2027-10-20",
-    "fetched_at": "2026-09-15T01:10:37.931400+00:00"
+    "fetched_at": "2026-09-15T13:56:03.262994+00:00"
    }
   },
   {
    "provider": "options",
-   "updated_at": "2026-09-15T01:11:11.065116+00:00",
+   "updated_at": "2026-09-15T13:56:37.410730+00:00",
    "payload": {
     "provider": "options",
     "events": [
@@ -16334,12 +16334,12 @@
     ],
     "coverage_start": "2026-08-31",
     "coverage_end": "2027-10-20",
-    "fetched_at": "2026-09-15T01:11:03.286698+00:00"
+    "fetched_at": "2026-09-15T13:56:29.390871+00:00"
    }
   },
   {
    "provider": "rebalances",
-   "updated_at": "2026-09-15T01:11:23.680786+00:00",
+   "updated_at": "2026-09-15T13:56:51.922427+00:00",
    "payload": {
     "provider": "rebalances",
     "events": [
@@ -16721,7 +16721,7 @@
     ],
     "coverage_start": null,
     "coverage_end": null,
-    "fetched_at": "2026-09-15T01:11:11.067188+00:00"
+    "fetched_at": "2026-09-15T13:56:37.414536+00:00"
    }
   }
  ],
@@ -16757,6 +16757,10 @@
   {
    "idempotency_key": "2026-09-15:morning",
    "sent_at": "2026-09-14T23:00:01.666490+00:00"
+  },
+  {
+   "idempotency_key": "2026-09-15:evening",
+   "sent_at": "2026-09-15T13:56:53.867587+00:00"
   }
  ],
  "changes": []
