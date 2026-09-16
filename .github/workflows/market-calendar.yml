@@ -3,15 +3,20 @@ name: market-calendar-bot
 on:
   schedule:
     # UTC 기준. 한국시간 = UTC + 9시간.
-    # 예약이 밀릴 것을 감안해 일찍 깨우고, 아래 '대기' 단계에서 정각을 맞춘다.
-    # 정각(:00)은 전 세계 요청이 몰려 잘 밀리므로 분을 흩어놓는다.
-    - cron: '0 20 * * *'    # 05:00 KST → 08:00 발송
-    - cron: '23 21 * * *'   # 06:23 KST → 08:00 예비
-    - cron: '47 22 * * *'   # 07:47 KST → 08:00 예비
-    - cron: '13 7 * * *'    # 16:13 KST → 21:00 발송
-    - cron: '27 8 * * *'    # 17:27 KST → 21:00 예비
-    - cron: '41 9 * * *'    # 18:41 KST → 21:00 예비
-    - cron: '53 10 * * *'   # 19:53 KST → 21:00 예비
+    # GitHub이 예약을 자주 건너뛰므로 여러 번 시도하고,
+    # 깨어난 쪽이 목표 시각까지 기다렸다가 보낸다. 중복은 자동으로 걸러진다.
+    - cron: '0 20 * * *'    # 05:00 KST → 08:00
+    - cron: '40 20 * * *'   # 05:40 KST → 08:00
+    - cron: '20 21 * * *'   # 06:20 KST → 08:00
+    - cron: '0 22 * * *'    # 07:00 KST → 08:00
+    - cron: '40 22 * * *'   # 07:40 KST → 08:00
+    - cron: '0 7 * * *'     # 16:00 KST → 21:00
+    - cron: '40 7 * * *'    # 16:40 KST → 21:00
+    - cron: '20 8 * * *'    # 17:20 KST → 21:00
+    - cron: '0 9 * * *'     # 18:00 KST → 21:00
+    - cron: '40 9 * * *'    # 18:40 KST → 21:00
+    - cron: '20 10 * * *'   # 19:20 KST → 21:00
+    - cron: '0 11 * * *'    # 20:00 KST → 21:00
   workflow_dispatch:
     inputs:
       command:
@@ -38,7 +43,7 @@ concurrency:
 jobs:
   run:
     runs-on: ubuntu-latest
-    timeout-minutes: 340
+    timeout-minutes: 345
     env:
       MARKET_BOT_TOKEN: ${{ secrets.MARKET_BOT_TOKEN }}
       MARKET_BOT_CHAT_ID: ${{ secrets.MARKET_BOT_CHAT_ID }}
@@ -68,19 +73,26 @@ jobs:
               python -m marketbot state-import
               python -m marketbot refresh || echo "갱신 실패 — 저장된 일정으로 진행"
               python -m marketbot state-export
-              # 2) 예약이 밀렸어도 정해진 시각에 보내도록 기다린다
               if [ "${{ github.event_name }}" = "schedule" ]; then
-                if [ "$(date +%-H)" -lt 15 ]; then TARGET="08:00"; else TARGET="21:00"; fi
+                # 2) 시계가 아니라 '어느 예약으로 깨어났는가'로 아침·저녁을 정한다
+                case "${{ github.event.schedule }}" in
+                  '0 20 * * *'|'40 20 * * *'|'20 21 * * *'|'0 22 * * *'|'40 22 * * *')
+                    SLOT=morning; TARGET='08:00' ;;
+                  *)
+                    SLOT=evening; TARGET='21:00' ;;
+                esac
+                # 3) 예약이 밀렸어도 목표 시각까지 기다린다
                 WAIT=$(( $(date -d "$(date +%F) $TARGET" +%s) - $(date +%s) ))
                 if [ "$WAIT" -gt 0 ] && [ "$WAIT" -le 18000 ]; then
-                  echo "지금 $(date '+%H:%M') KST → $TARGET KST까지 $((WAIT/60))분 대기"
+                  echo "지금 $(date '+%H:%M') KST → $TARGET KST까지 $((WAIT/60))분 대기 ($SLOT)"
                   sleep "$WAIT"
                 else
-                  echo "대기 없이 진행 ($(date '+%H:%M') KST, 목표 $TARGET)"
+                  echo "대기 없이 진행 ($(date '+%H:%M') KST, 목표 $TARGET, $SLOT)"
                 fi
+                python -m marketbot once --slot "$SLOT" --no-refresh
+              else
+                python -m marketbot once --slot auto --no-refresh
               fi
-              # 3) 발송 (갱신은 이미 했으므로 생략)
-              python -m marketbot once --slot auto --no-refresh
               ;;
             refresh)
               python -m marketbot state-import
