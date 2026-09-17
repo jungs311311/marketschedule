@@ -1,10 +1,10 @@
 {
  "version": 1,
- "exported_at": "2026-09-17T15:26:55.308401+00:00",
+ "exported_at": "2026-09-17T23:00:00.867385+00:00",
  "provider_cache": [
   {
    "provider": "markets",
-   "updated_at": "2026-09-17T15:26:00.491395+00:00",
+   "updated_at": "2026-09-17T22:28:24.794004+00:00",
    "payload": {
     "provider": "markets",
     "events": [],
@@ -15363,12 +15363,12 @@
     "failed_scopes": [],
     "coverage_start": "2026-09-03",
     "coverage_end": "2027-10-23",
-    "fetched_at": "2026-09-17T15:25:57.340744+00:00"
+    "fetched_at": "2026-09-17T22:28:22.045132+00:00"
    }
   },
   {
    "provider": "monetary",
-   "updated_at": "2026-09-17T15:26:27.496488+00:00",
+   "updated_at": "2026-09-17T22:28:50.138570+00:00",
    "payload": {
     "provider": "monetary",
     "events": [
@@ -15699,12 +15699,12 @@
     ],
     "coverage_start": "2026-09-03",
     "coverage_end": "2027-10-23",
-    "fetched_at": "2026-09-17T15:26:00.506840+00:00"
+    "fetched_at": "2026-09-17T22:28:24.803621+00:00"
    }
   },
   {
    "provider": "options",
-   "updated_at": "2026-09-17T15:26:37.831136+00:00",
+   "updated_at": "2026-09-17T22:28:57.980100+00:00",
    "payload": {
     "provider": "options",
     "events": [
@@ -16442,12 +16442,12 @@
     ],
     "coverage_start": "2026-09-03",
     "coverage_end": "2027-10-23",
-    "fetched_at": "2026-09-17T15:26:27.520514+00:00"
+    "fetched_at": "2026-09-17T22:28:50.143932+00:00"
    }
   },
   {
    "provider": "rebalances",
-   "updated_at": "2026-09-17T15:26:55.001285+00:00",
+   "updated_at": "2026-09-17T22:29:11.794364+00:00",
    "payload": {
     "provider": "rebalances",
     "events": [
@@ -16774,8 +16774,6 @@
      "nasdaq 개별 공지 pdf: 수집 또는 해석 실패 (ValueError). 일정 없음으로 판단할 수 없습니다.",
      "nasdaq 개별 공지 pdf: 수집 또는 해석 실패 (ValueError). 일정 없음으로 판단할 수 없습니다.",
      "nasdaq 개별 공지 nasdaq-issues-statement-regarding-nasdaq-100r-index-linked: 수집 또는 해석 실패 (ValueError). 일정 없음으로 판단할 수 없습니다.",
-     "nasdaq 개별 공지 pdf: 수집 또는 해석 실패 (ValueError). 일정 없음으로 판단할 수 없습니다.",
-     "nasdaq 개별 공지 nasdaq-concludes-public-consultation-nasdaq-100-indexr: 수집 또는 해석 실패 (ValueError). 일정 없음으로 판단할 수 없습니다.",
      "sp500 개별 공지 2026-08-13-Reddit-Set-to-Join-S-P-500-and-Sun-Communities-to-Join-S-P-MidCap-400: 수집 또는 해석 실패 (ValueError). 일정 없음으로 판단할 수 없습니다.",
      "sp500 개별 공지 2026-07-31-Ferguson-Enterprises-Set-to-Join-S-P-500-and-ADI-Global-Distribution-to-Join-S-: 수집 또는 해석 실패 (ValueError). 일정 없음으로 판단할 수 없습니다.",
      "리밸런싱 확인범위: MSCI 공개 정기 리뷰 자료와 Nasdaq/S&P 공개 최신 뉴스 및 최대 3개 추가 페이지입니다. 향후 미발표 일정·수시 편출입·특별 변경 전체의 부재는 보장하지 않습니다."
@@ -16789,7 +16787,7 @@
     ],
     "coverage_start": null,
     "coverage_end": null,
-    "fetched_at": "2026-09-17T15:26:37.834414+00:00"
+    "fetched_at": "2026-09-17T22:28:57.982493+00:00"
    }
   }
  ],
@@ -16845,6 +16843,10 @@
   {
    "idempotency_key": "2026-09-17:evening",
    "sent_at": "2026-09-17T12:23:41.093160+00:00"
+  },
+  {
+   "idempotency_key": "2026-09-18:morning",
+   "sent_at": "2026-09-17T23:00:00.864903+00:00"
   }
  ],
  "changes": []
