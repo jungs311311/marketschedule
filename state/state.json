@@ -1,10 +1,10 @@
 {
  "version": 1,
- "exported_at": "2026-09-16T23:58:44.746770+00:00",
+ "exported_at": "2026-09-17T00:52:12.050888+00:00",
  "provider_cache": [
   {
    "provider": "markets",
-   "updated_at": "2026-09-16T23:55:27.458511+00:00",
+   "updated_at": "2026-09-17T00:51:28.924487+00:00",
    "payload": {
     "provider": "markets",
     "events": [],
@@ -15327,12 +15327,12 @@
     "failed_scopes": [],
     "coverage_start": "2026-09-02",
     "coverage_end": "2027-10-22",
-    "fetched_at": "2026-09-16T23:55:24.575629+00:00"
+    "fetched_at": "2026-09-17T00:51:24.277261+00:00"
    }
   },
   {
    "provider": "monetary",
-   "updated_at": "2026-09-16T23:58:26.740082+00:00",
+   "updated_at": "2026-09-17T00:51:53.269639+00:00",
    "payload": {
     "provider": "monetary",
     "events": [
@@ -15641,6 +15641,7 @@
     "sessions": [],
     "sources": [
      "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+     "https://www.bok.or.kr/portal/singl/crncyPolicyDrcMtg/listYear.do?menuNo=200755&mtgSe=A&year=2026",
      "https://www.nist.gov/pml/time-and-frequency-division/popular-links/daylight-saving-time-dst"
     ],
     "warnings": [
@@ -15650,9 +15651,8 @@
      "FOMC 2027-06-09: 공식 발표 시각 미확인",
      "FOMC 2027-07-28: 공식 발표 시각 미확인",
      "FOMC 2027-09-15: 공식 발표 시각 미확인",
-     "한국은행 2026년 수집 실패: FetchError: Source request failed (TimeoutError)",
-     "한국은행 2027년 수집 실패: FetchError: Source request failed (TimeoutError)",
-     "현재 확인 실패 항목 3개에 이전의 공식 확인값을 유지했습니다."
+     "한국은행 2027년 수집 실패: ValueError: 한국은행 2027년 일정 제목을 확인할 수 없습니다",
+     "현재 확인 실패 항목 1개에 이전의 공식 확인값을 유지했습니다."
     ],
     "successful_scopes": [
      "fomc",
@@ -15663,12 +15663,12 @@
     ],
     "coverage_start": "2026-09-02",
     "coverage_end": "2027-10-22",
-    "fetched_at": "2026-09-16T23:55:27.468408+00:00"
+    "fetched_at": "2026-09-17T00:51:28.934233+00:00"
    }
   },
   {
    "provider": "options",
-   "updated_at": "2026-09-16T23:58:33.016797+00:00",
+   "updated_at": "2026-09-17T00:51:59.513191+00:00",
    "payload": {
     "provider": "options",
     "events": [
@@ -16406,12 +16406,12 @@
     ],
     "coverage_start": "2026-09-02",
     "coverage_end": "2027-10-22",
-    "fetched_at": "2026-09-16T23:58:26.741370+00:00"
+    "fetched_at": "2026-09-17T00:51:53.270837+00:00"
    }
   },
   {
    "provider": "rebalances",
-   "updated_at": "2026-09-16T23:58:44.299663+00:00",
+   "updated_at": "2026-09-17T00:52:11.629449+00:00",
    "payload": {
     "provider": "rebalances",
     "events": [
@@ -16753,7 +16753,7 @@
     ],
     "coverage_start": null,
     "coverage_end": null,
-    "fetched_at": "2026-09-16T23:58:33.018048+00:00"
+    "fetched_at": "2026-09-17T00:51:59.515016+00:00"
    }
   }
  ],
