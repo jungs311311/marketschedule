@@ -4,18 +4,21 @@ on:
   schedule:
     # UTC 기준. 한국시간 = UTC + 9시간.
     # GitHub이 예약을 자주 건너뛰므로 여러 번 시도하고,
-    # 깨어난 쪽이 목표 시각까지 기다렸다가 보낸다. 중복은 자동으로 걸러진다.
+    # 먼저 깨어난 쪽이 목표 시각까지 기다렸다가 보낸다. 중복은 자동으로 걸러진다.
+    # 한국 낮~저녁(= 미국 업무시간)은 GitHub이 붐벼 잘 밀리므로 일찍부터 시도한다.
     - cron: '0 20 * * *'    # 05:00 KST → 08:00
     - cron: '40 20 * * *'   # 05:40 KST → 08:00
     - cron: '20 21 * * *'   # 06:20 KST → 08:00
     - cron: '0 22 * * *'    # 07:00 KST → 08:00
     - cron: '40 22 * * *'   # 07:40 KST → 08:00
+    - cron: '0 3 * * *'     # 12:00 KST → 21:00
+    - cron: '0 4 * * *'     # 13:00 KST → 21:00
+    - cron: '0 5 * * *'     # 14:00 KST → 21:00
+    - cron: '0 6 * * *'     # 15:00 KST → 21:00
     - cron: '0 7 * * *'     # 16:00 KST → 21:00
-    - cron: '40 7 * * *'    # 16:40 KST → 21:00
-    - cron: '20 8 * * *'    # 17:20 KST → 21:00
+    - cron: '0 8 * * *'     # 17:00 KST → 21:00
     - cron: '0 9 * * *'     # 18:00 KST → 21:00
-    - cron: '40 9 * * *'    # 18:40 KST → 21:00
-    - cron: '20 10 * * *'   # 19:20 KST → 21:00
+    - cron: '0 10 * * *'    # 19:00 KST → 21:00
     - cron: '0 11 * * *'    # 20:00 KST → 21:00
   workflow_dispatch:
     inputs:
@@ -43,7 +46,7 @@ concurrency:
 jobs:
   run:
     runs-on: ubuntu-latest
-    timeout-minutes: 345
+    timeout-minutes: 700
     env:
       MARKET_BOT_TOKEN: ${{ secrets.MARKET_BOT_TOKEN }}
       MARKET_BOT_CHAT_ID: ${{ secrets.MARKET_BOT_CHAT_ID }}
@@ -81,9 +84,9 @@ jobs:
                   *)
                     SLOT=evening; TARGET='21:00' ;;
                 esac
-                # 3) 예약이 밀렸어도 목표 시각까지 기다린다
+                # 3) 예약이 밀렸어도 목표 시각까지 기다린다 (최대 10시간)
                 WAIT=$(( $(date -d "$(date +%F) $TARGET" +%s) - $(date +%s) ))
-                if [ "$WAIT" -gt 0 ] && [ "$WAIT" -le 18000 ]; then
+                if [ "$WAIT" -gt 0 ] && [ "$WAIT" -le 36000 ]; then
                   echo "지금 $(date '+%H:%M') KST → $TARGET KST까지 $((WAIT/60))분 대기 ($SLOT)"
                   sleep "$WAIT"
                 else
