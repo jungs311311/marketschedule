@@ -3,22 +3,18 @@ name: market-calendar-bot
 on:
   schedule:
     # UTC 기준. 한국시간 = UTC + 9시간.
-    # GitHub이 예약을 자주 건너뛰므로 여러 번 시도하고,
-    # 먼저 깨어난 쪽이 목표 시각까지 기다렸다가 보낸다. 중복은 자동으로 걸러진다.
-    # 한국 낮~저녁(= 미국 업무시간)은 GitHub이 붐벼 잘 밀리므로 일찍부터 시도한다.
+    # GitHub은 작업 하나가 최대 6시간이라, 목표 시각 5시간 전보다 이르게는 못 깨운다.
     - cron: '0 20 * * *'    # 05:00 KST → 08:00
     - cron: '40 20 * * *'   # 05:40 KST → 08:00
     - cron: '20 21 * * *'   # 06:20 KST → 08:00
     - cron: '0 22 * * *'    # 07:00 KST → 08:00
     - cron: '40 22 * * *'   # 07:40 KST → 08:00
-    - cron: '0 3 * * *'     # 12:00 KST → 21:00
-    - cron: '0 4 * * *'     # 13:00 KST → 21:00
-    - cron: '0 5 * * *'     # 14:00 KST → 21:00
-    - cron: '0 6 * * *'     # 15:00 KST → 21:00
     - cron: '0 7 * * *'     # 16:00 KST → 21:00
-    - cron: '0 8 * * *'     # 17:00 KST → 21:00
+    - cron: '40 7 * * *'    # 16:40 KST → 21:00
+    - cron: '20 8 * * *'    # 17:20 KST → 21:00
     - cron: '0 9 * * *'     # 18:00 KST → 21:00
-    - cron: '0 10 * * *'    # 19:00 KST → 21:00
+    - cron: '40 9 * * *'    # 18:40 KST → 21:00
+    - cron: '20 10 * * *'   # 19:20 KST → 21:00
     - cron: '0 11 * * *'    # 20:00 KST → 21:00
   workflow_dispatch:
     inputs:
@@ -46,7 +42,7 @@ concurrency:
 jobs:
   run:
     runs-on: ubuntu-latest
-    timeout-minutes: 700
+    timeout-minutes: 330
     env:
       MARKET_BOT_TOKEN: ${{ secrets.MARKET_BOT_TOKEN }}
       MARKET_BOT_CHAT_ID: ${{ secrets.MARKET_BOT_CHAT_ID }}
@@ -84,18 +80,20 @@ jobs:
                   *)
                     SLOT=evening; TARGET='21:00' ;;
                 esac
-                # 3) 예약이 밀렸어도 목표 시각까지 기다린다 (최대 10시간)
+                # 3) 예약이 밀렸어도 목표 시각까지 기다린다 (최대 5시간)
                 WAIT=$(( $(date -d "$(date +%F) $TARGET" +%s) - $(date +%s) ))
-                if [ "$WAIT" -gt 0 ] && [ "$WAIT" -le 36000 ]; then
+                if [ "$WAIT" -gt 0 ] && [ "$WAIT" -le 18000 ]; then
                   echo "지금 $(date '+%H:%M') KST → $TARGET KST까지 $((WAIT/60))분 대기 ($SLOT)"
                   sleep "$WAIT"
                 else
                   echo "대기 없이 진행 ($(date '+%H:%M') KST, 목표 $TARGET, $SLOT)"
                 fi
-                python -m marketbot once --slot "$SLOT" --no-refresh
               else
-                python -m marketbot once --slot auto --no-refresh
+                SLOT=auto
               fi
+              # 4) 보내기 직전에 최신 발송 기록을 다시 받아온다 (중복 방지)
+              git pull --rebase --autostash --quiet || echo "최신 기록 받기 실패 — 로컬 기록으로 진행"
+              python -m marketbot once --slot "$SLOT" --no-refresh
               ;;
             refresh)
               python -m marketbot state-import
@@ -122,13 +120,17 @@ jobs:
       - name: 일정 상태 저장
         if: always()
         run: |
-          if [ -n "$(git status --porcelain state)" ]; then
-            git config user.name  "github-actions[bot]"
-            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-            git add state
-            git commit -m "state: $(date '+%Y-%m-%d %H:%M KST')"
-            git pull --rebase --autostash
-            git push
-          else
+          if [ -z "$(git status --porcelain state)" ]; then
             echo "변경된 상태 없음"
+            exit 0
           fi
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add state
+          git commit -m "state: $(date '+%Y-%m-%d %H:%M KST')"
+          for i in 1 2 3; do
+            git pull --rebase --autostash --quiet && git push && exit 0
+            echo "밀어넣기 재시도 $i"
+            sleep 10
+          done
+          echo "상태 저장 실패 — 알림 자체는 이미 발송됨"
