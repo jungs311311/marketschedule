@@ -1,10 +1,10 @@
 {
  "version": 1,
- "exported_at": "2026-09-19T14:11:18.319392+00:00",
+ "exported_at": "2026-09-19T23:00:01.466567+00:00",
  "provider_cache": [
   {
    "provider": "markets",
-   "updated_at": "2026-09-19T14:10:35.168561+00:00",
+   "updated_at": "2026-09-19T21:48:47.889062+00:00",
    "payload": {
     "provider": "markets",
     "events": [],
@@ -15380,31 +15380,67 @@
        "https://www.nyse.com/trade/hours-calendars"
       ],
       "confirmed": true
+     },
+     {
+      "market": "JP",
+      "date": "2027-10-25",
+      "status": "open",
+      "reason": "정상 개장",
+      "open_at": "2027-10-25T09:00:00+09:00",
+      "close_at": "2027-10-25T15:30:00+09:00",
+      "sources": [
+       "https://www.jpx.co.jp/english/corporate/about-jpx/calendar/"
+      ],
+      "confirmed": true
+     },
+     {
+      "market": "KR",
+      "date": "2027-10-25",
+      "status": "open",
+      "reason": "정상 개장",
+      "open_at": "2027-10-25T09:00:00+09:00",
+      "close_at": "2027-10-25T15:30:00+09:00",
+      "sources": [
+       "https://open.krx.co.kr/contents/MKD/01/0110/01100305/MKD01100305.jsp"
+      ],
+      "confirmed": true
+     },
+     {
+      "market": "US",
+      "date": "2027-10-25",
+      "status": "unknown",
+      "reason": "공식 연간 일정 미발표 또는 수집 실패",
+      "open_at": null,
+      "close_at": null,
+      "sources": [
+       "https://www.nyse.com/trade/hours-calendars"
+      ],
+      "confirmed": false
      }
     ],
     "sources": [
-     "https://www.nyse.com/trade/hours-calendars",
-     "https://www.nasdaqtrader.com/Trader.aspx?id=Calendar",
      "https://www.jpx.co.jp/english/corporate/about-jpx/calendar/",
      "https://open.krx.co.kr/contents/MKD/01/0110/01100305/MKD01100305.jsp"
     ],
     "warnings": [
-     "현재 확인 실패 항목 33개에 이전의 공식 확인값을 유지했습니다."
+     "미국시장 일정 수집 실패: FetchError: Source request failed (HTTPError)",
+     "현재 확인 실패 항목 451개에 이전의 공식 확인값을 유지했습니다."
     ],
     "successful_scopes": [
-     "US",
      "JP",
      "KR"
     ],
-    "failed_scopes": [],
-    "coverage_start": "2026-09-04",
-    "coverage_end": "2027-10-24",
-    "fetched_at": "2026-09-19T14:10:33.034735+00:00"
+    "failed_scopes": [
+     "US"
+    ],
+    "coverage_start": "2026-09-05",
+    "coverage_end": "2027-10-25",
+    "fetched_at": "2026-09-19T21:48:42.533486+00:00"
    }
   },
   {
    "provider": "monetary",
-   "updated_at": "2026-09-19T14:10:59.530040+00:00",
+   "updated_at": "2026-09-19T21:49:11.338799+00:00",
    "payload": {
     "provider": "monetary",
     "events": [
@@ -15733,14 +15769,14 @@
     "failed_scopes": [
      "bok"
     ],
-    "coverage_start": "2026-09-04",
-    "coverage_end": "2027-10-24",
-    "fetched_at": "2026-09-19T14:10:35.178395+00:00"
+    "coverage_start": "2026-09-05",
+    "coverage_end": "2027-10-25",
+    "fetched_at": "2026-09-19T21:48:47.900297+00:00"
    }
   },
   {
    "provider": "options",
-   "updated_at": "2026-09-19T14:11:05.964438+00:00",
+   "updated_at": "2026-09-19T21:49:17.437569+00:00",
    "payload": {
     "provider": "options",
     "events": [
@@ -16476,14 +16512,14 @@
     "failed_scopes": [
      "us_options"
     ],
-    "coverage_start": "2026-09-04",
-    "coverage_end": "2027-10-24",
-    "fetched_at": "2026-09-19T14:10:59.533983+00:00"
+    "coverage_start": "2026-09-05",
+    "coverage_end": "2027-10-25",
+    "fetched_at": "2026-09-19T21:49:11.343811+00:00"
    }
   },
   {
    "provider": "rebalances",
-   "updated_at": "2026-09-19T14:11:17.665263+00:00",
+   "updated_at": "2026-09-19T21:49:27.273423+00:00",
    "payload": {
     "provider": "rebalances",
     "events": [
@@ -16823,7 +16859,7 @@
     ],
     "coverage_start": null,
     "coverage_end": null,
-    "fetched_at": "2026-09-19T14:11:05.967280+00:00"
+    "fetched_at": "2026-09-19T21:49:17.440364+00:00"
    }
   }
  ],
@@ -16895,6 +16931,10 @@
   {
    "idempotency_key": "2026-09-19:evening",
    "sent_at": "2026-09-19T12:00:01.491201+00:00"
+  },
+  {
+   "idempotency_key": "2026-09-20:morning",
+   "sent_at": "2026-09-19T23:00:01.464389+00:00"
   }
  ],
  "changes": []
