@@ -68,10 +68,9 @@ jobs:
           TODAY="$(date +%F)"
           case "$CMD" in
             once)
-              # 1) 먼저 공식 일정을 갱신해 둔다
+              # 1) 먼저 공식 일정을 갱신해 둔다 (작업 공간 DB에만 저장)
               python -m marketbot state-import
               python -m marketbot refresh || echo "갱신 실패 — 저장된 일정으로 진행"
-              python -m marketbot state-export
               if [ "${{ github.event_name }}" = "schedule" ]; then
                 # 2) 시계가 아니라 '어느 예약으로 깨어났는가'로 아침·저녁을 정한다
                 case "${{ github.event.schedule }}" in
@@ -91,8 +90,12 @@ jobs:
               else
                 SLOT=auto
               fi
-              # 4) 보내기 직전에 최신 발송 기록을 다시 받아온다 (중복 방지)
-              git pull --rebase --autostash --quiet || echo "최신 기록 받기 실패 — 로컬 기록으로 진행"
+              # 4) 보내기 직전에 저장소의 최신 발송 기록을 받아온다 (합치지 않고 통째로 가져옴)
+              if git fetch --quiet origin main && git checkout --quiet origin/main -- state; then
+                echo "최신 발송 기록 확인함"
+              else
+                echo "최신 기록 받기 실패 — 로컬 기록으로 진행"
+              fi
               python -m marketbot once --slot "$SLOT" --no-refresh
               ;;
             refresh)
@@ -120,17 +123,23 @@ jobs:
       - name: 일정 상태 저장
         if: always()
         run: |
-          if [ -z "$(git status --porcelain state)" ]; then
-            echo "변경된 상태 없음"
-            exit 0
-          fi
+          [ -f state/state.json ] || { echo "저장할 상태 없음"; exit 0; }
           git config user.name  "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add state
-          git commit -m "state: $(date '+%Y-%m-%d %H:%M KST')"
+          cp state/state.json /tmp/state.json
+          # 합치기(merge)를 하지 않는다. 최신 저장소 위에 이번 결과를 그대로 얹는다.
           for i in 1 2 3; do
-            git pull --rebase --autostash --quiet && git push && exit 0
-            echo "밀어넣기 재시도 $i"
-            sleep 10
+            git fetch --quiet origin main
+            git reset --quiet --hard origin/main
+            cp /tmp/state.json state/state.json
+            git add state
+            if git diff --cached --quiet; then
+              echo "변경된 상태 없음"; exit 0
+            fi
+            git commit --quiet -m "state: $(date '+%Y-%m-%d %H:%M KST')"
+            if git push --quiet origin HEAD:main; then
+              echo "상태 저장 완료"; exit 0
+            fi
+            echo "저장 재시도 $i"; sleep 10
           done
           echo "상태 저장 실패 — 알림 자체는 이미 발송됨"
