@@ -6,6 +6,7 @@ sqlite 파일 자체를 저장소에 커밋하면 바이너리라 이력이 커�
 from __future__ import annotations
 
 import json
+import logging
 import sqlite3
 from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
@@ -14,6 +15,8 @@ SESSION_PAST_DAYS = 30
 SESSION_FUTURE_DAYS = 400
 SENT_KEEP_DAYS = 120
 CHANGE_KEEP_DAYS = 120
+
+log = logging.getLogger('marketbot')
 
 
 def _trim(payload: dict, today: date) -> dict:
@@ -66,14 +69,25 @@ def export_state(db: sqlite3.Connection, path: str | Path,
 
 def import_state(db: sqlite3.Connection, path: str | Path) -> bool:
     file = Path(path)
-    if not file.exists() or not file.read_text(encoding='utf-8').strip():
+    if not file.exists():
         return False
-    state = json.loads(file.read_text(encoding='utf-8'))
+    text = file.read_text(encoding='utf-8')
+    if not text.strip():
+        return False
+    try:
+        state = json.loads(text)
+    except json.JSONDecodeError as error:
+        # 파일이 깨져 있어도 봇이 멈추면 안 된다. 무시하고 새로 수집하면
+        # 이번 실행이 끝날 때 깨끗한 파일로 다시 저장된다.
+        log.warning('state 파일을 읽을 수 없어 무시합니다: %s', error)
+        return False
 
     for item in state.get('provider_cache', []):
+        # 이미 더 최신 자료를 갖고 있으면 덮어쓰지 않는다.
         db.execute('''INSERT INTO provider_cache(provider,payload,updated_at) VALUES(?,?,?)
                       ON CONFLICT(provider) DO UPDATE SET payload=excluded.payload,
-                      updated_at=excluded.updated_at''',
+                      updated_at=excluded.updated_at
+                      WHERE excluded.updated_at > provider_cache.updated_at''',
                    (item['provider'], json.dumps(item['payload'], ensure_ascii=False),
                     item['updated_at']))
     for item in state.get('sent_messages', []):
