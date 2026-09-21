@@ -1,490 +1,14 @@
 {
  "version": 1,
-<<<<<<< Updated upstream
- "exported_at": "2026-09-19T23:00:01.466567+00:00",
+ "exported_at": "2026-09-21T13:34:58.017788+00:00",
  "provider_cache": [
   {
    "provider": "markets",
-   "updated_at": "2026-09-19T21:48:47.889062+00:00",
-=======
- "exported_at": "2026-09-19T23:00:55.596444+00:00",
- "provider_cache": [
-  {
-   "provider": "markets",
-   "updated_at": "2026-09-19T23:00:13.972893+00:00",
->>>>>>> Stashed changes
+   "updated_at": "2026-09-21T13:34:04.894064+00:00",
    "payload": {
     "provider": "markets",
     "events": [],
     "sessions": [
-     {
-      "market": "JP",
-      "date": "2026-08-24",
-      "status": "open",
-      "reason": "정상 개장",
-      "open_at": "2026-08-24T09:00:00+09:00",
-      "close_at": "2026-08-24T15:30:00+09:00",
-      "sources": [
-       "https://www.jpx.co.jp/english/corporate/about-jpx/calendar/"
-      ],
-      "confirmed": true
-     },
-     {
-      "market": "KR",
-      "date": "2026-08-24",
-      "status": "open",
-      "reason": "정상 개장",
-      "open_at": "2026-08-24T09:00:00+09:00",
-      "close_at": "2026-08-24T15:30:00+09:00",
-      "sources": [
-       "https://open.krx.co.kr/contents/MKD/01/0110/01100305/MKD01100305.jsp"
-      ],
-      "confirmed": true
-     },
-     {
-      "market": "US",
-      "date": "2026-08-24",
-      "status": "open",
-      "reason": "정상 개장",
-      "open_at": "2026-08-24T09:30:00-04:00",
-      "close_at": "2026-08-24T16:00:00-04:00",
-      "sources": [
-       "https://www.nyse.com/trade/hours-calendars"
-      ],
-      "confirmed": true
-     },
-     {
-      "market": "JP",
-      "date": "2026-08-25",
-      "status": "open",
-      "reason": "정상 개장",
-      "open_at": "2026-08-25T09:00:00+09:00",
-      "close_at": "2026-08-25T15:30:00+09:00",
-      "sources": [
-       "https://www.jpx.co.jp/english/corporate/about-jpx/calendar/"
-      ],
-      "confirmed": true
-     },
-     {
-      "market": "KR",
-      "date": "2026-08-25",
-      "status": "open",
-      "reason": "정상 개장",
-      "open_at": "2026-08-25T09:00:00+09:00",
-      "close_at": "2026-08-25T15:30:00+09:00",
-      "sources": [
-       "https://open.krx.co.kr/contents/MKD/01/0110/01100305/MKD01100305.jsp"
-      ],
-      "confirmed": true
-     },
-     {
-      "market": "US",
-      "date": "2026-08-25",
-      "status": "open",
-      "reason": "정상 개장",
-      "open_at": "2026-08-25T09:30:00-04:00",
-      "close_at": "2026-08-25T16:00:00-04:00",
-      "sources": [
-       "https://www.nyse.com/trade/hours-calendars"
-      ],
-      "confirmed": true
-     },
-     {
-      "market": "JP",
-      "date": "2026-08-26",
-      "status": "open",
-      "reason": "정상 개장",
-      "open_at": "2026-08-26T09:00:00+09:00",
-      "close_at": "2026-08-26T15:30:00+09:00",
-      "sources": [
-       "https://www.jpx.co.jp/english/corporate/about-jpx/calendar/"
-      ],
-      "confirmed": true
-     },
-     {
-      "market": "KR",
-      "date": "2026-08-26",
-      "status": "open",
-      "reason": "정상 개장",
-      "open_at": "2026-08-26T09:00:00+09:00",
-      "close_at": "2026-08-26T15:30:00+09:00",
-      "sources": [
-       "https://open.krx.co.kr/contents/MKD/01/0110/01100305/MKD01100305.jsp"
-      ],
-      "confirmed": true
-     },
-     {
-      "market": "US",
-      "date": "2026-08-26",
-      "status": "open",
-      "reason": "정상 개장",
-      "open_at": "2026-08-26T09:30:00-04:00",
-      "close_at": "2026-08-26T16:00:00-04:00",
-      "sources": [
-       "https://www.nyse.com/trade/hours-calendars"
-      ],
-      "confirmed": true
-     },
-     {
-      "market": "JP",
-      "date": "2026-08-27",
-      "status": "open",
-      "reason": "정상 개장",
-      "open_at": "2026-08-27T09:00:00+09:00",
-      "close_at": "2026-08-27T15:30:00+09:00",
-      "sources": [
-       "https://www.jpx.co.jp/english/corporate/about-jpx/calendar/"
-      ],
-      "confirmed": true
-     },
-     {
-      "market": "KR",
-      "date": "2026-08-27",
-      "status": "open",
-      "reason": "정상 개장",
-      "open_at": "2026-08-27T09:00:00+09:00",
-      "close_at": "2026-08-27T15:30:00+09:00",
-      "sources": [
-       "https://open.krx.co.kr/contents/MKD/01/0110/01100305/MKD01100305.jsp"
-      ],
-      "confirmed": true
-     },
-     {
-      "market": "US",
-      "date": "2026-08-27",
-      "status": "open",
-      "reason": "정상 개장",
-      "open_at": "2026-08-27T09:30:00-04:00",
-      "close_at": "2026-08-27T16:00:00-04:00",
-      "sources": [
-       "https://www.nyse.com/trade/hours-calendars"
-      ],
-      "confirmed": true
-     },
-     {
-      "market": "JP",
-      "date": "2026-08-28",
-      "status": "open",
-      "reason": "정상 개장",
-      "open_at": "2026-08-28T09:00:00+09:00",
-      "close_at": "2026-08-28T15:30:00+09:00",
-      "sources": [
-       "https://www.jpx.co.jp/english/corporate/about-jpx/calendar/"
-      ],
-      "confirmed": true
-     },
-     {
-      "market": "KR",
-      "date": "2026-08-28",
-      "status": "open",
-      "reason": "정상 개장",
-      "open_at": "2026-08-28T09:00:00+09:00",
-      "close_at": "2026-08-28T15:30:00+09:00",
-      "sources": [
-       "https://open.krx.co.kr/contents/MKD/01/0110/01100305/MKD01100305.jsp"
-      ],
-      "confirmed": true
-     },
-     {
-      "market": "US",
-      "date": "2026-08-28",
-      "status": "open",
-      "reason": "정상 개장",
-      "open_at": "2026-08-28T09:30:00-04:00",
-      "close_at": "2026-08-28T16:00:00-04:00",
-      "sources": [
-       "https://www.nyse.com/trade/hours-calendars"
-      ],
-      "confirmed": true
-     },
-     {
-      "market": "JP",
-      "date": "2026-08-29",
-      "status": "closed",
-      "reason": "주말",
-      "open_at": null,
-      "close_at": null,
-      "sources": [
-       "https://www.jpx.co.jp/english/corporate/about-jpx/calendar/"
-      ],
-      "confirmed": true
-     },
-     {
-      "market": "KR",
-      "date": "2026-08-29",
-      "status": "closed",
-      "reason": "주말",
-      "open_at": null,
-      "close_at": null,
-      "sources": [
-       "https://open.krx.co.kr/contents/MKD/01/0110/01100305/MKD01100305.jsp"
-      ],
-      "confirmed": true
-     },
-     {
-      "market": "US",
-      "date": "2026-08-29",
-      "status": "closed",
-      "reason": "주말",
-      "open_at": null,
-      "close_at": null,
-      "sources": [
-       "https://www.nyse.com/trade/hours-calendars"
-      ],
-      "confirmed": true
-     },
-     {
-      "market": "JP",
-      "date": "2026-08-30",
-      "status": "closed",
-      "reason": "주말",
-      "open_at": null,
-      "close_at": null,
-      "sources": [
-       "https://www.jpx.co.jp/english/corporate/about-jpx/calendar/"
-      ],
-      "confirmed": true
-     },
-     {
-      "market": "KR",
-      "date": "2026-08-30",
-      "status": "closed",
-      "reason": "주말",
-      "open_at": null,
-      "close_at": null,
-      "sources": [
-       "https://open.krx.co.kr/contents/MKD/01/0110/01100305/MKD01100305.jsp"
-      ],
-      "confirmed": true
-     },
-     {
-      "market": "US",
-      "date": "2026-08-30",
-      "status": "closed",
-      "reason": "주말",
-      "open_at": null,
-      "close_at": null,
-      "sources": [
-       "https://www.nyse.com/trade/hours-calendars"
-      ],
-      "confirmed": true
-     },
-     {
-      "market": "JP",
-      "date": "2026-08-31",
-      "status": "open",
-      "reason": "정상 개장",
-      "open_at": "2026-08-31T09:00:00+09:00",
-      "close_at": "2026-08-31T15:30:00+09:00",
-      "sources": [
-       "https://www.jpx.co.jp/english/corporate/about-jpx/calendar/"
-      ],
-      "confirmed": true
-     },
-     {
-      "market": "KR",
-      "date": "2026-08-31",
-      "status": "open",
-      "reason": "정상 개장",
-      "open_at": "2026-08-31T09:00:00+09:00",
-      "close_at": "2026-08-31T15:30:00+09:00",
-      "sources": [
-       "https://open.krx.co.kr/contents/MKD/01/0110/01100305/MKD01100305.jsp"
-      ],
-      "confirmed": true
-     },
-     {
-      "market": "US",
-      "date": "2026-08-31",
-      "status": "open",
-      "reason": "정상 개장",
-      "open_at": "2026-08-31T09:30:00-04:00",
-      "close_at": "2026-08-31T16:00:00-04:00",
-      "sources": [
-       "https://www.nyse.com/trade/hours-calendars"
-      ],
-      "confirmed": true
-     },
-     {
-      "market": "JP",
-      "date": "2026-09-01",
-      "status": "open",
-      "reason": "정상 개장",
-      "open_at": "2026-09-01T09:00:00+09:00",
-      "close_at": "2026-09-01T15:30:00+09:00",
-      "sources": [
-       "https://www.jpx.co.jp/english/corporate/about-jpx/calendar/"
-      ],
-      "confirmed": true
-     },
-     {
-      "market": "KR",
-      "date": "2026-09-01",
-      "status": "open",
-      "reason": "정상 개장",
-      "open_at": "2026-09-01T09:00:00+09:00",
-      "close_at": "2026-09-01T15:30:00+09:00",
-      "sources": [
-       "https://open.krx.co.kr/contents/MKD/01/0110/01100305/MKD01100305.jsp"
-      ],
-      "confirmed": true
-     },
-     {
-      "market": "US",
-      "date": "2026-09-01",
-      "status": "open",
-      "reason": "정상 개장",
-      "open_at": "2026-09-01T09:30:00-04:00",
-      "close_at": "2026-09-01T16:00:00-04:00",
-      "sources": [
-       "https://www.nyse.com/trade/hours-calendars"
-      ],
-      "confirmed": true
-     },
-     {
-      "market": "JP",
-      "date": "2026-09-02",
-      "status": "open",
-      "reason": "정상 개장",
-      "open_at": "2026-09-02T09:00:00+09:00",
-      "close_at": "2026-09-02T15:30:00+09:00",
-      "sources": [
-       "https://www.jpx.co.jp/english/corporate/about-jpx/calendar/"
-      ],
-      "confirmed": true
-     },
-     {
-      "market": "KR",
-      "date": "2026-09-02",
-      "status": "open",
-      "reason": "정상 개장",
-      "open_at": "2026-09-02T09:00:00+09:00",
-      "close_at": "2026-09-02T15:30:00+09:00",
-      "sources": [
-       "https://open.krx.co.kr/contents/MKD/01/0110/01100305/MKD01100305.jsp"
-      ],
-      "confirmed": true
-     },
-     {
-      "market": "US",
-      "date": "2026-09-02",
-      "status": "open",
-      "reason": "정상 개장",
-      "open_at": "2026-09-02T09:30:00-04:00",
-      "close_at": "2026-09-02T16:00:00-04:00",
-      "sources": [
-       "https://www.nyse.com/trade/hours-calendars"
-      ],
-      "confirmed": true
-     },
-     {
-      "market": "JP",
-      "date": "2026-09-03",
-      "status": "open",
-      "reason": "정상 개장",
-      "open_at": "2026-09-03T09:00:00+09:00",
-      "close_at": "2026-09-03T15:30:00+09:00",
-      "sources": [
-       "https://www.jpx.co.jp/english/corporate/about-jpx/calendar/"
-      ],
-      "confirmed": true
-     },
-     {
-      "market": "KR",
-      "date": "2026-09-03",
-      "status": "open",
-      "reason": "정상 개장",
-      "open_at": "2026-09-03T09:00:00+09:00",
-      "close_at": "2026-09-03T15:30:00+09:00",
-      "sources": [
-       "https://open.krx.co.kr/contents/MKD/01/0110/01100305/MKD01100305.jsp"
-      ],
-      "confirmed": true
-     },
-     {
-      "market": "US",
-      "date": "2026-09-03",
-      "status": "open",
-      "reason": "정상 개장",
-      "open_at": "2026-09-03T09:30:00-04:00",
-      "close_at": "2026-09-03T16:00:00-04:00",
-      "sources": [
-       "https://www.nyse.com/trade/hours-calendars"
-      ],
-      "confirmed": true
-     },
-     {
-      "market": "JP",
-      "date": "2026-09-04",
-      "status": "open",
-      "reason": "정상 개장",
-      "open_at": "2026-09-04T09:00:00+09:00",
-      "close_at": "2026-09-04T15:30:00+09:00",
-      "sources": [
-       "https://www.jpx.co.jp/english/corporate/about-jpx/calendar/"
-      ],
-      "confirmed": true
-     },
-     {
-      "market": "KR",
-      "date": "2026-09-04",
-      "status": "open",
-      "reason": "정상 개장",
-      "open_at": "2026-09-04T09:00:00+09:00",
-      "close_at": "2026-09-04T15:30:00+09:00",
-      "sources": [
-       "https://open.krx.co.kr/contents/MKD/01/0110/01100305/MKD01100305.jsp"
-      ],
-      "confirmed": true
-     },
-     {
-      "market": "US",
-      "date": "2026-09-04",
-      "status": "open",
-      "reason": "정상 개장",
-      "open_at": "2026-09-04T09:30:00-04:00",
-      "close_at": "2026-09-04T16:00:00-04:00",
-      "sources": [
-       "https://www.nyse.com/trade/hours-calendars"
-      ],
-      "confirmed": true
-     },
-     {
-      "market": "JP",
-      "date": "2026-09-05",
-      "status": "closed",
-      "reason": "주말",
-      "open_at": null,
-      "close_at": null,
-      "sources": [
-       "https://www.jpx.co.jp/english/corporate/about-jpx/calendar/"
-      ],
-      "confirmed": true
-     },
-     {
-      "market": "KR",
-      "date": "2026-09-05",
-      "status": "closed",
-      "reason": "주말",
-      "open_at": null,
-      "close_at": null,
-      "sources": [
-       "https://open.krx.co.kr/contents/MKD/01/0110/01100305/MKD01100305.jsp"
-      ],
-      "confirmed": true
-     },
-     {
-      "market": "US",
-      "date": "2026-09-05",
-      "status": "closed",
-      "reason": "주말",
-      "open_at": null,
-      "close_at": null,
-      "sources": [
-       "https://www.nyse.com/trade/hours-calendars"
-      ],
-      "confirmed": true
-     },
      {
       "market": "JP",
       "date": "2026-09-06",
@@ -15416,16 +14940,6 @@
      {
       "market": "US",
       "date": "2027-10-25",
-<<<<<<< Updated upstream
-      "status": "unknown",
-      "reason": "공식 연간 일정 미발표 또는 수집 실패",
-      "open_at": null,
-      "close_at": null,
-      "sources": [
-       "https://www.nyse.com/trade/hours-calendars"
-      ],
-      "confirmed": false
-=======
       "status": "open",
       "reason": "정상 개장",
       "open_at": "2027-10-25T09:30:00-04:00",
@@ -15434,70 +14948,68 @@
        "https://www.nyse.com/trade/hours-calendars"
       ],
       "confirmed": true
->>>>>>> Stashed changes
+     },
+     {
+      "market": "JP",
+      "date": "2027-10-26",
+      "status": "open",
+      "reason": "정상 개장",
+      "open_at": "2027-10-26T09:00:00+09:00",
+      "close_at": "2027-10-26T15:30:00+09:00",
+      "sources": [
+       "https://www.jpx.co.jp/english/corporate/about-jpx/calendar/"
+      ],
+      "confirmed": true
+     },
+     {
+      "market": "KR",
+      "date": "2027-10-26",
+      "status": "open",
+      "reason": "정상 개장",
+      "open_at": "2027-10-26T09:00:00+09:00",
+      "close_at": "2027-10-26T15:30:00+09:00",
+      "sources": [
+       "https://open.krx.co.kr/contents/MKD/01/0110/01100305/MKD01100305.jsp"
+      ],
+      "confirmed": true
+     },
+     {
+      "market": "US",
+      "date": "2027-10-26",
+      "status": "open",
+      "reason": "정상 개장",
+      "open_at": "2027-10-26T09:30:00-04:00",
+      "close_at": "2027-10-26T16:00:00-04:00",
+      "sources": [
+       "https://www.nyse.com/trade/hours-calendars"
+      ],
+      "confirmed": true
      }
     ],
     "sources": [
+     "https://www.nyse.com/trade/hours-calendars",
+     "https://www.nasdaqtrader.com/Trader.aspx?id=Calendar",
      "https://www.jpx.co.jp/english/corporate/about-jpx/calendar/",
      "https://open.krx.co.kr/contents/MKD/01/0110/01100305/MKD01100305.jsp"
     ],
-    "warnings": [
-<<<<<<< Updated upstream
-     "미국시장 일정 수집 실패: FetchError: Source request failed (HTTPError)",
-     "현재 확인 실패 항목 451개에 이전의 공식 확인값을 유지했습니다."
-=======
-     "현재 확인 실패 항목 36개에 이전의 공식 확인값을 유지했습니다."
->>>>>>> Stashed changes
-    ],
+    "warnings": [],
     "successful_scopes": [
+     "US",
      "JP",
      "KR"
     ],
-<<<<<<< Updated upstream
-    "failed_scopes": [
-     "US"
-    ],
-    "coverage_start": "2026-09-05",
-    "coverage_end": "2027-10-25",
-    "fetched_at": "2026-09-19T21:48:42.533486+00:00"
-=======
     "failed_scopes": [],
-    "coverage_start": "2026-09-05",
-    "coverage_end": "2027-10-25",
-    "fetched_at": "2026-09-19T23:00:11.427583+00:00"
->>>>>>> Stashed changes
+    "coverage_start": "2026-09-06",
+    "coverage_end": "2027-10-26",
+    "fetched_at": "2026-09-21T13:34:01.501511+00:00"
    }
   },
   {
    "provider": "monetary",
-<<<<<<< Updated upstream
-   "updated_at": "2026-09-19T21:49:11.338799+00:00",
-=======
-   "updated_at": "2026-09-19T23:00:38.511984+00:00",
->>>>>>> Stashed changes
+   "updated_at": "2026-09-21T13:34:34.232231+00:00",
    "payload": {
     "provider": "monetary",
     "events": [
-     {
-      "id": "bok:2026-08-27",
-      "category": "bok",
-      "title": "한국은행 기준금리 결정회의",
-      "market": "KR",
-      "trade_date": "2026-08-27",
-      "slot": "morning",
-      "phase": "rate_decision",
-      "occurs_at": null,
-      "details": [
-       "통화정책방향 결정회의 · 발표 시각은 당일 한국은행 공지 확인"
-      ],
-      "sources": [
-       "https://www.bok.or.kr/portal/singl/crncyPolicyDrcMtg/listYear.do?menuNo=200755&mtgSe=A&year=2026"
-      ],
-      "confirmed": true,
-      "announcement_date": null,
-      "implementation_date": null,
-      "effective_date": null
-     },
      {
       "id": "fomc:2026-09-16",
       "category": "fomc",
@@ -15522,26 +15034,6 @@
       "effective_date": null
      },
      {
-      "id": "bok:2026-10-22",
-      "category": "bok",
-      "title": "한국은행 기준금리 결정회의",
-      "market": "KR",
-      "trade_date": "2026-10-22",
-      "slot": "morning",
-      "phase": "rate_decision",
-      "occurs_at": null,
-      "details": [
-       "통화정책방향 결정회의 · 발표 시각은 당일 한국은행 공지 확인"
-      ],
-      "sources": [
-       "https://www.bok.or.kr/portal/singl/crncyPolicyDrcMtg/listYear.do?menuNo=200755&mtgSe=A&year=2026"
-      ],
-      "confirmed": true,
-      "announcement_date": null,
-      "implementation_date": null,
-      "effective_date": null
-     },
-     {
       "id": "fomc:2026-10-28",
       "category": "fomc",
       "title": "FOMC 금리 결정",
@@ -15558,49 +15050,6 @@
       "sources": [
        "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
        "https://www.federalreserve.gov/newsevents/2026-october.htm"
-      ],
-      "confirmed": true,
-      "announcement_date": null,
-      "implementation_date": null,
-      "effective_date": null
-     },
-     {
-      "id": "dst:2026:end",
-      "category": "dst",
-      "title": "미국 서머타임 종료",
-      "market": "US",
-      "trade_date": "2026-11-01",
-      "slot": "morning",
-      "phase": "event",
-      "occurs_at": "2026-11-01T15:00:00+09:00",
-      "details": [
-       "오늘 15:00 KST 뉴욕 시계 변경 예정",
-       "다음 미국 정규 거래일부터 한국시간 22:30–다음 날 05:00 → 23:30–다음 날 06:00",
-       "조기폐장·임시 거래시간 변경은 해당일 시장 안내 우선"
-      ],
-      "sources": [
-       "https://www.nist.gov/pml/time-and-frequency-division/popular-links/daylight-saving-time-dst",
-       "https://www.nyse.com/trade/hours-calendars"
-      ],
-      "confirmed": true,
-      "announcement_date": null,
-      "implementation_date": null,
-      "effective_date": null
-     },
-     {
-      "id": "bok:2026-11-26",
-      "category": "bok",
-      "title": "한국은행 기준금리 결정회의",
-      "market": "KR",
-      "trade_date": "2026-11-26",
-      "slot": "morning",
-      "phase": "rate_decision",
-      "occurs_at": null,
-      "details": [
-       "통화정책방향 결정회의 · 발표 시각은 당일 한국은행 공지 확인"
-      ],
-      "sources": [
-       "https://www.bok.or.kr/portal/singl/crncyPolicyDrcMtg/listYear.do?menuNo=200755&mtgSe=A&year=2026"
       ],
       "confirmed": true,
       "announcement_date": null,
@@ -15645,29 +15094,6 @@
       ],
       "sources": [
        "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
-      ],
-      "confirmed": true,
-      "announcement_date": null,
-      "implementation_date": null,
-      "effective_date": null
-     },
-     {
-      "id": "dst:2027:start",
-      "category": "dst",
-      "title": "미국 서머타임 시작",
-      "market": "US",
-      "trade_date": "2027-03-14",
-      "slot": "morning",
-      "phase": "event",
-      "occurs_at": "2027-03-14T16:00:00+09:00",
-      "details": [
-       "오늘 16:00 KST 뉴욕 시계 변경 예정",
-       "다음 미국 정규 거래일부터 한국시간 23:30–다음 날 06:00 → 22:30–다음 날 05:00",
-       "조기폐장·임시 거래시간 변경은 해당일 시장 안내 우선"
-      ],
-      "sources": [
-       "https://www.nist.gov/pml/time-and-frequency-division/popular-links/daylight-saving-time-dst",
-       "https://www.nyse.com/trade/hours-calendars"
       ],
       "confirmed": true,
       "announcement_date": null,
@@ -15778,6 +15204,92 @@
       "announcement_date": null,
       "implementation_date": null,
       "effective_date": null
+     },
+     {
+      "id": "bok:2026-10-22",
+      "category": "bok",
+      "title": "한국은행 기준금리 결정회의",
+      "market": "KR",
+      "trade_date": "2026-10-22",
+      "slot": "morning",
+      "phase": "rate_decision",
+      "occurs_at": null,
+      "details": [
+       "통화정책방향 결정회의 · 발표 시각은 당일 한국은행 공지 확인"
+      ],
+      "sources": [
+       "https://www.bok.or.kr/portal/singl/crncyPolicyDrcMtg/listYear.do?menuNo=200755&mtgSe=A&year=2026"
+      ],
+      "confirmed": true,
+      "announcement_date": null,
+      "implementation_date": null,
+      "effective_date": null
+     },
+     {
+      "id": "bok:2026-11-26",
+      "category": "bok",
+      "title": "한국은행 기준금리 결정회의",
+      "market": "KR",
+      "trade_date": "2026-11-26",
+      "slot": "morning",
+      "phase": "rate_decision",
+      "occurs_at": null,
+      "details": [
+       "통화정책방향 결정회의 · 발표 시각은 당일 한국은행 공지 확인"
+      ],
+      "sources": [
+       "https://www.bok.or.kr/portal/singl/crncyPolicyDrcMtg/listYear.do?menuNo=200755&mtgSe=A&year=2026"
+      ],
+      "confirmed": true,
+      "announcement_date": null,
+      "implementation_date": null,
+      "effective_date": null
+     },
+     {
+      "id": "dst:2026:end",
+      "category": "dst",
+      "title": "미국 서머타임 종료",
+      "market": "US",
+      "trade_date": "2026-11-01",
+      "slot": "morning",
+      "phase": "event",
+      "occurs_at": "2026-11-01T15:00:00+09:00",
+      "details": [
+       "오늘 15:00 KST 뉴욕 시계 변경 예정",
+       "다음 미국 정규 거래일부터 한국시간 22:30–다음 날 05:00 → 23:30–다음 날 06:00",
+       "조기폐장·임시 거래시간 변경은 해당일 시장 안내 우선"
+      ],
+      "sources": [
+       "https://www.nist.gov/pml/time-and-frequency-division/popular-links/daylight-saving-time-dst",
+       "https://www.nyse.com/trade/hours-calendars"
+      ],
+      "confirmed": true,
+      "announcement_date": null,
+      "implementation_date": null,
+      "effective_date": null
+     },
+     {
+      "id": "dst:2027:start",
+      "category": "dst",
+      "title": "미국 서머타임 시작",
+      "market": "US",
+      "trade_date": "2027-03-14",
+      "slot": "morning",
+      "phase": "event",
+      "occurs_at": "2027-03-14T16:00:00+09:00",
+      "details": [
+       "오늘 16:00 KST 뉴욕 시계 변경 예정",
+       "다음 미국 정규 거래일부터 한국시간 23:30–다음 날 06:00 → 22:30–다음 날 05:00",
+       "조기폐장·임시 거래시간 변경은 해당일 시장 안내 우선"
+      ],
+      "sources": [
+       "https://www.nist.gov/pml/time-and-frequency-division/popular-links/daylight-saving-time-dst",
+       "https://www.nyse.com/trade/hours-calendars"
+      ],
+      "confirmed": true,
+      "announcement_date": null,
+      "implementation_date": null,
+      "effective_date": null
      }
     ],
     "sessions": [],
@@ -15793,8 +15305,7 @@
      "FOMC 2027-06-09: 공식 발표 시각 미확인",
      "FOMC 2027-07-28: 공식 발표 시각 미확인",
      "FOMC 2027-09-15: 공식 발표 시각 미확인",
-     "한국은행 2027년 수집 실패: ValueError: 한국은행 2027년 일정 제목을 확인할 수 없습니다",
-     "현재 확인 실패 항목 1개에 이전의 공식 확인값을 유지했습니다."
+     "한국은행 2027년 수집 실패: ValueError: 한국은행 2027년 일정 제목을 확인할 수 없습니다"
     ],
     "successful_scopes": [
      "fomc",
@@ -15803,22 +15314,14 @@
     "failed_scopes": [
      "bok"
     ],
-    "coverage_start": "2026-09-05",
-    "coverage_end": "2027-10-25",
-<<<<<<< Updated upstream
-    "fetched_at": "2026-09-19T21:48:47.900297+00:00"
-=======
-    "fetched_at": "2026-09-19T23:00:13.983645+00:00"
->>>>>>> Stashed changes
+    "coverage_start": "2026-09-06",
+    "coverage_end": "2027-10-26",
+    "fetched_at": "2026-09-21T13:34:05.397817+00:00"
    }
   },
   {
    "provider": "options",
-<<<<<<< Updated upstream
-   "updated_at": "2026-09-19T21:49:17.437569+00:00",
-=======
-   "updated_at": "2026-09-19T23:00:44.941193+00:00",
->>>>>>> Stashed changes
+   "updated_at": "2026-09-21T13:34:42.277457+00:00",
    "payload": {
     "provider": "options",
     "events": [
@@ -16554,22 +16057,14 @@
     "failed_scopes": [
      "us_options"
     ],
-    "coverage_start": "2026-09-05",
-    "coverage_end": "2027-10-25",
-<<<<<<< Updated upstream
-    "fetched_at": "2026-09-19T21:49:11.343811+00:00"
-=======
-    "fetched_at": "2026-09-19T23:00:38.513159+00:00"
->>>>>>> Stashed changes
+    "coverage_start": "2026-09-06",
+    "coverage_end": "2027-10-26",
+    "fetched_at": "2026-09-21T13:34:34.235264+00:00"
    }
   },
   {
    "provider": "rebalances",
-<<<<<<< Updated upstream
-   "updated_at": "2026-09-19T21:49:27.273423+00:00",
-=======
-   "updated_at": "2026-09-19T23:00:55.403696+00:00",
->>>>>>> Stashed changes
+   "updated_at": "2026-09-21T13:34:56.045252+00:00",
    "payload": {
     "provider": "rebalances",
     "events": [
@@ -16909,86 +16404,14 @@
     ],
     "coverage_start": null,
     "coverage_end": null,
-<<<<<<< Updated upstream
-    "fetched_at": "2026-09-19T21:49:17.440364+00:00"
-=======
-    "fetched_at": "2026-09-19T23:00:44.942921+00:00"
->>>>>>> Stashed changes
+    "fetched_at": "2026-09-21T13:34:42.578135+00:00"
    }
   }
  ],
  "sent_messages": [
   {
-   "idempotency_key": "2026-09-10:morning",
-   "sent_at": "2026-09-09T15:45:20.847003+00:00"
-  },
-  {
-   "idempotency_key": "2026-09-11:morning",
-   "sent_at": "2026-09-11T00:50:45.826945+00:00"
-  },
-  {
-   "idempotency_key": "2026-09-12:morning",
-   "sent_at": "2026-09-12T00:56:02.071706+00:00"
-  },
-  {
-   "idempotency_key": "2026-09-12:evening",
-   "sent_at": "2026-09-12T14:49:29.061643+00:00"
-  },
-  {
-   "idempotency_key": "2026-09-13:morning",
-   "sent_at": "2026-09-13T00:38:34.751952+00:00"
-  },
-  {
-   "idempotency_key": "2026-09-13:evening",
-   "sent_at": "2026-09-13T13:43:43.213179+00:00"
-  },
-  {
-   "idempotency_key": "2026-09-14:morning",
-   "sent_at": "2026-09-13T23:00:01.112434+00:00"
-  },
-  {
-   "idempotency_key": "2026-09-15:morning",
-   "sent_at": "2026-09-14T23:00:01.666490+00:00"
-  },
-  {
-   "idempotency_key": "2026-09-15:evening",
-   "sent_at": "2026-09-15T13:56:53.867587+00:00"
-  },
-  {
-   "idempotency_key": "2026-09-16:morning",
-   "sent_at": "2026-09-15T23:00:00.979878+00:00"
-  },
-  {
-   "idempotency_key": "2026-09-16:evening",
-   "sent_at": "2026-09-16T12:37:11.633913+00:00"
-  },
-  {
-   "idempotency_key": "2026-09-17:morning",
-   "sent_at": "2026-09-16T23:00:00.885505+00:00"
-  },
-  {
-   "idempotency_key": "2026-09-17:evening",
-   "sent_at": "2026-09-17T12:23:41.093160+00:00"
-  },
-  {
-   "idempotency_key": "2026-09-18:morning",
-   "sent_at": "2026-09-17T23:00:00.864903+00:00"
-  },
-  {
-   "idempotency_key": "2026-09-18:evening",
-   "sent_at": "2026-09-18T12:00:02.333183+00:00"
-  },
-  {
-   "idempotency_key": "2026-09-19:morning",
-   "sent_at": "2026-09-18T23:00:00.921224+00:00"
-  },
-  {
-   "idempotency_key": "2026-09-19:evening",
-   "sent_at": "2026-09-19T12:00:01.491201+00:00"
-  },
-  {
-   "idempotency_key": "2026-09-20:morning",
-   "sent_at": "2026-09-19T23:00:01.464389+00:00"
+   "idempotency_key": "2026-09-21:evening",
+   "sent_at": "2026-09-21T13:34:57.941619+00:00"
   }
  ],
  "changes": []
