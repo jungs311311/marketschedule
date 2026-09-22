@@ -31,9 +31,11 @@ on:
           - status
           - render-morning
           - render-evening
+          - relay            # 저녁 알림 이어달리기 (보통 아침 봇이 자동 호출)
 
 permissions:
   contents: write
+  actions: write
 
 concurrency:
   group: market-calendar-bot
@@ -51,6 +53,8 @@ jobs:
       MARKET_BOT_LOG: data/marketbot.log
       TZ: Asia/Seoul
       PYTHONUTF8: '1'
+      GH_TOKEN: ${{ github.token }}
+      GH_REPO: ${{ github.repository }}
     steps:
       - uses: actions/checkout@v4
 
@@ -96,7 +100,39 @@ jobs:
               else
                 echo "최신 기록 받기 실패 — 로컬 기록으로 진행"
               fi
+              KEY="$(date +%F):morning"
+              grep -q "\"$KEY\"" state/state.json 2>/dev/null && SENT_BEFORE=yes || SENT_BEFORE=no
               python -m marketbot once --slot "$SLOT" --no-refresh
+              # 5) 이번에 아침 알림을 보낸 봇이면, 저녁 이어달리기를 시작한다
+              if [ "$SLOT" = morning ] && [ "$SENT_BEFORE" = no ] && grep -q "\"$KEY\"" state/state.json; then
+                curl -sS -o /dev/null -w "저녁 이어달리기 호출: HTTP %{http_code}\n" -X POST \
+                  -H "Authorization: Bearer $GH_TOKEN" -H "Accept: application/vnd.github+json" \
+                  "https://api.github.com/repos/$GH_REPO/actions/workflows/market-calendar.yml/dispatches" \
+                  -d '{"ref":"main","inputs":{"command":"relay"}}' || echo "호출 실패 — 예비 예약으로 진행"
+              fi
+              ;;
+            relay)
+              # 21:00까지 남은 시간이 4시간보다 많으면, 최대 5시간 자고 다음 주자를 부른다
+              LEFT=$(( $(date -d "$(date +%F) 21:00" +%s) - $(date +%s) ))
+              if [ "$LEFT" -le 0 ]; then
+                echo "이미 21:00이 지났습니다 — 이어달리기 종료"
+              elif [ "$LEFT" -gt 14400 ]; then
+                NAP=$(( LEFT - 10800 )); [ "$NAP" -gt 18000 ] && NAP=18000
+                echo "$(date '+%H:%M') KST — $((NAP/60))분 뒤 다음 주자 호출 (21:00까지 $((LEFT/60))분)"
+                sleep "$NAP"
+                curl -sS -o /dev/null -w "다음 주자 호출: HTTP %{http_code}\n" -X POST \
+                  -H "Authorization: Bearer $GH_TOKEN" -H "Accept: application/vnd.github+json" \
+                  "https://api.github.com/repos/$GH_REPO/actions/workflows/market-calendar.yml/dispatches" \
+                  -d '{"ref":"main","inputs":{"command":"relay"}}' || echo "호출 실패 — 예비 예약으로 진행"
+              else
+                # 마지막 주자: 갱신 → 21:00까지 대기 → 발송
+                python -m marketbot state-import
+                python -m marketbot refresh || echo "갱신 실패 — 저장된 일정으로 진행"
+                WAIT=$(( $(date -d "$(date +%F) 21:00" +%s) - $(date +%s) ))
+                [ "$WAIT" -gt 0 ] && { echo "마지막 주자 — 21:00까지 $((WAIT/60))분 대기"; sleep "$WAIT"; }
+                git fetch --quiet origin main && git checkout --quiet origin/main -- state || true
+                python -m marketbot once --slot evening --no-refresh
+              fi
               ;;
             refresh)
               python -m marketbot state-import
