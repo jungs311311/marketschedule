@@ -1,10 +1,10 @@
 {
  "version": 1,
- "exported_at": "2026-09-22T23:00:01.392869+00:00",
+ "exported_at": "2026-09-23T12:00:02.452261+00:00",
  "provider_cache": [
   {
    "provider": "markets",
-   "updated_at": "2026-09-22T22:27:01.760293+00:00",
+   "updated_at": "2026-09-23T09:00:19.443335+00:00",
    "payload": {
     "provider": "markets",
     "events": [],
@@ -15075,12 +15075,12 @@
     "failed_scopes": [],
     "coverage_start": "2026-09-08",
     "coverage_end": "2027-10-28",
-    "fetched_at": "2026-09-22T22:26:59.301362+00:00"
+    "fetched_at": "2026-09-23T09:00:16.992386+00:00"
    }
   },
   {
    "provider": "monetary",
-   "updated_at": "2026-09-22T22:27:29.617409+00:00",
+   "updated_at": "2026-09-23T09:00:45.999554+00:00",
    "payload": {
     "provider": "monetary",
     "events": [
@@ -15412,12 +15412,12 @@
     ],
     "coverage_start": "2026-09-08",
     "coverage_end": "2027-10-28",
-    "fetched_at": "2026-09-22T22:27:01.767081+00:00"
+    "fetched_at": "2026-09-23T09:00:19.454373+00:00"
    }
   },
   {
    "provider": "options",
-   "updated_at": "2026-09-22T22:27:37.923432+00:00",
+   "updated_at": "2026-09-23T09:00:55.959972+00:00",
    "payload": {
     "provider": "options",
     "events": [
@@ -16155,12 +16155,12 @@
     ],
     "coverage_start": "2026-09-08",
     "coverage_end": "2027-10-28",
-    "fetched_at": "2026-09-22T22:27:29.618248+00:00"
+    "fetched_at": "2026-09-23T09:00:46.011495+00:00"
    }
   },
   {
    "provider": "rebalances",
-   "updated_at": "2026-09-22T22:27:50.130064+00:00",
+   "updated_at": "2026-09-23T09:01:04.803543+00:00",
    "payload": {
     "provider": "rebalances",
     "events": [
@@ -16500,7 +16500,7 @@
     ],
     "coverage_start": null,
     "coverage_end": null,
-    "fetched_at": "2026-09-22T22:27:37.940002+00:00"
+    "fetched_at": "2026-09-23T09:00:55.964878+00:00"
    }
   }
  ],
@@ -16520,6 +16520,10 @@
   {
    "idempotency_key": "2026-09-23:morning",
    "sent_at": "2026-09-22T23:00:01.390795+00:00"
+  },
+  {
+   "idempotency_key": "2026-09-23:evening",
+   "sent_at": "2026-09-23T12:00:02.450829+00:00"
   }
  ],
  "changes": []
