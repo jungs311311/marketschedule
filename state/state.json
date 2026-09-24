@@ -1,10 +1,10 @@
 {
  "version": 1,
- "exported_at": "2026-09-24T14:03:52.125973+00:00",
+ "exported_at": "2026-09-24T14:23:32.220825+00:00",
  "provider_cache": [
   {
    "provider": "markets",
-   "updated_at": "2026-09-24T14:02:36.540294+00:00",
+   "updated_at": "2026-09-24T14:22:37.711826+00:00",
    "payload": {
     "provider": "markets",
     "events": [],
@@ -15095,28 +15095,28 @@
      }
     ],
     "sources": [
-     "https://www.nyse.com/trade/hours-calendars",
-     "https://www.nasdaqtrader.com/Trader.aspx?id=Calendar",
      "https://www.jpx.co.jp/english/corporate/about-jpx/calendar/",
      "https://open.krx.co.kr/contents/MKD/01/0110/01100305/MKD01100305.jsp"
     ],
     "warnings": [
-     "현재 확인 실패 항목 9개에 이전의 공식 확인값을 유지했습니다."
+     "미국시장 일정 수집 실패: FetchError: Source request failed (HTTPError)",
+     "현재 확인 실패 항목 425개에 이전의 공식 확인값을 유지했습니다."
     ],
     "successful_scopes": [
-     "US",
      "JP",
      "KR"
     ],
-    "failed_scopes": [],
+    "failed_scopes": [
+     "US"
+    ],
     "coverage_start": "2026-09-09",
     "coverage_end": "2027-10-29",
-    "fetched_at": "2026-09-24T14:02:34.287026+00:00"
+    "fetched_at": "2026-09-24T14:22:32.609627+00:00"
    }
   },
   {
    "provider": "monetary",
-   "updated_at": "2026-09-24T14:03:31.474297+00:00",
+   "updated_at": "2026-09-24T14:23:05.585386+00:00",
    "payload": {
     "provider": "monetary",
     "events": [
@@ -15448,12 +15448,12 @@
     ],
     "coverage_start": "2026-09-09",
     "coverage_end": "2027-10-29",
-    "fetched_at": "2026-09-24T14:02:36.549991+00:00"
+    "fetched_at": "2026-09-24T14:22:37.722745+00:00"
    }
   },
   {
    "provider": "options",
-   "updated_at": "2026-09-24T14:03:38.652885+00:00",
+   "updated_at": "2026-09-24T14:23:19.809240+00:00",
    "payload": {
     "provider": "options",
     "events": [
@@ -16191,12 +16191,12 @@
     ],
     "coverage_start": "2026-09-09",
     "coverage_end": "2027-10-29",
-    "fetched_at": "2026-09-24T14:03:31.476284+00:00"
+    "fetched_at": "2026-09-24T14:23:05.589625+00:00"
    }
   },
   {
    "provider": "rebalances",
-   "updated_at": "2026-09-24T14:03:51.492189+00:00",
+   "updated_at": "2026-09-24T14:23:31.718097+00:00",
    "payload": {
     "provider": "rebalances",
     "events": [
@@ -16536,7 +16536,7 @@
     ],
     "coverage_start": null,
     "coverage_end": null,
-    "fetched_at": "2026-09-24T14:03:38.654665+00:00"
+    "fetched_at": "2026-09-24T14:23:19.810643+00:00"
    }
   }
  ],
