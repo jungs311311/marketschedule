@@ -1,10 +1,10 @@
 {
  "version": 1,
- "exported_at": "2026-09-24T12:31:00.538680+00:00",
+ "exported_at": "2026-09-24T12:54:51.665003+00:00",
  "provider_cache": [
   {
    "provider": "markets",
-   "updated_at": "2026-09-24T12:30:15.332773+00:00",
+   "updated_at": "2026-09-24T12:53:50.420067+00:00",
    "payload": {
     "provider": "markets",
     "events": [],
@@ -15111,12 +15111,12 @@
     "failed_scopes": [],
     "coverage_start": "2026-09-09",
     "coverage_end": "2027-10-29",
-    "fetched_at": "2026-09-24T12:30:13.110036+00:00"
+    "fetched_at": "2026-09-24T12:53:47.629499+00:00"
    }
   },
   {
    "provider": "monetary",
-   "updated_at": "2026-09-24T12:30:42.342601+00:00",
+   "updated_at": "2026-09-24T12:54:18.361418+00:00",
    "payload": {
     "provider": "monetary",
     "events": [
@@ -15448,12 +15448,12 @@
     ],
     "coverage_start": "2026-09-09",
     "coverage_end": "2027-10-29",
-    "fetched_at": "2026-09-24T12:30:15.340272+00:00"
+    "fetched_at": "2026-09-24T12:53:50.429410+00:00"
    }
   },
   {
    "provider": "options",
-   "updated_at": "2026-09-24T12:30:49.864518+00:00",
+   "updated_at": "2026-09-24T12:54:37.998382+00:00",
    "payload": {
     "provider": "options",
     "events": [
@@ -16172,16 +16172,13 @@
     ],
     "sessions": [],
     "sources": [
-     "https://global.krx.co.kr/contents/GLB/02/0201/0201040202/GLB0201040202.jsp",
-     "https://www.optionseducation.org/optionsoverview/options-basics",
-     "https://www.optionseducation.org/referencelibrary/faq/options-exercise",
-     "https://www.optionseducation.org/advancedconcepts/equity-vs-index-options",
-     "https://www.nasdaq.com/NDX_NDXP_Factsheet",
-     "https://www.cboe.com/tradable-products/sp-500/spx-options/spx-specifications",
-     "https://cdn.cboe.com/resources/options/Cboe2026OPTIONSCalendar.pdf"
+     "https://global.krx.co.kr/contents/GLB/02/0201/0201040202/GLB0201040202.jsp"
     ],
     "warnings": [
-     "미국 옵션 2027년 일정 검증 실패: FetchError: Source request failed (HTTPError)"
+     "미국 옵션 상품 명세 수집 실패: PdfStreamError: Stream has ended unexpectedly",
+     "미국 옵션 2026년 일정 검증 실패: ValueError: 미국 표준 월간 옵션 셋째 금요일 규칙 미확인",
+     "미국 옵션 2027년 일정 검증 실패: FetchError: Source request failed (HTTPError)",
+     "현재 확인 실패 항목 4개에 이전의 공식 확인값을 유지했습니다."
     ],
     "successful_scopes": [
      "kr_options"
@@ -16191,12 +16188,12 @@
     ],
     "coverage_start": "2026-09-09",
     "coverage_end": "2027-10-29",
-    "fetched_at": "2026-09-24T12:30:42.343734+00:00"
+    "fetched_at": "2026-09-24T12:54:18.365416+00:00"
    }
   },
   {
    "provider": "rebalances",
-   "updated_at": "2026-09-24T12:30:59.950261+00:00",
+   "updated_at": "2026-09-24T12:54:51.054194+00:00",
    "payload": {
     "provider": "rebalances",
     "events": [
@@ -16536,7 +16533,7 @@
     ],
     "coverage_start": null,
     "coverage_end": null,
-    "fetched_at": "2026-09-24T12:30:49.865645+00:00"
+    "fetched_at": "2026-09-24T12:54:38.000011+00:00"
    }
   }
  ],
