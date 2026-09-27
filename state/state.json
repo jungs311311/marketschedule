@@ -1,10 +1,10 @@
 {
  "version": 1,
- "exported_at": "2026-09-27T14:35:15.860840+00:00",
+ "exported_at": "2026-09-27T14:49:36.553715+00:00",
  "provider_cache": [
   {
    "provider": "markets",
-   "updated_at": "2026-09-27T14:34:23.872908+00:00",
+   "updated_at": "2026-09-27T14:48:48.288022+00:00",
    "payload": {
     "provider": "markets",
     "events": [],
@@ -15219,12 +15219,12 @@
     "failed_scopes": [],
     "coverage_start": "2026-09-12",
     "coverage_end": "2027-11-01",
-    "fetched_at": "2026-09-27T14:34:21.351403+00:00"
+    "fetched_at": "2026-09-27T14:48:45.817182+00:00"
    }
   },
   {
    "provider": "monetary",
-   "updated_at": "2026-09-27T14:34:51.908724+00:00",
+   "updated_at": "2026-09-27T14:49:16.975170+00:00",
    "payload": {
     "provider": "monetary",
     "events": [
@@ -15556,12 +15556,12 @@
     ],
     "coverage_start": "2026-09-12",
     "coverage_end": "2027-11-01",
-    "fetched_at": "2026-09-27T14:34:23.882331+00:00"
+    "fetched_at": "2026-09-27T14:48:48.296542+00:00"
    }
   },
   {
    "provider": "options",
-   "updated_at": "2026-09-27T14:35:01.694579+00:00",
+   "updated_at": "2026-09-27T14:49:23.618188+00:00",
    "payload": {
     "provider": "options",
     "events": [
@@ -16277,12 +16277,12 @@
     ],
     "coverage_start": "2026-09-12",
     "coverage_end": "2027-11-01",
-    "fetched_at": "2026-09-27T14:34:51.909934+00:00"
+    "fetched_at": "2026-09-27T14:49:16.976515+00:00"
    }
   },
   {
    "provider": "rebalances",
-   "updated_at": "2026-09-27T14:35:15.287099+00:00",
+   "updated_at": "2026-09-27T14:49:36.065404+00:00",
    "payload": {
     "provider": "rebalances",
     "events": [
@@ -16622,7 +16622,7 @@
     ],
     "coverage_start": null,
     "coverage_end": null,
-    "fetched_at": "2026-09-27T14:35:01.695738+00:00"
+    "fetched_at": "2026-09-27T14:49:23.619785+00:00"
    }
   }
  ],
