@@ -1,10 +1,10 @@
 {
  "version": 1,
- "exported_at": "2026-09-29T12:00:02.226489+00:00",
+ "exported_at": "2026-09-29T13:42:49.705817+00:00",
  "provider_cache": [
   {
    "provider": "markets",
-   "updated_at": "2026-09-29T09:00:15.961966+00:00",
+   "updated_at": "2026-09-29T13:41:49.621119+00:00",
    "payload": {
     "provider": "markets",
     "events": [],
@@ -15291,12 +15291,12 @@
     "failed_scopes": [],
     "coverage_start": "2026-09-14",
     "coverage_end": "2027-11-03",
-    "fetched_at": "2026-09-29T09:00:13.504126+00:00"
+    "fetched_at": "2026-09-29T13:41:46.797918+00:00"
    }
   },
   {
    "provider": "monetary",
-   "updated_at": "2026-09-29T09:00:43.021763+00:00",
+   "updated_at": "2026-09-29T13:42:18.104164+00:00",
    "payload": {
     "provider": "monetary",
     "events": [
@@ -15628,12 +15628,12 @@
     ],
     "coverage_start": "2026-09-14",
     "coverage_end": "2027-11-03",
-    "fetched_at": "2026-09-29T09:00:15.973809+00:00"
+    "fetched_at": "2026-09-29T13:41:49.630557+00:00"
    }
   },
   {
    "provider": "options",
-   "updated_at": "2026-09-29T09:00:49.037244+00:00",
+   "updated_at": "2026-09-29T13:42:26.376007+00:00",
    "payload": {
     "provider": "options",
     "events": [
@@ -16349,12 +16349,12 @@
     ],
     "coverage_start": "2026-09-14",
     "coverage_end": "2027-11-03",
-    "fetched_at": "2026-09-29T09:00:43.025470+00:00"
+    "fetched_at": "2026-09-29T13:42:18.105374+00:00"
    }
   },
   {
    "provider": "rebalances",
-   "updated_at": "2026-09-29T09:00:59.537435+00:00",
+   "updated_at": "2026-09-29T13:42:49.097898+00:00",
    "payload": {
     "provider": "rebalances",
     "events": [
@@ -16655,7 +16655,6 @@
      "https://www.msci.com/eqb/pressreleases/archive/ir_dates.pdf",
      "https://www.msci.com/eqb/gimi/stdindex/index_review.html",
      "https://www.msci.com/eqb/pressreleases/archive/MSCI_Aug26_QIRPR.pdf",
-     "https://www.msci.com/eqb/pressreleases/archive/MSCI_May26_QIRPR.pdf",
      "https://www.msci.com/eqb/pressreleases/archive/MSCI_Feb26_QIRPR.pdf",
      "https://www.msci.com/eqb/pressreleases/archive/MSCI_Nov25_QIRPR.pdf",
      "https://www.msci.com/eqb/pressreleases/archive/MSCI_Aug25_QIRPR.pdf",
@@ -16675,6 +16674,7 @@
      "https://press.spglobal.com/2026-09-04-Bloom-Energy,-Illumina,-and-Everpure-Set-to-Join-S-P-500-Others-to-Join-S-P-100,-S-P-MidCap-400,-and-S-P-SmallCap-600"
     ],
     "warnings": [
+     "MSCI 리뷰 공지 MSCI_May26_QIRPR.pdf: 수집 또는 해석 실패 (FetchError). 일정 없음으로 판단할 수 없습니다.",
      "sp500 방법론: 수집 또는 해석 실패 (FetchError). 일정 없음으로 판단할 수 없습니다.",
      "nasdaq 개별 공지 pdf: 수집 또는 해석 실패 (ValueError). 일정 없음으로 판단할 수 없습니다.",
      "nasdaq 개별 공지 space-exploration-technologies-corporation-join-nasdaq-100: 수집 또는 해석 실패 (ValueError). 일정 없음으로 판단할 수 없습니다.",
@@ -16694,7 +16694,7 @@
     ],
     "coverage_start": null,
     "coverage_end": null,
-    "fetched_at": "2026-09-29T09:00:49.038887+00:00"
+    "fetched_at": "2026-09-29T13:42:26.377596+00:00"
    }
   }
  ],
