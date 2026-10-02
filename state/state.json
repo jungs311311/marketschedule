@@ -1,10 +1,10 @@
 {
  "version": 1,
- "exported_at": "2026-10-01T23:30:57.250247+00:00",
+ "exported_at": "2026-10-02T12:00:02.045111+00:00",
  "provider_cache": [
   {
    "provider": "markets",
-   "updated_at": "2026-10-01T23:29:59.142365+00:00",
+   "updated_at": "2026-10-02T09:00:15.841487+00:00",
    "payload": {
     "provider": "markets",
     "events": [],
@@ -15399,12 +15399,12 @@
     "failed_scopes": [],
     "coverage_start": "2026-09-17",
     "coverage_end": "2027-11-06",
-    "fetched_at": "2026-10-01T23:29:54.201133+00:00"
+    "fetched_at": "2026-10-02T09:00:13.946050+00:00"
    }
   },
   {
    "provider": "monetary",
-   "updated_at": "2026-10-01T23:30:27.308796+00:00",
+   "updated_at": "2026-10-02T09:00:43.035490+00:00",
    "payload": {
     "provider": "monetary",
     "events": [
@@ -15713,12 +15713,12 @@
     ],
     "coverage_start": "2026-09-17",
     "coverage_end": "2027-11-06",
-    "fetched_at": "2026-10-01T23:29:59.150789+00:00"
+    "fetched_at": "2026-10-02T09:00:15.931022+00:00"
    }
   },
   {
    "provider": "options",
-   "updated_at": "2026-10-01T23:30:35.148948+00:00",
+   "updated_at": "2026-10-02T09:00:52.151729+00:00",
    "payload": {
     "provider": "options",
     "events": [
@@ -16434,12 +16434,12 @@
     ],
     "coverage_start": "2026-09-17",
     "coverage_end": "2027-11-06",
-    "fetched_at": "2026-10-01T23:30:27.310137+00:00"
+    "fetched_at": "2026-10-02T09:00:43.074089+00:00"
    }
   },
   {
    "provider": "rebalances",
-   "updated_at": "2026-10-01T23:30:56.095316+00:00",
+   "updated_at": "2026-10-02T09:01:28.048465+00:00",
    "payload": {
     "provider": "rebalances",
     "events": [
@@ -16761,11 +16761,11 @@
     "warnings": [
      "MSCI 리뷰 공지 MSCI_May26_QIRPR.pdf: 수집 또는 해석 실패 (FetchError). 일정 없음으로 판단할 수 없습니다.",
      "sp500 방법론: 수집 또는 해석 실패 (FetchError). 일정 없음으로 판단할 수 없습니다.",
+     "nasdaq 개별 공지 moderna-inc-join-nasdaq-100-indexr-beginning-october-9-2026: 수집 또는 해석 실패 (ValueError). 일정 없음으로 판단할 수 없습니다.",
+     "nasdaq 개별 공지 pdf: 수집 또는 해석 실패 (ValueError). 일정 없음으로 판단할 수 없습니다.",
      "nasdaq 개별 공지 pdf: 수집 또는 해석 실패 (ValueError). 일정 없음으로 판단할 수 없습니다.",
      "nasdaq 개별 공지 space-exploration-technologies-corporation-join-nasdaq-100: 수집 또는 해석 실패 (ValueError). 일정 없음으로 판단할 수 없습니다.",
      "nasdaq 개별 공지 pdf: 수집 또는 해석 실패 (ValueError). 일정 없음으로 판단할 수 없습니다.",
-     "nasdaq 개별 공지 pdf: 수집 또는 해석 실패 (ValueError). 일정 없음으로 판단할 수 없습니다.",
-     "nasdaq 개별 공지 nasdaq-issues-statement-regarding-nasdaq-100r-index-linked: 수집 또는 해석 실패 (ValueError). 일정 없음으로 판단할 수 없습니다.",
      "sp500 개별 공지 2026-10-01-Vylor-Added-to-the-S-P-500-Twilio-Set-to-Join-S-P-500-Others-to-Join-S-P-MidCap: 수집 또는 해석 실패 (ValueError). 일정 없음으로 판단할 수 없습니다.",
      "sp500 개별 공지 2026-08-13-Reddit-Set-to-Join-S-P-500-and-Sun-Communities-to-Join-S-P-MidCap-400: 수집 또는 해석 실패 (ValueError). 일정 없음으로 판단할 수 없습니다.",
      "sp500 개별 공지 2026-07-31-Ferguson-Enterprises-Set-to-Join-S-P-500-and-ADI-Global-Distribution-to-Join-S-: 수집 또는 해석 실패 (ValueError). 일정 없음으로 판단할 수 없습니다.",
@@ -16780,7 +16780,7 @@
     ],
     "coverage_start": null,
     "coverage_end": null,
-    "fetched_at": "2026-10-01T23:30:35.182149+00:00"
+    "fetched_at": "2026-10-02T09:00:52.223328+00:00"
    }
   }
  ],
@@ -16868,6 +16868,10 @@
   {
    "idempotency_key": "2026-10-02:morning",
    "sent_at": "2026-10-01T23:30:57.232828+00:00"
+  },
+  {
+   "idempotency_key": "2026-10-02:evening",
+   "sent_at": "2026-10-02T12:00:02.044029+00:00"
   }
  ],
  "changes": []
