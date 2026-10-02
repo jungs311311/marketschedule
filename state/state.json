@@ -1,10 +1,10 @@
 {
  "version": 1,
- "exported_at": "2026-10-01T23:30:57.250247+00:00",
+ "exported_at": "2026-10-01T14:46:48.560845+00:00",
  "provider_cache": [
   {
    "provider": "markets",
-   "updated_at": "2026-10-01T23:29:59.142365+00:00",
+   "updated_at": "2026-10-01T14:45:53.586632+00:00",
    "payload": {
     "provider": "markets",
     "events": [],
@@ -15344,42 +15344,6 @@
        "https://www.nyse.com/trade/hours-calendars"
       ],
       "confirmed": true
-     },
-     {
-      "market": "JP",
-      "date": "2027-11-06",
-      "status": "closed",
-      "reason": "주말",
-      "open_at": null,
-      "close_at": null,
-      "sources": [
-       "https://www.jpx.co.jp/english/corporate/about-jpx/calendar/"
-      ],
-      "confirmed": true
-     },
-     {
-      "market": "KR",
-      "date": "2027-11-06",
-      "status": "closed",
-      "reason": "주말",
-      "open_at": null,
-      "close_at": null,
-      "sources": [
-       "https://open.krx.co.kr/contents/MKD/01/0110/01100305/MKD01100305.jsp"
-      ],
-      "confirmed": true
-     },
-     {
-      "market": "US",
-      "date": "2027-11-06",
-      "status": "closed",
-      "reason": "주말",
-      "open_at": null,
-      "close_at": null,
-      "sources": [
-       "https://www.nyse.com/trade/hours-calendars"
-      ],
-      "confirmed": true
      }
     ],
     "sources": [
@@ -15389,7 +15353,7 @@
      "https://open.krx.co.kr/contents/MKD/01/0110/01100305/MKD01100305.jsp"
     ],
     "warnings": [
-     "현재 확인 실패 항목 33개에 이전의 공식 확인값을 유지했습니다."
+     "현재 확인 실패 항목 30개에 이전의 공식 확인값을 유지했습니다."
     ],
     "successful_scopes": [
      "US",
@@ -15397,17 +15361,40 @@
      "KR"
     ],
     "failed_scopes": [],
-    "coverage_start": "2026-09-17",
-    "coverage_end": "2027-11-06",
-    "fetched_at": "2026-10-01T23:29:54.201133+00:00"
+    "coverage_start": "2026-09-16",
+    "coverage_end": "2027-11-05",
+    "fetched_at": "2026-10-01T14:45:51.587128+00:00"
    }
   },
   {
    "provider": "monetary",
-   "updated_at": "2026-10-01T23:30:27.308796+00:00",
+   "updated_at": "2026-10-01T14:46:21.315962+00:00",
    "payload": {
     "provider": "monetary",
     "events": [
+     {
+      "id": "fomc:2026-09-16",
+      "category": "fomc",
+      "title": "FOMC 금리 결정",
+      "market": "US",
+      "trade_date": "2026-09-16",
+      "slot": "evening",
+      "phase": "rate_decision",
+      "occurs_at": "2026-09-17T03:00:00+09:00",
+      "details": [
+       "미국 결정일 2026-09-16 · 정례회의 마지막 날",
+       "내일 새벽 금리 결정 2026-09-17 03:00 KST (14:00 ET)",
+       "기자회견 2026-09-17 03:30 KST (14:30 ET)"
+      ],
+      "sources": [
+       "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+       "https://www.federalreserve.gov/newsevents/2026-september.htm"
+      ],
+      "confirmed": true,
+      "announcement_date": null,
+      "implementation_date": null,
+      "effective_date": null
+     },
      {
       "id": "bok:2026-10-22",
       "category": "bok",
@@ -15711,14 +15698,14 @@
     "failed_scopes": [
      "bok"
     ],
-    "coverage_start": "2026-09-17",
-    "coverage_end": "2027-11-06",
-    "fetched_at": "2026-10-01T23:29:59.150789+00:00"
+    "coverage_start": "2026-09-16",
+    "coverage_end": "2027-11-05",
+    "fetched_at": "2026-10-01T14:45:53.596012+00:00"
    }
   },
   {
    "provider": "options",
-   "updated_at": "2026-10-01T23:30:35.148948+00:00",
+   "updated_at": "2026-10-01T14:46:27.555425+00:00",
    "payload": {
     "provider": "options",
     "events": [
@@ -16432,14 +16419,14 @@
     "failed_scopes": [
      "us_options"
     ],
-    "coverage_start": "2026-09-17",
-    "coverage_end": "2027-11-06",
-    "fetched_at": "2026-10-01T23:30:27.310137+00:00"
+    "coverage_start": "2026-09-16",
+    "coverage_end": "2027-11-05",
+    "fetched_at": "2026-10-01T14:46:21.320114+00:00"
    }
   },
   {
    "provider": "rebalances",
-   "updated_at": "2026-10-01T23:30:56.095316+00:00",
+   "updated_at": "2026-10-01T14:46:48.137147+00:00",
    "payload": {
     "provider": "rebalances",
     "events": [
@@ -16766,7 +16753,6 @@
      "nasdaq 개별 공지 pdf: 수집 또는 해석 실패 (ValueError). 일정 없음으로 판단할 수 없습니다.",
      "nasdaq 개별 공지 pdf: 수집 또는 해석 실패 (ValueError). 일정 없음으로 판단할 수 없습니다.",
      "nasdaq 개별 공지 nasdaq-issues-statement-regarding-nasdaq-100r-index-linked: 수집 또는 해석 실패 (ValueError). 일정 없음으로 판단할 수 없습니다.",
-     "sp500 개별 공지 2026-10-01-Vylor-Added-to-the-S-P-500-Twilio-Set-to-Join-S-P-500-Others-to-Join-S-P-MidCap: 수집 또는 해석 실패 (ValueError). 일정 없음으로 판단할 수 없습니다.",
      "sp500 개별 공지 2026-08-13-Reddit-Set-to-Join-S-P-500-and-Sun-Communities-to-Join-S-P-MidCap-400: 수집 또는 해석 실패 (ValueError). 일정 없음으로 판단할 수 없습니다.",
      "sp500 개별 공지 2026-07-31-Ferguson-Enterprises-Set-to-Join-S-P-500-and-ADI-Global-Distribution-to-Join-S-: 수집 또는 해석 실패 (ValueError). 일정 없음으로 판단할 수 없습니다.",
      "리밸런싱 확인범위: MSCI 공개 정기 리뷰 자료와 Nasdaq/S&P 공개 최신 뉴스 및 최대 3개 추가 페이지입니다. 향후 미발표 일정·수시 편출입·특별 변경 전체의 부재는 보장하지 않습니다."
@@ -16780,7 +16766,7 @@
     ],
     "coverage_start": null,
     "coverage_end": null,
-    "fetched_at": "2026-10-01T23:30:35.182149+00:00"
+    "fetched_at": "2026-10-01T14:46:27.557196+00:00"
    }
   }
  ],
@@ -16864,10 +16850,6 @@
   {
    "idempotency_key": "2026-10-01:evening",
    "sent_at": "2026-10-01T14:08:39.372262+00:00"
-  },
-  {
-   "idempotency_key": "2026-10-02:morning",
-   "sent_at": "2026-10-01T23:30:57.232828+00:00"
   }
  ],
  "changes": []
