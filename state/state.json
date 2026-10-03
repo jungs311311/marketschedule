@@ -1,10 +1,10 @@
 {
  "version": 1,
- "exported_at": "2026-10-03T14:25:09.064412+00:00",
+ "exported_at": "2026-10-03T14:46:33.652767+00:00",
  "provider_cache": [
   {
    "provider": "markets",
-   "updated_at": "2026-10-03T14:24:11.192273+00:00",
+   "updated_at": "2026-10-03T14:45:25.581420+00:00",
    "payload": {
     "provider": "markets",
     "events": [],
@@ -15435,12 +15435,12 @@
     "failed_scopes": [],
     "coverage_start": "2026-09-18",
     "coverage_end": "2027-11-07",
-    "fetched_at": "2026-10-03T14:24:09.075870+00:00"
+    "fetched_at": "2026-10-03T14:45:23.000036+00:00"
    }
   },
   {
    "provider": "monetary",
-   "updated_at": "2026-10-03T14:24:40.172183+00:00",
+   "updated_at": "2026-10-03T14:45:56.430174+00:00",
    "payload": {
     "provider": "monetary",
     "events": [
@@ -15772,12 +15772,12 @@
     ],
     "coverage_start": "2026-09-18",
     "coverage_end": "2027-11-07",
-    "fetched_at": "2026-10-03T14:24:11.202317+00:00"
+    "fetched_at": "2026-10-03T14:45:25.591089+00:00"
    }
   },
   {
    "provider": "options",
-   "updated_at": "2026-10-03T14:24:47.626756+00:00",
+   "updated_at": "2026-10-03T14:46:03.461259+00:00",
    "payload": {
     "provider": "options",
     "events": [
@@ -16493,12 +16493,12 @@
     ],
     "coverage_start": "2026-09-18",
     "coverage_end": "2027-11-07",
-    "fetched_at": "2026-10-03T14:24:40.173519+00:00"
+    "fetched_at": "2026-10-03T14:45:56.431298+00:00"
    }
   },
   {
    "provider": "rebalances",
-   "updated_at": "2026-10-03T14:25:08.499325+00:00",
+   "updated_at": "2026-10-03T14:46:33.139782+00:00",
    "payload": {
     "provider": "rebalances",
     "events": [
@@ -16801,9 +16801,6 @@
      "https://www.msci.com/eqb/pressreleases/archive/MSCI_Aug26_QIRPR.pdf",
      "https://www.msci.com/eqb/pressreleases/archive/MSCI_Feb26_QIRPR.pdf",
      "https://www.msci.com/eqb/pressreleases/archive/MSCI_Nov25_QIRPR.pdf",
-     "https://www.msci.com/eqb/pressreleases/archive/MSCI_Aug25_QIRPR.pdf",
-     "https://www.msci.com/eqb/pressreleases/archive/MSCI_May25_QIRPR.pdf",
-     "https://www.msci.com/eqb/pressreleases/archive/MSCI_Feb25_QIRPR.pdf",
      "https://indexes.nasdaq.com/docs/Methodology_NDX.pdf",
      "https://ir.nasdaq.com/rss/news-releases.xml",
      "https://ir.nasdaq.com/news-and-events/press-releases",
@@ -16819,6 +16816,9 @@
     ],
     "warnings": [
      "MSCI 리뷰 공지 MSCI_May26_QIRPR.pdf: 수집 또는 해석 실패 (FetchError). 일정 없음으로 판단할 수 없습니다.",
+     "MSCI 리뷰 공지 MSCI_Aug25_QIRPR.pdf: 수집 또는 해석 실패 (FetchError). 일정 없음으로 판단할 수 없습니다.",
+     "MSCI 리뷰 공지 MSCI_May25_QIRPR.pdf: 수집 또는 해석 실패 (FetchError). 일정 없음으로 판단할 수 없습니다.",
+     "MSCI 리뷰 공지 MSCI_Feb25_QIRPR.pdf: 수집 또는 해석 실패 (FetchError). 일정 없음으로 판단할 수 없습니다.",
      "sp500 방법론: 수집 또는 해석 실패 (FetchError). 일정 없음으로 판단할 수 없습니다.",
      "nasdaq 개별 공지 moderna-inc-join-nasdaq-100-indexr-beginning-october-9-2026: 수집 또는 해석 실패 (ValueError). 일정 없음으로 판단할 수 없습니다.",
      "nasdaq 개별 공지 pdf: 수집 또는 해석 실패 (ValueError). 일정 없음으로 판단할 수 없습니다.",
@@ -16839,7 +16839,7 @@
     ],
     "coverage_start": null,
     "coverage_end": null,
-    "fetched_at": "2026-10-03T14:24:47.628185+00:00"
+    "fetched_at": "2026-10-03T14:46:03.462809+00:00"
    }
   }
  ],
