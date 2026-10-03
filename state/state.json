@@ -1,10 +1,10 @@
 {
  "version": 1,
- "exported_at": "2026-10-02T14:47:40.313913+00:00",
+ "exported_at": "2026-10-02T23:20:29.151094+00:00",
  "provider_cache": [
   {
    "provider": "markets",
-   "updated_at": "2026-10-02T14:46:41.212505+00:00",
+   "updated_at": "2026-10-02T23:19:32.262274+00:00",
    "payload": {
     "provider": "markets",
     "events": [],
@@ -15380,6 +15380,42 @@
        "https://www.nyse.com/trade/hours-calendars"
       ],
       "confirmed": true
+     },
+     {
+      "market": "JP",
+      "date": "2027-11-07",
+      "status": "closed",
+      "reason": "주말",
+      "open_at": null,
+      "close_at": null,
+      "sources": [
+       "https://www.jpx.co.jp/english/corporate/about-jpx/calendar/"
+      ],
+      "confirmed": true
+     },
+     {
+      "market": "KR",
+      "date": "2027-11-07",
+      "status": "closed",
+      "reason": "주말",
+      "open_at": null,
+      "close_at": null,
+      "sources": [
+       "https://open.krx.co.kr/contents/MKD/01/0110/01100305/MKD01100305.jsp"
+      ],
+      "confirmed": true
+     },
+     {
+      "market": "US",
+      "date": "2027-11-07",
+      "status": "closed",
+      "reason": "주말",
+      "open_at": null,
+      "close_at": null,
+      "sources": [
+       "https://www.nyse.com/trade/hours-calendars"
+      ],
+      "confirmed": true
      }
     ],
     "sources": [
@@ -15389,7 +15425,7 @@
      "https://open.krx.co.kr/contents/MKD/01/0110/01100305/MKD01100305.jsp"
     ],
     "warnings": [
-     "현재 확인 실패 항목 33개에 이전의 공식 확인값을 유지했습니다."
+     "현재 확인 실패 항목 36개에 이전의 공식 확인값을 유지했습니다."
     ],
     "successful_scopes": [
      "US",
@@ -15397,14 +15433,14 @@
      "KR"
     ],
     "failed_scopes": [],
-    "coverage_start": "2026-09-17",
-    "coverage_end": "2027-11-06",
-    "fetched_at": "2026-10-02T14:46:38.912021+00:00"
+    "coverage_start": "2026-09-18",
+    "coverage_end": "2027-11-07",
+    "fetched_at": "2026-10-02T23:19:29.905297+00:00"
    }
   },
   {
    "provider": "monetary",
-   "updated_at": "2026-10-02T14:47:09.016868+00:00",
+   "updated_at": "2026-10-02T23:19:59.932927+00:00",
    "payload": {
     "provider": "monetary",
     "events": [
@@ -15686,6 +15722,29 @@
       "announcement_date": null,
       "implementation_date": null,
       "effective_date": null
+     },
+     {
+      "id": "dst:2027:end",
+      "category": "dst",
+      "title": "미국 서머타임 종료",
+      "market": "US",
+      "trade_date": "2027-11-07",
+      "slot": "morning",
+      "phase": "event",
+      "occurs_at": "2027-11-07T15:00:00+09:00",
+      "details": [
+       "오늘 15:00 KST 뉴욕 시계 변경 예정",
+       "다음 미국 정규 거래일부터 한국시간 22:30–다음 날 05:00 → 23:30–다음 날 06:00",
+       "조기폐장·임시 거래시간 변경은 해당일 시장 안내 우선"
+      ],
+      "sources": [
+       "https://www.nist.gov/pml/time-and-frequency-division/popular-links/daylight-saving-time-dst",
+       "https://www.nyse.com/trade/hours-calendars"
+      ],
+      "confirmed": true,
+      "announcement_date": null,
+      "implementation_date": null,
+      "effective_date": null
      }
     ],
     "sessions": [],
@@ -15711,14 +15770,14 @@
     "failed_scopes": [
      "bok"
     ],
-    "coverage_start": "2026-09-17",
-    "coverage_end": "2027-11-06",
-    "fetched_at": "2026-10-02T14:46:41.222426+00:00"
+    "coverage_start": "2026-09-18",
+    "coverage_end": "2027-11-07",
+    "fetched_at": "2026-10-02T23:19:32.272921+00:00"
    }
   },
   {
    "provider": "options",
-   "updated_at": "2026-10-02T14:47:17.974708+00:00",
+   "updated_at": "2026-10-02T23:20:09.442870+00:00",
    "payload": {
     "provider": "options",
     "events": [
@@ -16432,14 +16491,14 @@
     "failed_scopes": [
      "us_options"
     ],
-    "coverage_start": "2026-09-17",
-    "coverage_end": "2027-11-06",
-    "fetched_at": "2026-10-02T14:47:09.021598+00:00"
+    "coverage_start": "2026-09-18",
+    "coverage_end": "2027-11-07",
+    "fetched_at": "2026-10-02T23:19:59.934396+00:00"
    }
   },
   {
    "provider": "rebalances",
-   "updated_at": "2026-10-02T14:47:39.757265+00:00",
+   "updated_at": "2026-10-02T23:20:28.253512+00:00",
    "payload": {
     "provider": "rebalances",
     "events": [
@@ -16780,7 +16839,7 @@
     ],
     "coverage_start": null,
     "coverage_end": null,
-    "fetched_at": "2026-10-02T14:47:17.977599+00:00"
+    "fetched_at": "2026-10-02T23:20:09.444453+00:00"
    }
   }
  ],
@@ -16872,6 +16931,10 @@
   {
    "idempotency_key": "2026-10-02:evening",
    "sent_at": "2026-10-02T12:00:02.044029+00:00"
+  },
+  {
+   "idempotency_key": "2026-10-03:morning",
+   "sent_at": "2026-10-02T23:20:29.149240+00:00"
   }
  ],
  "changes": []
