@@ -9,9 +9,10 @@ from pathlib import Path
 from zoneinfo import ZoneInfo
 
 from .config import data_path, load_env
-from .engine import refresh_all, run_forever, send_slot
+from .engine import cached_results, refresh_all, run_forever, send_slot
 from .snapshot import export_state, import_state
 from .storage import Store
+from .weekimage import draw_week
 from .telegram import Telegram
 
 KST = ZoneInfo('Asia/Seoul')
@@ -56,6 +57,21 @@ def parser() -> argparse.ArgumentParser:
     commands.add_parser('status', help='캐시 상태와 오류 확인')
     commands.add_parser('run', help='오전 8시·오후 9시 상시 스케줄러 (PC 상시 실행용)')
     return root
+
+
+def send_week_image(store: Store, day: date) -> None:
+    """아침 알림 뒤에 이번 주 일정표 이미지를 한 장 더 보낸다."""
+    key = f'{day.isoformat()}:week-image'
+    if store.was_sent(key):
+        return
+    chat_id = os.getenv('MARKET_BOT_CHAT_ID', '')
+    if not chat_id:
+        return
+    sessions = {(s.market, s.date): s for r in cached_results(store) for s in r.sessions}
+    path = Path(os.getenv('MARKET_BOT_LOG', 'data/x')).parent / f'week-{day.isoformat()}.png'
+    draw_week(sessions, day, path)
+    Telegram(os.getenv('MARKET_BOT_TOKEN', '')).send_photo(chat_id, path)
+    store.mark_sent(key, '주간 일정 이미지')
 
 
 def print_status(store: Store) -> None:
@@ -131,6 +147,11 @@ def main() -> None:
                 if not args.no_refresh:
                     refresh_all(store, now.date())
                 print(send_slot(store, now.date(), slot))
+                if slot == 'morning':
+                    try:
+                        send_week_image(store, now.date())
+                    except Exception as error:   # 이미지 실패가 알림을 막지 않게 한다
+                        logging.getLogger('marketbot').warning('주간 일정표 이미지 실패: %s', error)
             finally:
                 export_state(store.db, state_path(), now.date())
         elif args.command == 'status':
