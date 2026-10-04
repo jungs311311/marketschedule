@@ -31,7 +31,7 @@ on:
           - status
           - render-morning
           - render-evening
-          - relay            # 저녁 알림 이어달리기 (보통 아침 봇이 자동 호출)
+          - relay
 
 permissions:
   contents: write
@@ -62,8 +62,12 @@ jobs:
         with:
           python-version: '3.12'
 
-      - name: 라이브러리 설치
-        run: pip install -r requirements.txt
+      - name: 라이브러리와 한글 글꼴 설치
+        run: |
+          pip install -r requirements.txt
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq fonts-nanum
+          fc-cache -f >/dev/null 2>&1 || true
 
       - name: 실행
         run: |
@@ -72,18 +76,15 @@ jobs:
           TODAY="$(date +%F)"
           case "$CMD" in
             once)
-              # 1) 먼저 공식 일정을 갱신해 둔다 (작업 공간 DB에만 저장)
               python -m marketbot state-import
               python -m marketbot refresh || echo "갱신 실패 — 저장된 일정으로 진행"
               if [ "${{ github.event_name }}" = "schedule" ]; then
-                # 2) 시계가 아니라 '어느 예약으로 깨어났는가'로 아침·저녁을 정한다
                 case "${{ github.event.schedule }}" in
                   '0 20 * * *'|'40 20 * * *'|'20 21 * * *'|'0 22 * * *'|'40 22 * * *')
                     SLOT=morning; TARGET='08:00' ;;
                   *)
                     SLOT=evening; TARGET='21:00' ;;
                 esac
-                # 3) 예약이 밀렸어도 목표 시각까지 기다린다 (최대 5시간)
                 WAIT=$(( $(date -d "$(date +%F) $TARGET" +%s) - $(date +%s) ))
                 if [ "$WAIT" -gt 0 ] && [ "$WAIT" -le 18000 ]; then
                   echo "지금 $(date '+%H:%M') KST → $TARGET KST까지 $((WAIT/60))분 대기 ($SLOT)"
@@ -94,7 +95,6 @@ jobs:
               else
                 SLOT=auto
               fi
-              # 4) 보내기 직전에 저장소의 최신 발송 기록을 받아온다 (합치지 않고 통째로 가져옴)
               if git fetch --quiet origin main && git checkout --quiet origin/main -- state; then
                 echo "최신 발송 기록 확인함"
               else
@@ -103,7 +103,6 @@ jobs:
               KEY="$(date +%F):morning"
               grep -q "\"$KEY\"" state/state.json 2>/dev/null && SENT_BEFORE=yes || SENT_BEFORE=no
               python -m marketbot once --slot "$SLOT" --no-refresh
-              # 5) 이번에 아침 알림을 보낸 봇이면, 저녁 이어달리기를 시작한다
               if [ "$SLOT" = morning ] && [ "$SENT_BEFORE" = no ] && grep -q "\"$KEY\"" state/state.json; then
                 curl -sS -o /dev/null -w "저녁 이어달리기 호출: HTTP %{http_code}\n" -X POST \
                   -H "Authorization: Bearer $GH_TOKEN" -H "Accept: application/vnd.github+json" \
@@ -112,7 +111,6 @@ jobs:
               fi
               ;;
             relay)
-              # 21:00까지 남은 시간이 4시간보다 많으면, 최대 5시간 자고 다음 주자를 부른다
               LEFT=$(( $(date -d "$(date +%F) 21:00" +%s) - $(date +%s) ))
               if [ "$LEFT" -le 0 ]; then
                 echo "이미 21:00이 지났습니다 — 이어달리기 종료"
@@ -125,7 +123,6 @@ jobs:
                   "https://api.github.com/repos/$GH_REPO/actions/workflows/market-calendar.yml/dispatches" \
                   -d '{"ref":"main","inputs":{"command":"relay"}}' || echo "호출 실패 — 예비 예약으로 진행"
               else
-                # 마지막 주자: 갱신 → 21:00까지 대기 → 발송
                 python -m marketbot state-import
                 python -m marketbot refresh || echo "갱신 실패 — 저장된 일정으로 진행"
                 WAIT=$(( $(date -d "$(date +%F) 21:00" +%s) - $(date +%s) ))
@@ -163,7 +160,6 @@ jobs:
           git config user.name  "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           cp state/state.json /tmp/state.json
-          # 합치기(merge)를 하지 않는다. 최신 저장소 위에 이번 결과를 그대로 얹는다.
           for i in 1 2 3; do
             git fetch --quiet origin main
             git reset --quiet --hard origin/main
