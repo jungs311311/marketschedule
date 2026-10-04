@@ -1,10 +1,10 @@
 {
  "version": 1,
- "exported_at": "2026-10-03T14:46:33.652767+00:00",
+ "exported_at": "2026-10-03T23:00:01.263380+00:00",
  "provider_cache": [
   {
    "provider": "markets",
-   "updated_at": "2026-10-03T14:45:25.581420+00:00",
+   "updated_at": "2026-10-03T22:28:31.532875+00:00",
    "payload": {
     "provider": "markets",
     "events": [],
@@ -15416,6 +15416,42 @@
        "https://www.nyse.com/trade/hours-calendars"
       ],
       "confirmed": true
+     },
+     {
+      "market": "JP",
+      "date": "2027-11-08",
+      "status": "open",
+      "reason": "정상 개장",
+      "open_at": "2027-11-08T09:00:00+09:00",
+      "close_at": "2027-11-08T15:30:00+09:00",
+      "sources": [
+       "https://www.jpx.co.jp/english/corporate/about-jpx/calendar/"
+      ],
+      "confirmed": true
+     },
+     {
+      "market": "KR",
+      "date": "2027-11-08",
+      "status": "open",
+      "reason": "정상 개장",
+      "open_at": "2027-11-08T09:00:00+09:00",
+      "close_at": "2027-11-08T15:30:00+09:00",
+      "sources": [
+       "https://open.krx.co.kr/contents/MKD/01/0110/01100305/MKD01100305.jsp"
+      ],
+      "confirmed": true
+     },
+     {
+      "market": "US",
+      "date": "2027-11-08",
+      "status": "open",
+      "reason": "정상 개장",
+      "open_at": "2027-11-08T09:30:00-05:00",
+      "close_at": "2027-11-08T16:00:00-05:00",
+      "sources": [
+       "https://www.nyse.com/trade/hours-calendars"
+      ],
+      "confirmed": true
      }
     ],
     "sources": [
@@ -15425,7 +15461,7 @@
      "https://open.krx.co.kr/contents/MKD/01/0110/01100305/MKD01100305.jsp"
     ],
     "warnings": [
-     "현재 확인 실패 항목 36개에 이전의 공식 확인값을 유지했습니다."
+     "현재 확인 실패 항목 39개에 이전의 공식 확인값을 유지했습니다."
     ],
     "successful_scopes": [
      "US",
@@ -15433,14 +15469,14 @@
      "KR"
     ],
     "failed_scopes": [],
-    "coverage_start": "2026-09-18",
-    "coverage_end": "2027-11-07",
-    "fetched_at": "2026-10-03T14:45:23.000036+00:00"
+    "coverage_start": "2026-09-19",
+    "coverage_end": "2027-11-08",
+    "fetched_at": "2026-10-03T22:28:29.298800+00:00"
    }
   },
   {
    "provider": "monetary",
-   "updated_at": "2026-10-03T14:45:56.430174+00:00",
+   "updated_at": "2026-10-03T22:28:59.205557+00:00",
    "payload": {
     "provider": "monetary",
     "events": [
@@ -15770,14 +15806,14 @@
     "failed_scopes": [
      "bok"
     ],
-    "coverage_start": "2026-09-18",
-    "coverage_end": "2027-11-07",
-    "fetched_at": "2026-10-03T14:45:25.591089+00:00"
+    "coverage_start": "2026-09-19",
+    "coverage_end": "2027-11-08",
+    "fetched_at": "2026-10-03T22:28:31.539624+00:00"
    }
   },
   {
    "provider": "options",
-   "updated_at": "2026-10-03T14:46:03.461259+00:00",
+   "updated_at": "2026-10-03T22:29:06.488551+00:00",
    "payload": {
     "provider": "options",
     "events": [
@@ -16483,7 +16519,8 @@
      "https://cdn.cboe.com/resources/options/Cboe2026OPTIONSCalendar.pdf"
     ],
     "warnings": [
-     "미국 옵션 2027년 일정 검증 실패: FetchError: Source request failed (HTTPError)"
+     "미국 옵션 2027년 일정 검증 실패: FetchError: Source request failed (HTTPError)",
+     "현재 확인 실패 항목 1개에 이전의 공식 확인값을 유지했습니다."
     ],
     "successful_scopes": [
      "kr_options"
@@ -16491,37 +16528,17 @@
     "failed_scopes": [
      "us_options"
     ],
-    "coverage_start": "2026-09-18",
-    "coverage_end": "2027-11-07",
-    "fetched_at": "2026-10-03T14:45:56.431298+00:00"
+    "coverage_start": "2026-09-19",
+    "coverage_end": "2027-11-08",
+    "fetched_at": "2026-10-03T22:28:59.206379+00:00"
    }
   },
   {
    "provider": "rebalances",
-   "updated_at": "2026-10-03T14:46:33.139782+00:00",
+   "updated_at": "2026-10-03T22:29:29.184777+00:00",
    "payload": {
     "provider": "rebalances",
     "events": [
-     {
-      "id": "nasdaq:US:2026-09-21",
-      "category": "nasdaq",
-      "title": "Nasdaq-100 분기 리밸런싱 예정 (미확정)",
-      "market": "US",
-      "trade_date": "2026-09-18",
-      "slot": "evening",
-      "phase": "implementation",
-      "occurs_at": null,
-      "details": [
-       "정기 규칙으로 계산한 예정일입니다. 해당 회차 공식 공지 확인 전에는 기본 알림에서 제외됩니다."
-      ],
-      "sources": [
-       "https://indexes.nasdaq.com/docs/Methodology_NDX.pdf"
-      ],
-      "confirmed": false,
-      "announcement_date": null,
-      "implementation_date": "2026-09-18",
-      "effective_date": "2026-09-21"
-     },
      {
       "id": "sp500:US:2026-09-21",
       "category": "sp500",
@@ -16801,6 +16818,9 @@
      "https://www.msci.com/eqb/pressreleases/archive/MSCI_Aug26_QIRPR.pdf",
      "https://www.msci.com/eqb/pressreleases/archive/MSCI_Feb26_QIRPR.pdf",
      "https://www.msci.com/eqb/pressreleases/archive/MSCI_Nov25_QIRPR.pdf",
+     "https://www.msci.com/eqb/pressreleases/archive/MSCI_Aug25_QIRPR.pdf",
+     "https://www.msci.com/eqb/pressreleases/archive/MSCI_May25_QIRPR.pdf",
+     "https://www.msci.com/eqb/pressreleases/archive/MSCI_Feb25_QIRPR.pdf",
      "https://indexes.nasdaq.com/docs/Methodology_NDX.pdf",
      "https://ir.nasdaq.com/rss/news-releases.xml",
      "https://ir.nasdaq.com/news-and-events/press-releases",
@@ -16816,9 +16836,6 @@
     ],
     "warnings": [
      "MSCI 리뷰 공지 MSCI_May26_QIRPR.pdf: 수집 또는 해석 실패 (FetchError). 일정 없음으로 판단할 수 없습니다.",
-     "MSCI 리뷰 공지 MSCI_Aug25_QIRPR.pdf: 수집 또는 해석 실패 (FetchError). 일정 없음으로 판단할 수 없습니다.",
-     "MSCI 리뷰 공지 MSCI_May25_QIRPR.pdf: 수집 또는 해석 실패 (FetchError). 일정 없음으로 판단할 수 없습니다.",
-     "MSCI 리뷰 공지 MSCI_Feb25_QIRPR.pdf: 수집 또는 해석 실패 (FetchError). 일정 없음으로 판단할 수 없습니다.",
      "sp500 방법론: 수집 또는 해석 실패 (FetchError). 일정 없음으로 판단할 수 없습니다.",
      "nasdaq 개별 공지 moderna-inc-join-nasdaq-100-indexr-beginning-october-9-2026: 수집 또는 해석 실패 (ValueError). 일정 없음으로 판단할 수 없습니다.",
      "nasdaq 개별 공지 pdf: 수집 또는 해석 실패 (ValueError). 일정 없음으로 판단할 수 없습니다.",
@@ -16828,7 +16845,8 @@
      "sp500 개별 공지 2026-10-01-Vylor-Added-to-the-S-P-500-Twilio-Set-to-Join-S-P-500-Others-to-Join-S-P-MidCap: 수집 또는 해석 실패 (ValueError). 일정 없음으로 판단할 수 없습니다.",
      "sp500 개별 공지 2026-08-13-Reddit-Set-to-Join-S-P-500-and-Sun-Communities-to-Join-S-P-MidCap-400: 수집 또는 해석 실패 (ValueError). 일정 없음으로 판단할 수 없습니다.",
      "sp500 개별 공지 2026-07-31-Ferguson-Enterprises-Set-to-Join-S-P-500-and-ADI-Global-Distribution-to-Join-S-: 수집 또는 해석 실패 (ValueError). 일정 없음으로 판단할 수 없습니다.",
-     "리밸런싱 확인범위: MSCI 공개 정기 리뷰 자료와 Nasdaq/S&P 공개 최신 뉴스 및 최대 3개 추가 페이지입니다. 향후 미발표 일정·수시 편출입·특별 변경 전체의 부재는 보장하지 않습니다."
+     "리밸런싱 확인범위: MSCI 공개 정기 리뷰 자료와 Nasdaq/S&P 공개 최신 뉴스 및 최대 3개 추가 페이지입니다. 향후 미발표 일정·수시 편출입·특별 변경 전체의 부재는 보장하지 않습니다.",
+     "현재 확인 실패 항목 1개에 이전의 공식 확인값을 유지했습니다."
     ],
     "successful_scopes": [
      "msci",
@@ -16839,7 +16857,7 @@
     ],
     "coverage_start": null,
     "coverage_end": null,
-    "fetched_at": "2026-10-03T14:46:03.462809+00:00"
+    "fetched_at": "2026-10-03T22:29:06.489959+00:00"
    }
   }
  ],
@@ -16939,6 +16957,10 @@
   {
    "idempotency_key": "2026-10-03:evening",
    "sent_at": "2026-10-03T12:00:02.750569+00:00"
+  },
+  {
+   "idempotency_key": "2026-10-04:morning",
+   "sent_at": "2026-10-03T23:00:01.261710+00:00"
   }
  ],
  "changes": []
