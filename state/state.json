@@ -1,10 +1,10 @@
 {
  "version": 1,
- "exported_at": "2026-10-08T12:00:02.980136+00:00",
+ "exported_at": "2026-10-08T14:21:08.527429+00:00",
  "provider_cache": [
   {
    "provider": "markets",
-   "updated_at": "2026-10-08T09:01:06.400434+00:00",
+   "updated_at": "2026-10-08T14:20:18.393061+00:00",
    "payload": {
     "provider": "markets",
     "events": [],
@@ -15533,7 +15533,7 @@
      "https://open.krx.co.kr/contents/MKD/01/0110/01100305/MKD01100305.jsp"
     ],
     "warnings": [
-     "현재 확인 실패 항목 48개에 이전의 공식 확인값을 유지했습니다."
+     "현재 확인 실패 항목 45개에 이전의 공식 확인값을 유지했습니다."
     ],
     "successful_scopes": [
      "US",
@@ -15543,12 +15543,12 @@
     "failed_scopes": [],
     "coverage_start": "2026-09-23",
     "coverage_end": "2027-11-12",
-    "fetched_at": "2026-10-08T09:01:03.968246+00:00"
+    "fetched_at": "2026-10-08T14:20:16.013547+00:00"
    }
   },
   {
    "provider": "monetary",
-   "updated_at": "2026-10-08T09:01:33.061510+00:00",
+   "updated_at": "2026-10-08T14:20:45.781940+00:00",
    "payload": {
     "provider": "monetary",
     "events": [
@@ -15880,12 +15880,12 @@
     ],
     "coverage_start": "2026-09-23",
     "coverage_end": "2027-11-12",
-    "fetched_at": "2026-10-08T09:01:06.410663+00:00"
+    "fetched_at": "2026-10-08T14:20:18.550058+00:00"
    }
   },
   {
    "provider": "options",
-   "updated_at": "2026-10-08T09:01:41.519655+00:00",
+   "updated_at": "2026-10-08T14:20:52.677081+00:00",
    "payload": {
     "provider": "options",
     "events": [
@@ -16624,12 +16624,12 @@
     ],
     "coverage_start": "2026-09-23",
     "coverage_end": "2027-11-12",
-    "fetched_at": "2026-10-08T09:01:33.063026+00:00"
+    "fetched_at": "2026-10-08T14:20:45.787747+00:00"
    }
   },
   {
    "provider": "rebalances",
-   "updated_at": "2026-10-08T09:02:02.704128+00:00",
+   "updated_at": "2026-10-08T14:21:07.984504+00:00",
    "payload": {
     "provider": "rebalances",
     "events": [
@@ -16657,48 +16657,6 @@
       "effective_date": "2026-09-21"
      },
      {
-      "id": "msci:KR:2026-12-01",
-      "category": "msci",
-      "title": "MSCI 정기 리뷰 반영 예정 (미확정)",
-      "market": "KR",
-      "trade_date": "2026-11-30",
-      "slot": "morning",
-      "phase": "implementation",
-      "occurs_at": null,
-      "details": [
-       "공식 발표일과 효력일은 확인됨. 종가 반영일은 개별 리뷰 발표문 확인 전 추정값입니다.",
-       "리뷰: November 2026 / 효력일: 2026-12-01"
-      ],
-      "sources": [
-       "https://www.msci.com/eqb/pressreleases/archive/ir_dates.pdf"
-      ],
-      "confirmed": false,
-      "announcement_date": "2026-11-11",
-      "implementation_date": "2026-11-30",
-      "effective_date": "2026-12-01"
-     },
-     {
-      "id": "msci:US:2026-12-01",
-      "category": "msci",
-      "title": "MSCI 정기 리뷰 반영 예정 (미확정)",
-      "market": "US",
-      "trade_date": "2026-11-30",
-      "slot": "evening",
-      "phase": "implementation",
-      "occurs_at": null,
-      "details": [
-       "공식 발표일과 효력일은 확인됨. 종가 반영일은 개별 리뷰 발표문 확인 전 추정값입니다.",
-       "리뷰: November 2026 / 효력일: 2026-12-01"
-      ],
-      "sources": [
-       "https://www.msci.com/eqb/pressreleases/archive/ir_dates.pdf"
-      ],
-      "confirmed": false,
-      "announcement_date": "2026-11-11",
-      "implementation_date": "2026-11-30",
-      "effective_date": "2026-12-01"
-     },
-     {
       "id": "nasdaq:US:2026-12-21",
       "category": "nasdaq",
       "title": "Nasdaq-100 분기 리밸런싱 예정 (미확정)",
@@ -16717,48 +16675,6 @@
       "announcement_date": null,
       "implementation_date": "2026-12-18",
       "effective_date": "2026-12-21"
-     },
-     {
-      "id": "msci:KR:2027-03-01",
-      "category": "msci",
-      "title": "MSCI 정기 리뷰 반영 예정 (미확정)",
-      "market": "KR",
-      "trade_date": "2027-02-26",
-      "slot": "morning",
-      "phase": "implementation",
-      "occurs_at": null,
-      "details": [
-       "공식 발표일과 효력일은 확인됨. 종가 반영일은 개별 리뷰 발표문 확인 전 추정값입니다.",
-       "리뷰: February 2027 / 효력일: 2027-03-01"
-      ],
-      "sources": [
-       "https://www.msci.com/eqb/pressreleases/archive/ir_dates.pdf"
-      ],
-      "confirmed": false,
-      "announcement_date": "2027-02-09",
-      "implementation_date": "2027-02-26",
-      "effective_date": "2027-03-01"
-     },
-     {
-      "id": "msci:US:2027-03-01",
-      "category": "msci",
-      "title": "MSCI 정기 리뷰 반영 예정 (미확정)",
-      "market": "US",
-      "trade_date": "2027-02-26",
-      "slot": "evening",
-      "phase": "implementation",
-      "occurs_at": null,
-      "details": [
-       "공식 발표일과 효력일은 확인됨. 종가 반영일은 개별 리뷰 발표문 확인 전 추정값입니다.",
-       "리뷰: February 2027 / 효력일: 2027-03-01"
-      ],
-      "sources": [
-       "https://www.msci.com/eqb/pressreleases/archive/ir_dates.pdf"
-      ],
-      "confirmed": false,
-      "announcement_date": "2027-02-09",
-      "implementation_date": "2027-02-26",
-      "effective_date": "2027-03-01"
      },
      {
       "id": "nasdaq:US:2027-03-22",
@@ -16781,48 +16697,6 @@
       "effective_date": "2027-03-22"
      },
      {
-      "id": "msci:KR:2027-05-28",
-      "category": "msci",
-      "title": "MSCI 정기 리뷰 반영 예정 (미확정)",
-      "market": "KR",
-      "trade_date": "2027-05-27",
-      "slot": "morning",
-      "phase": "implementation",
-      "occurs_at": null,
-      "details": [
-       "공식 발표일과 효력일은 확인됨. 종가 반영일은 개별 리뷰 발표문 확인 전 추정값입니다.",
-       "리뷰: May 2027 / 효력일: 2027-05-28"
-      ],
-      "sources": [
-       "https://www.msci.com/eqb/pressreleases/archive/ir_dates.pdf"
-      ],
-      "confirmed": false,
-      "announcement_date": "2027-05-10",
-      "implementation_date": "2027-05-27",
-      "effective_date": "2027-05-28"
-     },
-     {
-      "id": "msci:US:2027-05-28",
-      "category": "msci",
-      "title": "MSCI 정기 리뷰 반영 예정 (미확정)",
-      "market": "US",
-      "trade_date": "2027-05-27",
-      "slot": "evening",
-      "phase": "implementation",
-      "occurs_at": null,
-      "details": [
-       "공식 발표일과 효력일은 확인됨. 종가 반영일은 개별 리뷰 발표문 확인 전 추정값입니다.",
-       "리뷰: May 2027 / 효력일: 2027-05-28"
-      ],
-      "sources": [
-       "https://www.msci.com/eqb/pressreleases/archive/ir_dates.pdf"
-      ],
-      "confirmed": false,
-      "announcement_date": "2027-05-10",
-      "implementation_date": "2027-05-27",
-      "effective_date": "2027-05-28"
-     },
-     {
       "id": "nasdaq:US:2027-06-21",
       "category": "nasdaq",
       "title": "Nasdaq-100 분기 리밸런싱 예정 (미확정)",
@@ -16841,48 +16715,6 @@
       "announcement_date": null,
       "implementation_date": "2027-06-17",
       "effective_date": "2027-06-21"
-     },
-     {
-      "id": "msci:KR:2027-09-01",
-      "category": "msci",
-      "title": "MSCI 정기 리뷰 반영 예정 (미확정)",
-      "market": "KR",
-      "trade_date": "2027-08-31",
-      "slot": "morning",
-      "phase": "implementation",
-      "occurs_at": null,
-      "details": [
-       "공식 발표일과 효력일은 확인됨. 종가 반영일은 개별 리뷰 발표문 확인 전 추정값입니다.",
-       "리뷰: August 2027 / 효력일: 2027-09-01"
-      ],
-      "sources": [
-       "https://www.msci.com/eqb/pressreleases/archive/ir_dates.pdf"
-      ],
-      "confirmed": false,
-      "announcement_date": "2027-08-12",
-      "implementation_date": "2027-08-31",
-      "effective_date": "2027-09-01"
-     },
-     {
-      "id": "msci:US:2027-09-01",
-      "category": "msci",
-      "title": "MSCI 정기 리뷰 반영 예정 (미확정)",
-      "market": "US",
-      "trade_date": "2027-08-31",
-      "slot": "evening",
-      "phase": "implementation",
-      "occurs_at": null,
-      "details": [
-       "공식 발표일과 효력일은 확인됨. 종가 반영일은 개별 리뷰 발표문 확인 전 추정값입니다.",
-       "리뷰: August 2027 / 효력일: 2027-09-01"
-      ],
-      "sources": [
-       "https://www.msci.com/eqb/pressreleases/archive/ir_dates.pdf"
-      ],
-      "confirmed": false,
-      "announcement_date": "2027-08-12",
-      "implementation_date": "2027-08-31",
-      "effective_date": "2027-09-01"
      },
      {
       "id": "nasdaq:US:2027-09-20",
@@ -16907,15 +16739,6 @@
     ],
     "sessions": [],
     "sources": [
-     "https://www.msci.com/eqb/pressreleases/archive/ir_dates.pdf",
-     "https://www.msci.com/eqb/gimi/stdindex/index_review.html",
-     "https://www.msci.com/eqb/pressreleases/archive/MSCI_Aug26_QIRPR.pdf",
-     "https://www.msci.com/eqb/pressreleases/archive/MSCI_May26_QIRPR.pdf",
-     "https://www.msci.com/eqb/pressreleases/archive/MSCI_Feb26_QIRPR.pdf",
-     "https://www.msci.com/eqb/pressreleases/archive/MSCI_Nov25_QIRPR.pdf",
-     "https://www.msci.com/eqb/pressreleases/archive/MSCI_Aug25_QIRPR.pdf",
-     "https://www.msci.com/eqb/pressreleases/archive/MSCI_May25_QIRPR.pdf",
-     "https://www.msci.com/eqb/pressreleases/archive/MSCI_Feb25_QIRPR.pdf",
      "https://indexes.nasdaq.com/docs/Methodology_NDX.pdf",
      "https://ir.nasdaq.com/rss/news-releases.xml",
      "https://ir.nasdaq.com/news-and-events/press-releases",
@@ -16930,6 +16753,8 @@
      "https://press.spglobal.com/2026-09-04-Bloom-Energy,-Illumina,-and-Everpure-Set-to-Join-S-P-500-Others-to-Join-S-P-100,-S-P-MidCap-400,-and-S-P-SmallCap-600"
     ],
     "warnings": [
+     "MSCI 향후 리뷰 일정: 수집 또는 해석 실패 (FetchError). 일정 없음으로 판단할 수 없습니다.",
+     "MSCI 리뷰 발표 목록: 수집 또는 해석 실패 (FetchError). 일정 없음으로 판단할 수 없습니다.",
      "sp500 방법론: 수집 또는 해석 실패 (FetchError). 일정 없음으로 판단할 수 없습니다.",
      "nasdaq 개별 공지 moderna-inc-join-nasdaq-100-indexr-beginning-october-9-2026: 수집 또는 해석 실패 (ValueError). 일정 없음으로 판단할 수 없습니다.",
      "nasdaq 개별 공지 pdf: 수집 또는 해석 실패 (ValueError). 일정 없음으로 판단할 수 없습니다.",
@@ -16943,15 +16768,15 @@
      "현재 확인 실패 항목 1개에 이전의 공식 확인값을 유지했습니다."
     ],
     "successful_scopes": [
-     "msci",
      "nasdaq"
     ],
     "failed_scopes": [
+     "msci",
      "sp500"
     ],
     "coverage_start": null,
     "coverage_end": null,
-    "fetched_at": "2026-10-08T09:01:41.521091+00:00"
+    "fetched_at": "2026-10-08T14:20:52.678963+00:00"
    }
   }
  ],
