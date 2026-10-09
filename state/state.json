@@ -1,10 +1,10 @@
 {
  "version": 1,
- "exported_at": "2026-10-09T12:00:02.398489+00:00",
+ "exported_at": "2026-10-09T14:06:29.392311+00:00",
  "provider_cache": [
   {
    "provider": "markets",
-   "updated_at": "2026-10-09T09:00:28.891458+00:00",
+   "updated_at": "2026-10-09T14:05:18.406224+00:00",
    "payload": {
     "provider": "markets",
     "events": [],
@@ -15533,7 +15533,7 @@
      "https://open.krx.co.kr/contents/MKD/01/0110/01100305/MKD01100305.jsp"
     ],
     "warnings": [
-     "현재 확인 실패 항목 48개에 이전의 공식 확인값을 유지했습니다."
+     "현재 확인 실패 항목 45개에 이전의 공식 확인값을 유지했습니다."
     ],
     "successful_scopes": [
      "US",
@@ -15543,12 +15543,12 @@
     "failed_scopes": [],
     "coverage_start": "2026-09-24",
     "coverage_end": "2027-11-13",
-    "fetched_at": "2026-10-09T09:00:26.217510+00:00"
+    "fetched_at": "2026-10-09T14:05:14.899095+00:00"
    }
   },
   {
    "provider": "monetary",
-   "updated_at": "2026-10-09T09:00:56.833875+00:00",
+   "updated_at": "2026-10-09T14:05:57.619082+00:00",
    "payload": {
     "provider": "monetary",
     "events": [
@@ -15880,12 +15880,12 @@
     ],
     "coverage_start": "2026-09-24",
     "coverage_end": "2027-11-13",
-    "fetched_at": "2026-10-09T09:00:28.901065+00:00"
+    "fetched_at": "2026-10-09T14:05:18.414831+00:00"
    }
   },
   {
    "provider": "options",
-   "updated_at": "2026-10-09T09:01:07.496879+00:00",
+   "updated_at": "2026-10-09T14:06:10.316112+00:00",
    "payload": {
     "provider": "options",
     "events": [
@@ -16624,12 +16624,12 @@
     ],
     "coverage_start": "2026-09-24",
     "coverage_end": "2027-11-13",
-    "fetched_at": "2026-10-09T09:00:56.844485+00:00"
+    "fetched_at": "2026-10-09T14:05:57.620350+00:00"
    }
   },
   {
    "provider": "rebalances",
-   "updated_at": "2026-10-09T09:01:19.190731+00:00",
+   "updated_at": "2026-10-09T14:06:28.770932+00:00",
    "payload": {
     "provider": "rebalances",
     "events": [
@@ -16951,7 +16951,7 @@
     ],
     "coverage_start": null,
     "coverage_end": null,
-    "fetched_at": "2026-10-09T09:01:07.497885+00:00"
+    "fetched_at": "2026-10-09T14:06:10.317304+00:00"
    }
   }
  ],
