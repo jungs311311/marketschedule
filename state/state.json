@@ -1,10 +1,10 @@
 {
  "version": 1,
- "exported_at": "2026-10-10T23:00:16.917341+00:00",
+ "exported_at": "2026-10-11T12:00:02.114088+00:00",
  "provider_cache": [
   {
    "provider": "markets",
-   "updated_at": "2026-10-10T22:59:25.028441+00:00",
+   "updated_at": "2026-10-11T09:00:29.074593+00:00",
    "payload": {
     "provider": "markets",
     "events": [],
@@ -15543,12 +15543,12 @@
     "failed_scopes": [],
     "coverage_start": "2026-09-26",
     "coverage_end": "2027-11-15",
-    "fetched_at": "2026-10-10T22:59:22.712141+00:00"
+    "fetched_at": "2026-10-11T09:00:26.979849+00:00"
    }
   },
   {
    "provider": "monetary",
-   "updated_at": "2026-10-10T22:59:52.067570+00:00",
+   "updated_at": "2026-10-11T09:00:56.160428+00:00",
    "payload": {
     "provider": "monetary",
     "events": [
@@ -15880,12 +15880,12 @@
     ],
     "coverage_start": "2026-09-26",
     "coverage_end": "2027-11-15",
-    "fetched_at": "2026-10-10T22:59:25.034917+00:00"
+    "fetched_at": "2026-10-11T09:00:29.084869+00:00"
    }
   },
   {
    "provider": "options",
-   "updated_at": "2026-10-10T23:00:03.220191+00:00",
+   "updated_at": "2026-10-11T09:01:03.979261+00:00",
    "payload": {
     "provider": "options",
     "events": [
@@ -16624,12 +16624,12 @@
     ],
     "coverage_start": "2026-09-26",
     "coverage_end": "2027-11-15",
-    "fetched_at": "2026-10-10T22:59:52.068535+00:00"
+    "fetched_at": "2026-10-11T09:00:56.161600+00:00"
    }
   },
   {
    "provider": "rebalances",
-   "updated_at": "2026-10-10T23:00:14.053474+00:00",
+   "updated_at": "2026-10-11T09:01:15.209624+00:00",
    "payload": {
     "provider": "rebalances",
     "events": [
@@ -16951,7 +16951,7 @@
     ],
     "coverage_start": null,
     "coverage_end": null,
-    "fetched_at": "2026-10-10T23:00:03.221126+00:00"
+    "fetched_at": "2026-10-11T09:01:03.980695+00:00"
    }
   }
  ],
@@ -17139,6 +17139,10 @@
   {
    "idempotency_key": "2026-10-11:week-image",
    "sent_at": "2026-10-10T23:00:16.916479+00:00"
+  },
+  {
+   "idempotency_key": "2026-10-11:evening",
+   "sent_at": "2026-10-11T12:00:02.112894+00:00"
   }
  ],
  "changes": []
