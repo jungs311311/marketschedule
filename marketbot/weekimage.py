@@ -30,7 +30,8 @@ def _font(candidates: tuple[str, ...], size: int) -> ImageFont.FreeTypeFont:
     raise FileNotFoundError('한글 글꼴을 찾을 수 없습니다 (fonts-nanum 설치 필요)')
 
 
-def draw_week(sessions: dict, day: date, path: str | Path) -> Path:
+def draw_week(sessions: dict, day: date, path: str | Path,
+              title: str = '이번 주 증시 일정', highlight: bool = True) -> Path:
     monday = day - timedelta(days=day.weekday())
     days = [monday + timedelta(days=i) for i in range(7)]
     notes: list[str] = []
@@ -43,13 +44,13 @@ def draw_week(sessions: dict, day: date, path: str | Path) -> Path:
     f_title, f_sub = _font(BOLD, 36), _font(PLAIN, 22)
     f_head, f_cell, f_note = _font(BOLD, 26), _font(BOLD, 26), _font(PLAIN, 22)
 
-    draw.text((pad, 28), '이번 주 증시 일정', font=f_title, fill=TEXT)
+    draw.text((pad, 28), title, font=f_title, fill=TEXT)
     draw.text((pad, 72), f'{monday:%Y.%m.%d} ~ {days[-1]:%m.%d}', font=f_sub, fill=SUB)
 
     top = head + 26
     for index, each in enumerate(days):
         x = pad + name_w + col_w * index
-        if each == day:
+        if highlight and each == day:
             draw.rounded_rectangle(
                 [x + 4, top - 6, x + col_w - 4, top + row_h * (len(MARKETS) + 1) - 10],
                 12, fill=TODAY_BG)

@@ -4,7 +4,7 @@ import argparse
 import logging
 import os
 import sys
-from datetime import date, datetime
+from datetime import date, datetime, timedelta
 from pathlib import Path
 from zoneinfo import ZoneInfo
 
@@ -70,7 +70,14 @@ def send_week_image(store: Store, day: date) -> None:
     sessions = {(s.market, s.date): s for r in cached_results(store) for s in r.sessions}
     path = Path(os.getenv('MARKET_BOT_LOG', 'data/x')).parent / f'week-{day.isoformat()}.png'
     draw_week(sessions, day, path)
-    Telegram(os.getenv('MARKET_BOT_TOKEN', '')).send_photo(chat_id, path)
+    telegram = Telegram(os.getenv('MARKET_BOT_TOKEN', ''))
+    telegram.send_photo(chat_id, path)
+    # 금·토·일에는 다음 주 일정표도 함께 보낸다
+    if day.weekday() >= 4:
+        next_monday = day + timedelta(days=7 - day.weekday())
+        next_path = path.with_name(f'week-next-{day.isoformat()}.png')
+        draw_week(sessions, next_monday, next_path, title='다음 주 증시 일정', highlight=False)
+        telegram.send_photo(chat_id, next_path)
     store.mark_sent(key, '주간 일정 이미지')
 
 
