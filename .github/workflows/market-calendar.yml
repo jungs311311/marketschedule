@@ -32,6 +32,7 @@ on:
           - render-morning
           - render-evening
           - relay
+          - relay-morning
 
 permissions:
   contents: write
@@ -71,6 +72,12 @@ jobs:
 
       - name: 실행
         run: |
+          relay_call() {
+            curl -sS -o /dev/null -w "이어달리기 호출($1): HTTP %{http_code}\n" -X POST \
+              -H "Authorization: Bearer $GH_TOKEN" -H "Accept: application/vnd.github+json" \
+              "https://api.github.com/repos/$GH_REPO/actions/workflows/market-calendar.yml/dispatches" \
+              -d "{\"ref\":\"main\",\"inputs\":{\"command\":\"$1\"}}" || echo "호출 실패 — 예비 예약으로 진행"
+          }
           CMD="${{ github.event.inputs.command }}"
           CMD="${CMD:-once}"
           TODAY="$(date +%F)"
@@ -100,35 +107,48 @@ jobs:
               else
                 echo "최신 기록 받기 실패 — 로컬 기록으로 진행"
               fi
-              KEY="$(date +%F):morning"
-              grep -q "\"$KEY\"" state/state.json 2>/dev/null && SENT_BEFORE=yes || SENT_BEFORE=no
+              # 4) 이번에 알림을 보낸 봇이면 다음 알림 이어달리기를 시작한다
+              #    아침을 보냈으면 → 저녁(21:00) 이어달리기, 저녁을 보냈으면 → 다음 날 아침(08:00) 이어달리기
+              before_morning=$(grep -c "\"$(date +%F):morning\"" state/state.json 2>/dev/null || true)
+              before_evening=$(grep -c "\"$(date +%F):evening\"" state/state.json 2>/dev/null || true)
               python -m marketbot once --slot "$SLOT" --no-refresh
-              if [ "$SLOT" = morning ] && [ "$SENT_BEFORE" = no ] && grep -q "\"$KEY\"" state/state.json; then
-                curl -sS -o /dev/null -w "저녁 이어달리기 호출: HTTP %{http_code}\n" -X POST \
-                  -H "Authorization: Bearer $GH_TOKEN" -H "Accept: application/vnd.github+json" \
-                  "https://api.github.com/repos/$GH_REPO/actions/workflows/market-calendar.yml/dispatches" \
-                  -d '{"ref":"main","inputs":{"command":"relay"}}' || echo "호출 실패 — 예비 예약으로 진행"
+              if [ "$before_morning" = 0 ] && grep -q "\"$(date +%F):morning\"" state/state.json; then
+                relay_call relay
+              fi
+              if [ "$before_evening" = 0 ] && grep -q "\"$(date +%F):evening\"" state/state.json; then
+                relay_call relay-morning
               fi
               ;;
-            relay)
-              LEFT=$(( $(date -d "$(date +%F) 21:00" +%s) - $(date +%s) ))
-              if [ "$LEFT" -le 0 ]; then
-                echo "이미 21:00이 지났습니다 — 이어달리기 종료"
-              elif [ "$LEFT" -gt 14400 ]; then
-                NAP=$(( LEFT - 10800 )); [ "$NAP" -gt 18000 ] && NAP=18000
-                echo "$(date '+%H:%M') KST — $((NAP/60))분 뒤 다음 주자 호출 (21:00까지 $((LEFT/60))분)"
-                sleep "$NAP"
-                curl -sS -o /dev/null -w "다음 주자 호출: HTTP %{http_code}\n" -X POST \
-                  -H "Authorization: Bearer $GH_TOKEN" -H "Accept: application/vnd.github+json" \
-                  "https://api.github.com/repos/$GH_REPO/actions/workflows/market-calendar.yml/dispatches" \
-                  -d '{"ref":"main","inputs":{"command":"relay"}}' || echo "호출 실패 — 예비 예약으로 진행"
+            relay|relay-morning)
+              # relay: 오늘 21:00 저녁 알림 / relay-morning: 다음 08:00 아침 알림
+              if [ "$CMD" = relay ]; then
+                SLOT=evening; GOAL="$(date +%F) 21:00"
               else
+                SLOT=morning
+                if [ "$(date +%-H)" -lt 8 ]; then GOAL="$(date +%F) 08:00"; else GOAL="$(date -d tomorrow +%F) 08:00"; fi
+              fi
+              LEFT=$(( $(date -d "$GOAL" +%s) - $(date +%s) ))
+              if [ "$LEFT" -le 0 ]; then
+                echo "이미 $GOAL 이 지났습니다 — 이어달리기 종료"
+              elif [ "$LEFT" -gt 14400 ]; then
+                # 4시간보다 많이 남았으면 최대 5시간 자고 다음 주자를 부른다
+                NAP=$(( LEFT - 10800 )); [ "$NAP" -gt 18000 ] && NAP=18000
+                echo "$(date '+%H:%M') KST — $((NAP/60))분 뒤 다음 주자 호출 ($GOAL 까지 $((LEFT/60))분)"
+                sleep "$NAP"
+                relay_call "$CMD"
+              else
+                # 마지막 주자: 갱신 → 목표 시각까지 대기 → 발송
                 python -m marketbot state-import
                 python -m marketbot refresh || echo "갱신 실패 — 저장된 일정으로 진행"
-                WAIT=$(( $(date -d "$(date +%F) 21:00" +%s) - $(date +%s) ))
-                [ "$WAIT" -gt 0 ] && { echo "마지막 주자 — 21:00까지 $((WAIT/60))분 대기"; sleep "$WAIT"; }
+                WAIT=$(( $(date -d "$GOAL" +%s) - $(date +%s) ))
+                [ "$WAIT" -gt 0 ] && { echo "마지막 주자 — $GOAL 까지 $((WAIT/60))분 대기"; sleep "$WAIT"; }
                 git fetch --quiet origin main && git checkout --quiet origin/main -- state || true
-                python -m marketbot once --slot evening --no-refresh
+                KEY="$(date +%F):$SLOT"
+                grep -q "\"$KEY\"" state/state.json 2>/dev/null && SENT_BEFORE=yes || SENT_BEFORE=no
+                python -m marketbot once --slot "$SLOT" --no-refresh
+                if [ "$SENT_BEFORE" = no ] && grep -q "\"$KEY\"" state/state.json; then
+                  [ "$SLOT" = evening ] && relay_call relay-morning || relay_call relay
+                fi
               fi
               ;;
             refresh)
