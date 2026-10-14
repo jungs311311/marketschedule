@@ -1,50 +1,14 @@
 {
  "version": 1,
- "exported_at": "2026-10-14T12:00:02.010271+00:00",
+ "exported_at": "2026-10-14T23:00:03.423713+00:00",
  "provider_cache": [
   {
    "provider": "markets",
-   "updated_at": "2026-10-14T09:00:45.229231+00:00",
+   "updated_at": "2026-10-14T20:00:43.584470+00:00",
    "payload": {
     "provider": "markets",
     "events": [],
     "sessions": [
-     {
-      "market": "JP",
-      "date": "2026-09-14",
-      "status": "open",
-      "reason": "정상 개장",
-      "open_at": "2026-09-14T09:00:00+09:00",
-      "close_at": "2026-09-14T15:30:00+09:00",
-      "sources": [
-       "https://www.jpx.co.jp/english/corporate/about-jpx/calendar/"
-      ],
-      "confirmed": true
-     },
-     {
-      "market": "KR",
-      "date": "2026-09-14",
-      "status": "open",
-      "reason": "정상 개장",
-      "open_at": "2026-09-14T09:00:00+09:00",
-      "close_at": "2026-09-14T15:30:00+09:00",
-      "sources": [
-       "https://open.krx.co.kr/contents/MKD/01/0110/01100305/MKD01100305.jsp"
-      ],
-      "confirmed": true
-     },
-     {
-      "market": "US",
-      "date": "2026-09-14",
-      "status": "open",
-      "reason": "정상 개장",
-      "open_at": "2026-09-14T09:30:00-04:00",
-      "close_at": "2026-09-14T16:00:00-04:00",
-      "sources": [
-       "https://www.nyse.com/trade/hours-calendars"
-      ],
-      "confirmed": true
-     },
      {
       "market": "JP",
       "date": "2026-09-15",
@@ -15524,6 +15488,42 @@
        "https://www.nyse.com/trade/hours-calendars"
       ],
       "confirmed": true
+     },
+     {
+      "market": "JP",
+      "date": "2027-11-19",
+      "status": "open",
+      "reason": "정상 개장",
+      "open_at": "2027-11-19T09:00:00+09:00",
+      "close_at": "2027-11-19T15:30:00+09:00",
+      "sources": [
+       "https://www.jpx.co.jp/english/corporate/about-jpx/calendar/"
+      ],
+      "confirmed": true
+     },
+     {
+      "market": "KR",
+      "date": "2027-11-19",
+      "status": "open",
+      "reason": "정상 개장",
+      "open_at": "2027-11-19T09:00:00+09:00",
+      "close_at": "2027-11-19T15:30:00+09:00",
+      "sources": [
+       "https://open.krx.co.kr/contents/MKD/01/0110/01100305/MKD01100305.jsp"
+      ],
+      "confirmed": true
+     },
+     {
+      "market": "US",
+      "date": "2027-11-19",
+      "status": "open",
+      "reason": "정상 개장",
+      "open_at": "2027-11-19T09:30:00-05:00",
+      "close_at": "2027-11-19T16:00:00-05:00",
+      "sources": [
+       "https://www.nyse.com/trade/hours-calendars"
+      ],
+      "confirmed": true
      }
     ],
     "sources": [
@@ -15541,14 +15541,14 @@
      "KR"
     ],
     "failed_scopes": [],
-    "coverage_start": "2026-09-29",
-    "coverage_end": "2027-11-18",
-    "fetched_at": "2026-10-14T09:00:42.513474+00:00"
+    "coverage_start": "2026-09-30",
+    "coverage_end": "2027-11-19",
+    "fetched_at": "2026-10-14T20:00:41.499032+00:00"
    }
   },
   {
    "provider": "monetary",
-   "updated_at": "2026-10-14T09:01:13.768300+00:00",
+   "updated_at": "2026-10-14T20:01:10.622197+00:00",
    "payload": {
     "provider": "monetary",
     "events": [
@@ -15878,14 +15878,14 @@
     "failed_scopes": [
      "bok"
     ],
-    "coverage_start": "2026-09-29",
-    "coverage_end": "2027-11-18",
-    "fetched_at": "2026-10-14T09:00:45.239411+00:00"
+    "coverage_start": "2026-09-30",
+    "coverage_end": "2027-11-19",
+    "fetched_at": "2026-10-14T20:00:43.592629+00:00"
    }
   },
   {
    "provider": "options",
-   "updated_at": "2026-10-14T09:01:26.608876+00:00",
+   "updated_at": "2026-10-14T20:01:17.160714+00:00",
    "payload": {
     "provider": "options",
     "events": [
@@ -16600,6 +16600,35 @@
       "announcement_date": null,
       "implementation_date": null,
       "effective_date": null
+     },
+     {
+      "id": "us_options:2027-11-19",
+      "category": "us_options",
+      "title": "미장 월간 옵션 만기",
+      "market": "US",
+      "trade_date": "2027-11-19",
+      "slot": "evening",
+      "phase": "expiration",
+      "occurs_at": "2027-11-19T09:30:00-05:00",
+      "details": [
+       "[지수 AM] SPX·NDX 표준 월물: 구성종목 개장가격 기준 결제 (2027-11-19 23:30 KST)",
+       "[개별주식] 표준 월물: 장 마감 종가 기준 자동행사 판단 (2027-11-20 06:00 KST)",
+       "SPX·NDX AM의 결제시점과 최종거래시점은 다름: 상품별 최신 명세 확인",
+       "SPXW·NDXP 같은 PM 결제 지수옵션과 위클리·일일 옵션은 기본 알림에서 제외",
+       "공식 연간 만기 캘린더 또는 거래일 확인 실패 · 기본 발송 제외"
+      ],
+      "sources": [
+       "https://www.optionseducation.org/optionsoverview/options-basics",
+       "https://www.optionseducation.org/referencelibrary/faq/options-exercise",
+       "https://www.optionseducation.org/advancedconcepts/equity-vs-index-options",
+       "https://www.cboe.com/tradable-products/sp-500/spx-options/spx-specifications",
+       "https://www.nasdaq.com/NDX_NDXP_Factsheet",
+       "https://cdn.cboe.com/resources/options/Cboe2027OPTIONSCalendar.pdf"
+      ],
+      "confirmed": false,
+      "announcement_date": null,
+      "implementation_date": null,
+      "effective_date": null
      }
     ],
     "sessions": [],
@@ -16622,14 +16651,14 @@
     "failed_scopes": [
      "us_options"
     ],
-    "coverage_start": "2026-09-29",
-    "coverage_end": "2027-11-18",
-    "fetched_at": "2026-10-14T09:01:13.769799+00:00"
+    "coverage_start": "2026-09-30",
+    "coverage_end": "2027-11-19",
+    "fetched_at": "2026-10-14T20:01:10.787177+00:00"
    }
   },
   {
    "provider": "rebalances",
-   "updated_at": "2026-10-14T09:01:38.163504+00:00",
+   "updated_at": "2026-10-14T20:01:27.896506+00:00",
    "payload": {
     "provider": "rebalances",
     "events": [
@@ -16951,7 +16980,7 @@
     ],
     "coverage_start": null,
     "coverage_end": null,
-    "fetched_at": "2026-10-14T09:01:26.610995+00:00"
+    "fetched_at": "2026-10-14T20:01:17.161978+00:00"
    }
   }
  ],
@@ -17179,6 +17208,14 @@
   {
    "idempotency_key": "2026-10-14:evening",
    "sent_at": "2026-10-14T12:00:02.008722+00:00"
+  },
+  {
+   "idempotency_key": "2026-10-15:morning",
+   "sent_at": "2026-10-14T23:00:01.962203+00:00"
+  },
+  {
+   "idempotency_key": "2026-10-15:week-image",
+   "sent_at": "2026-10-14T23:00:03.310608+00:00"
   }
  ],
  "changes": []
