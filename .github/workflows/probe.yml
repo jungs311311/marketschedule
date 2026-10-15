@@ -1,5 +1,7 @@
 name: probe
 on: workflow_dispatch
+permissions:
+  contents: write
 jobs:
   probe:
     runs-on: ubuntu-latest
@@ -10,7 +12,7 @@ jobs:
       - run: pip install -q -r requirements.txt
       - name: 공식 사이트 접속 시험
         run: |
-          python - <<'PY'
+          python - <<'PY' | tee /tmp/probe.txt
           import re
           from marketbot.http import HttpClient
           c = HttpClient(timeout=25)
@@ -37,3 +39,14 @@ jobs:
               except Exception as e:
                   print(f'FAIL {type(e).__name__}: {e} {u}')
           PY
+      - name: 결과를 임시 브랜치에 저장
+        if: always()
+        run: |
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git checkout --orphan probe-results
+          git rm -rqf .
+          cp /tmp/probe.txt probe.txt
+          git add probe.txt
+          git commit -qm probe
+          git push -fq origin probe-results
