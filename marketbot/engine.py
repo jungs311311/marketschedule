@@ -8,7 +8,7 @@ from zoneinfo import ZoneInfo
 
 from .config import data_path
 from .http import HttpClient
-from .providers import markets, monetary, options, rebalances
+from .providers import indicators, markets, monetary, options, rebalances
 from .render import render
 from .storage import Store, merge_with_confirmed_cache
 from .telegram import Telegram
@@ -29,6 +29,7 @@ def refresh_all(store: Store, today: date | None = None, client: HttpClient | No
         ('monetary', lambda: monetary.collect(client, start, end)),
         ('options', lambda: options.collect(client, start, end, market_result.sessions)),
         ('rebalances', lambda: rebalances.collect(client, start, end, market_result.sessions)),
+        ('indicators', lambda: indicators.collect(client, start, end)),
     ):
         try:
             result = call()
