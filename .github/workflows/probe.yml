@@ -10,35 +10,20 @@ jobs:
       - uses: actions/setup-python@v5
         with: {python-version: '3.12'}
       - run: pip install -q -r requirements.txt
-      - name: 공식 사이트 접속 시험
+      - name: 원본 저장
         run: |
-          python - <<'PY' | tee /tmp/probe.txt
-          import re
+          mkdir -p /tmp/raw
+          python - <<'PY'
           from marketbot.http import HttpClient
           c = HttpClient(timeout=25)
-          urls = [
-            'https://www.bls.gov/schedule/2026/10_sched.htm',
-            'https://www.bls.gov/schedule/2026/home.htm',
-            'https://www.bls.gov/schedule/news_release/cpi.htm',
-            'https://www.bls.gov/schedule/news_release/empsit.htm',
-            'https://www.bea.gov/news/schedule',
-            'https://www.boj.or.jp/en/mopo/mpmsche_minu/index.htm',
-            'https://kostat.go.kr/ansk/file/schedule_2026.pdf',
-            'https://kostat.go.kr/ansk/file/schedule_2027.pdf',
-          ]
-          for u in urls:
-              try:
-                  b = c.get_bytes(u)
-                  t = b.decode('utf-8','replace')
-                  print(f'OK   {len(b):>8} {u}')
-                  if u.endswith('.pdf'):
-                      t = c.pdf_text(u)
-                  for kw in ('Consumer Price Index','Employment Situation','Personal Income and Outlays','Oct. 29','소비자물가'):
-                      for m in list(re.finditer(re.escape(kw), t))[:2]:
-                          print('      ', repr(t[max(0,m.start()-120):m.end()+80]))
-              except Exception as e:
-                  print(f'FAIL {type(e).__name__}: {e} {u}')
+          for name, u in [('bls_cpi.htm','https://www.bls.gov/schedule/news_release/cpi.htm'),
+                          ('bls_empsit.htm','https://www.bls.gov/schedule/news_release/empsit.htm'),
+                          ('bea.htm','https://www.bea.gov/news/schedule'),
+                          ('boj.htm','https://www.boj.or.jp/en/mopo/mpmsche_minu/index.htm'),
+                          ('kostat_2026.pdf','https://kostat.go.kr/ansk/file/schedule_2026.pdf')]:
+              open('/tmp/raw/'+name,'wb').write(c.get_bytes(u)); print('saved', name)
           PY
+          echo done > /tmp/probe.txt
       - name: 결과를 임시 브랜치에 저장
         if: always()
         run: |
@@ -46,7 +31,7 @@ jobs:
           git config user.email 41898282+github-actions[bot]@users.noreply.github.com
           git checkout --orphan probe-results
           git rm -rqf .
-          cp /tmp/probe.txt probe.txt
-          git add probe.txt
+          cp /tmp/probe.txt probe.txt; cp /tmp/raw/* .
+          git add -A
           git commit -qm probe
           git push -fq origin probe-results
