@@ -1,0 +1,39 @@
+name: probe
+on: workflow_dispatch
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.12'}
+      - run: pip install -q -r requirements.txt
+      - name: 공식 사이트 접속 시험
+        run: |
+          python - <<'PY'
+          import re
+          from marketbot.http import HttpClient
+          c = HttpClient(timeout=25)
+          urls = [
+            'https://www.bls.gov/schedule/2026/10_sched.htm',
+            'https://www.bls.gov/schedule/2026/home.htm',
+            'https://www.bls.gov/schedule/news_release/cpi.htm',
+            'https://www.bls.gov/schedule/news_release/empsit.htm',
+            'https://www.bea.gov/news/schedule',
+            'https://www.boj.or.jp/en/mopo/mpmsche_minu/index.htm',
+            'https://kostat.go.kr/ansk/file/schedule_2026.pdf',
+            'https://kostat.go.kr/ansk/file/schedule_2027.pdf',
+          ]
+          for u in urls:
+              try:
+                  b = c.get_bytes(u)
+                  t = b.decode('utf-8','replace')
+                  print(f'OK   {len(b):>8} {u}')
+                  if u.endswith('.pdf'):
+                      t = c.pdf_text(u)
+                  for kw in ('Consumer Price Index','Employment Situation','Personal Income and Outlays','Oct. 29','소비자물가'):
+                      for m in list(re.finditer(re.escape(kw), t))[:2]:
+                          print('      ', repr(t[max(0,m.start()-120):m.end()+80]))
+              except Exception as e:
+                  print(f'FAIL {type(e).__name__}: {e} {u}')
+          PY
