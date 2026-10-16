@@ -1,527 +1,27 @@
 {
  "version": 1,
- "exported_at": "2026-10-15T23:00:05.430314+00:00",
+ "exported_at": "2026-10-16T12:00:02.667246+00:00",
  "provider_cache": [
   {
    "provider": "indicators",
-   "updated_at": "2026-10-15T20:01:35.511043+00:00",
+   "updated_at": "2026-10-16T09:01:57.839833+00:00",
    "payload": {
     "provider": "indicators",
     "events": [
      {
-      "id": "us_cpi:2026-11-10",
-      "category": "us_cpi",
-      "title": "미국 CPI(소비자물가) 발표",
-      "market": "US",
-      "trade_date": "2026-11-10",
-      "slot": "evening",
+      "id": "kr_cpi:2026-10-02",
+      "category": "kr_cpi",
+      "title": "한국 소비자물가 발표",
+      "market": "KR",
+      "trade_date": "2026-10-02",
+      "slot": "morning",
       "phase": "release",
-      "occurs_at": "2026-11-10T22:30:00+09:00",
+      "occurs_at": null,
       "details": [
-       "오늘 22:30 KST (08:30 ET) 발표 · 10월분"
+       "통계청 소비자물가동향 · 9월분 · 발표 시각은 당일 공지 확인"
       ],
       "sources": [
-       "https://www.bls.gov/schedule/news_release/cpi.htm"
-      ],
-      "confirmed": true,
-      "announcement_date": null,
-      "implementation_date": null,
-      "effective_date": null
-     },
-     {
-      "id": "us_cpi:2026-12-10",
-      "category": "us_cpi",
-      "title": "미국 CPI(소비자물가) 발표",
-      "market": "US",
-      "trade_date": "2026-12-10",
-      "slot": "evening",
-      "phase": "release",
-      "occurs_at": "2026-12-10T22:30:00+09:00",
-      "details": [
-       "오늘 22:30 KST (08:30 ET) 발표 · 11월분"
-      ],
-      "sources": [
-       "https://www.bls.gov/schedule/news_release/cpi.htm"
-      ],
-      "confirmed": true,
-      "announcement_date": null,
-      "implementation_date": null,
-      "effective_date": null
-     },
-     {
-      "id": "us_cpi:2027-01-13",
-      "category": "us_cpi",
-      "title": "미국 CPI(소비자물가) 발표",
-      "market": "US",
-      "trade_date": "2027-01-13",
-      "slot": "evening",
-      "phase": "release",
-      "occurs_at": "2027-01-13T22:30:00+09:00",
-      "details": [
-       "오늘 22:30 KST (08:30 ET) 발표 · 12월분"
-      ],
-      "sources": [
-       "https://www.bls.gov/schedule/news_release/cpi.htm"
-      ],
-      "confirmed": true,
-      "announcement_date": null,
-      "implementation_date": null,
-      "effective_date": null
-     },
-     {
-      "id": "us_cpi:2027-02-11",
-      "category": "us_cpi",
-      "title": "미국 CPI(소비자물가) 발표",
-      "market": "US",
-      "trade_date": "2027-02-11",
-      "slot": "evening",
-      "phase": "release",
-      "occurs_at": "2027-02-11T22:30:00+09:00",
-      "details": [
-       "오늘 22:30 KST (08:30 ET) 발표 · 1월분"
-      ],
-      "sources": [
-       "https://www.bls.gov/schedule/news_release/cpi.htm"
-      ],
-      "confirmed": true,
-      "announcement_date": null,
-      "implementation_date": null,
-      "effective_date": null
-     },
-     {
-      "id": "us_cpi:2027-03-10",
-      "category": "us_cpi",
-      "title": "미국 CPI(소비자물가) 발표",
-      "market": "US",
-      "trade_date": "2027-03-10",
-      "slot": "evening",
-      "phase": "release",
-      "occurs_at": "2027-03-10T22:30:00+09:00",
-      "details": [
-       "오늘 22:30 KST (08:30 ET) 발표 · 2월분"
-      ],
-      "sources": [
-       "https://www.bls.gov/schedule/news_release/cpi.htm"
-      ],
-      "confirmed": true,
-      "announcement_date": null,
-      "implementation_date": null,
-      "effective_date": null
-     },
-     {
-      "id": "us_cpi:2027-04-13",
-      "category": "us_cpi",
-      "title": "미국 CPI(소비자물가) 발표",
-      "market": "US",
-      "trade_date": "2027-04-13",
-      "slot": "evening",
-      "phase": "release",
-      "occurs_at": "2027-04-13T21:30:00+09:00",
-      "details": [
-       "오늘 21:30 KST (08:30 ET) 발표 · 3월분"
-      ],
-      "sources": [
-       "https://www.bls.gov/schedule/news_release/cpi.htm"
-      ],
-      "confirmed": true,
-      "announcement_date": null,
-      "implementation_date": null,
-      "effective_date": null
-     },
-     {
-      "id": "us_cpi:2027-05-12",
-      "category": "us_cpi",
-      "title": "미국 CPI(소비자물가) 발표",
-      "market": "US",
-      "trade_date": "2027-05-12",
-      "slot": "evening",
-      "phase": "release",
-      "occurs_at": "2027-05-12T21:30:00+09:00",
-      "details": [
-       "오늘 21:30 KST (08:30 ET) 발표 · 4월분"
-      ],
-      "sources": [
-       "https://www.bls.gov/schedule/news_release/cpi.htm"
-      ],
-      "confirmed": true,
-      "announcement_date": null,
-      "implementation_date": null,
-      "effective_date": null
-     },
-     {
-      "id": "us_cpi:2027-06-10",
-      "category": "us_cpi",
-      "title": "미국 CPI(소비자물가) 발표",
-      "market": "US",
-      "trade_date": "2027-06-10",
-      "slot": "evening",
-      "phase": "release",
-      "occurs_at": "2027-06-10T21:30:00+09:00",
-      "details": [
-       "오늘 21:30 KST (08:30 ET) 발표 · 5월분"
-      ],
-      "sources": [
-       "https://www.bls.gov/schedule/news_release/cpi.htm"
-      ],
-      "confirmed": true,
-      "announcement_date": null,
-      "implementation_date": null,
-      "effective_date": null
-     },
-     {
-      "id": "us_cpi:2027-07-14",
-      "category": "us_cpi",
-      "title": "미국 CPI(소비자물가) 발표",
-      "market": "US",
-      "trade_date": "2027-07-14",
-      "slot": "evening",
-      "phase": "release",
-      "occurs_at": "2027-07-14T21:30:00+09:00",
-      "details": [
-       "오늘 21:30 KST (08:30 ET) 발표 · 6월분"
-      ],
-      "sources": [
-       "https://www.bls.gov/schedule/news_release/cpi.htm"
-      ],
-      "confirmed": true,
-      "announcement_date": null,
-      "implementation_date": null,
-      "effective_date": null
-     },
-     {
-      "id": "us_cpi:2027-08-11",
-      "category": "us_cpi",
-      "title": "미국 CPI(소비자물가) 발표",
-      "market": "US",
-      "trade_date": "2027-08-11",
-      "slot": "evening",
-      "phase": "release",
-      "occurs_at": "2027-08-11T21:30:00+09:00",
-      "details": [
-       "오늘 21:30 KST (08:30 ET) 발표 · 7월분"
-      ],
-      "sources": [
-       "https://www.bls.gov/schedule/news_release/cpi.htm"
-      ],
-      "confirmed": true,
-      "announcement_date": null,
-      "implementation_date": null,
-      "effective_date": null
-     },
-     {
-      "id": "us_cpi:2027-09-14",
-      "category": "us_cpi",
-      "title": "미국 CPI(소비자물가) 발표",
-      "market": "US",
-      "trade_date": "2027-09-14",
-      "slot": "evening",
-      "phase": "release",
-      "occurs_at": "2027-09-14T21:30:00+09:00",
-      "details": [
-       "오늘 21:30 KST (08:30 ET) 발표 · 8월분"
-      ],
-      "sources": [
-       "https://www.bls.gov/schedule/news_release/cpi.htm"
-      ],
-      "confirmed": true,
-      "announcement_date": null,
-      "implementation_date": null,
-      "effective_date": null
-     },
-     {
-      "id": "us_cpi:2027-10-14",
-      "category": "us_cpi",
-      "title": "미국 CPI(소비자물가) 발표",
-      "market": "US",
-      "trade_date": "2027-10-14",
-      "slot": "evening",
-      "phase": "release",
-      "occurs_at": "2027-10-14T21:30:00+09:00",
-      "details": [
-       "오늘 21:30 KST (08:30 ET) 발표 · 9월분"
-      ],
-      "sources": [
-       "https://www.bls.gov/schedule/news_release/cpi.htm"
-      ],
-      "confirmed": true,
-      "announcement_date": null,
-      "implementation_date": null,
-      "effective_date": null
-     },
-     {
-      "id": "us_cpi:2027-11-10",
-      "category": "us_cpi",
-      "title": "미국 CPI(소비자물가) 발표",
-      "market": "US",
-      "trade_date": "2027-11-10",
-      "slot": "evening",
-      "phase": "release",
-      "occurs_at": "2027-11-10T22:30:00+09:00",
-      "details": [
-       "오늘 22:30 KST (08:30 ET) 발표 · 10월분"
-      ],
-      "sources": [
-       "https://www.bls.gov/schedule/news_release/cpi.htm"
-      ],
-      "confirmed": true,
-      "announcement_date": null,
-      "implementation_date": null,
-      "effective_date": null
-     },
-     {
-      "id": "us_jobs:2026-11-06",
-      "category": "us_jobs",
-      "title": "미국 고용보고서 발표",
-      "market": "US",
-      "trade_date": "2026-11-06",
-      "slot": "evening",
-      "phase": "release",
-      "occurs_at": "2026-11-06T22:30:00+09:00",
-      "details": [
-       "오늘 22:30 KST (08:30 ET) 발표 · 10월분"
-      ],
-      "sources": [
-       "https://www.bls.gov/schedule/news_release/empsit.htm"
-      ],
-      "confirmed": true,
-      "announcement_date": null,
-      "implementation_date": null,
-      "effective_date": null
-     },
-     {
-      "id": "us_jobs:2026-12-04",
-      "category": "us_jobs",
-      "title": "미국 고용보고서 발표",
-      "market": "US",
-      "trade_date": "2026-12-04",
-      "slot": "evening",
-      "phase": "release",
-      "occurs_at": "2026-12-04T22:30:00+09:00",
-      "details": [
-       "오늘 22:30 KST (08:30 ET) 발표 · 11월분"
-      ],
-      "sources": [
-       "https://www.bls.gov/schedule/news_release/empsit.htm"
-      ],
-      "confirmed": true,
-      "announcement_date": null,
-      "implementation_date": null,
-      "effective_date": null
-     },
-     {
-      "id": "us_jobs:2027-01-08",
-      "category": "us_jobs",
-      "title": "미국 고용보고서 발표",
-      "market": "US",
-      "trade_date": "2027-01-08",
-      "slot": "evening",
-      "phase": "release",
-      "occurs_at": "2027-01-08T22:30:00+09:00",
-      "details": [
-       "오늘 22:30 KST (08:30 ET) 발표 · 12월분"
-      ],
-      "sources": [
-       "https://www.bls.gov/schedule/news_release/empsit.htm"
-      ],
-      "confirmed": true,
-      "announcement_date": null,
-      "implementation_date": null,
-      "effective_date": null
-     },
-     {
-      "id": "us_jobs:2027-02-05",
-      "category": "us_jobs",
-      "title": "미국 고용보고서 발표",
-      "market": "US",
-      "trade_date": "2027-02-05",
-      "slot": "evening",
-      "phase": "release",
-      "occurs_at": "2027-02-05T22:30:00+09:00",
-      "details": [
-       "오늘 22:30 KST (08:30 ET) 발표 · 1월분"
-      ],
-      "sources": [
-       "https://www.bls.gov/schedule/news_release/empsit.htm"
-      ],
-      "confirmed": true,
-      "announcement_date": null,
-      "implementation_date": null,
-      "effective_date": null
-     },
-     {
-      "id": "us_jobs:2027-03-05",
-      "category": "us_jobs",
-      "title": "미국 고용보고서 발표",
-      "market": "US",
-      "trade_date": "2027-03-05",
-      "slot": "evening",
-      "phase": "release",
-      "occurs_at": "2027-03-05T22:30:00+09:00",
-      "details": [
-       "오늘 22:30 KST (08:30 ET) 발표 · 2월분"
-      ],
-      "sources": [
-       "https://www.bls.gov/schedule/news_release/empsit.htm"
-      ],
-      "confirmed": true,
-      "announcement_date": null,
-      "implementation_date": null,
-      "effective_date": null
-     },
-     {
-      "id": "us_jobs:2027-04-02",
-      "category": "us_jobs",
-      "title": "미국 고용보고서 발표",
-      "market": "US",
-      "trade_date": "2027-04-02",
-      "slot": "evening",
-      "phase": "release",
-      "occurs_at": "2027-04-02T21:30:00+09:00",
-      "details": [
-       "오늘 21:30 KST (08:30 ET) 발표 · 3월분"
-      ],
-      "sources": [
-       "https://www.bls.gov/schedule/news_release/empsit.htm"
-      ],
-      "confirmed": true,
-      "announcement_date": null,
-      "implementation_date": null,
-      "effective_date": null
-     },
-     {
-      "id": "us_jobs:2027-05-07",
-      "category": "us_jobs",
-      "title": "미국 고용보고서 발표",
-      "market": "US",
-      "trade_date": "2027-05-07",
-      "slot": "evening",
-      "phase": "release",
-      "occurs_at": "2027-05-07T21:30:00+09:00",
-      "details": [
-       "오늘 21:30 KST (08:30 ET) 발표 · 4월분"
-      ],
-      "sources": [
-       "https://www.bls.gov/schedule/news_release/empsit.htm"
-      ],
-      "confirmed": true,
-      "announcement_date": null,
-      "implementation_date": null,
-      "effective_date": null
-     },
-     {
-      "id": "us_jobs:2027-06-04",
-      "category": "us_jobs",
-      "title": "미국 고용보고서 발표",
-      "market": "US",
-      "trade_date": "2027-06-04",
-      "slot": "evening",
-      "phase": "release",
-      "occurs_at": "2027-06-04T21:30:00+09:00",
-      "details": [
-       "오늘 21:30 KST (08:30 ET) 발표 · 5월분"
-      ],
-      "sources": [
-       "https://www.bls.gov/schedule/news_release/empsit.htm"
-      ],
-      "confirmed": true,
-      "announcement_date": null,
-      "implementation_date": null,
-      "effective_date": null
-     },
-     {
-      "id": "us_jobs:2027-07-02",
-      "category": "us_jobs",
-      "title": "미국 고용보고서 발표",
-      "market": "US",
-      "trade_date": "2027-07-02",
-      "slot": "evening",
-      "phase": "release",
-      "occurs_at": "2027-07-02T21:30:00+09:00",
-      "details": [
-       "오늘 21:30 KST (08:30 ET) 발표 · 6월분"
-      ],
-      "sources": [
-       "https://www.bls.gov/schedule/news_release/empsit.htm"
-      ],
-      "confirmed": true,
-      "announcement_date": null,
-      "implementation_date": null,
-      "effective_date": null
-     },
-     {
-      "id": "us_jobs:2027-08-06",
-      "category": "us_jobs",
-      "title": "미국 고용보고서 발표",
-      "market": "US",
-      "trade_date": "2027-08-06",
-      "slot": "evening",
-      "phase": "release",
-      "occurs_at": "2027-08-06T21:30:00+09:00",
-      "details": [
-       "오늘 21:30 KST (08:30 ET) 발표 · 7월분"
-      ],
-      "sources": [
-       "https://www.bls.gov/schedule/news_release/empsit.htm"
-      ],
-      "confirmed": true,
-      "announcement_date": null,
-      "implementation_date": null,
-      "effective_date": null
-     },
-     {
-      "id": "us_jobs:2027-09-03",
-      "category": "us_jobs",
-      "title": "미국 고용보고서 발표",
-      "market": "US",
-      "trade_date": "2027-09-03",
-      "slot": "evening",
-      "phase": "release",
-      "occurs_at": "2027-09-03T21:30:00+09:00",
-      "details": [
-       "오늘 21:30 KST (08:30 ET) 발표 · 8월분"
-      ],
-      "sources": [
-       "https://www.bls.gov/schedule/news_release/empsit.htm"
-      ],
-      "confirmed": true,
-      "announcement_date": null,
-      "implementation_date": null,
-      "effective_date": null
-     },
-     {
-      "id": "us_jobs:2027-10-08",
-      "category": "us_jobs",
-      "title": "미국 고용보고서 발표",
-      "market": "US",
-      "trade_date": "2027-10-08",
-      "slot": "evening",
-      "phase": "release",
-      "occurs_at": "2027-10-08T21:30:00+09:00",
-      "details": [
-       "오늘 21:30 KST (08:30 ET) 발표 · 9월분"
-      ],
-      "sources": [
-       "https://www.bls.gov/schedule/news_release/empsit.htm"
-      ],
-      "confirmed": true,
-      "announcement_date": null,
-      "implementation_date": null,
-      "effective_date": null
-     },
-     {
-      "id": "us_jobs:2027-11-05",
-      "category": "us_jobs",
-      "title": "미국 고용보고서 발표",
-      "market": "US",
-      "trade_date": "2027-11-05",
-      "slot": "evening",
-      "phase": "release",
-      "occurs_at": "2027-11-05T21:30:00+09:00",
-      "details": [
-       "오늘 21:30 KST (08:30 ET) 발표 · 10월분"
-      ],
-      "sources": [
-       "https://www.bls.gov/schedule/news_release/empsit.htm"
+       "https://kostat.go.kr/ansk/file/schedule_2026.pdf"
       ],
       "confirmed": true,
       "announcement_date": null,
@@ -539,46 +39,6 @@
       "occurs_at": "2026-10-29T21:30:00+09:00",
       "details": [
        "오늘 21:30 KST (08:30 ET) 발표 · 9월분"
-      ],
-      "sources": [
-       "https://www.bea.gov/news/schedule"
-      ],
-      "confirmed": true,
-      "announcement_date": null,
-      "implementation_date": null,
-      "effective_date": null
-     },
-     {
-      "id": "us_pce:2026-11-25",
-      "category": "us_pce",
-      "title": "미국 PCE(개인소비지출 물가) 발표",
-      "market": "US",
-      "trade_date": "2026-11-25",
-      "slot": "evening",
-      "phase": "release",
-      "occurs_at": "2026-11-25T22:30:00+09:00",
-      "details": [
-       "오늘 22:30 KST (08:30 ET) 발표 · 10월분"
-      ],
-      "sources": [
-       "https://www.bea.gov/news/schedule"
-      ],
-      "confirmed": true,
-      "announcement_date": null,
-      "implementation_date": null,
-      "effective_date": null
-     },
-     {
-      "id": "us_pce:2026-12-23",
-      "category": "us_pce",
-      "title": "미국 PCE(개인소비지출 물가) 발표",
-      "market": "US",
-      "trade_date": "2026-12-23",
-      "slot": "evening",
-      "phase": "release",
-      "occurs_at": "2026-12-23T22:30:00+09:00",
-      "details": [
-       "오늘 22:30 KST (08:30 ET) 발표 · 11월분"
       ],
       "sources": [
        "https://www.bea.gov/news/schedule"
@@ -610,6 +70,146 @@
       "effective_date": null
      },
      {
+      "id": "kr_cpi:2026-11-03",
+      "category": "kr_cpi",
+      "title": "한국 소비자물가 발표",
+      "market": "KR",
+      "trade_date": "2026-11-03",
+      "slot": "morning",
+      "phase": "release",
+      "occurs_at": null,
+      "details": [
+       "통계청 소비자물가동향 · 10월분 · 발표 시각은 당일 공지 확인"
+      ],
+      "sources": [
+       "https://kostat.go.kr/ansk/file/schedule_2026.pdf"
+      ],
+      "confirmed": true,
+      "announcement_date": null,
+      "implementation_date": null,
+      "effective_date": null
+     },
+     {
+      "id": "us_jobs:2026-11-06",
+      "category": "us_jobs",
+      "title": "미국 고용보고서 발표",
+      "market": "US",
+      "trade_date": "2026-11-06",
+      "slot": "evening",
+      "phase": "release",
+      "occurs_at": "2026-11-06T22:30:00+09:00",
+      "details": [
+       "오늘 22:30 KST (08:30 ET) 발표 · 10월분"
+      ],
+      "sources": [
+       "https://www.bls.gov/schedule/news_release/empsit.htm"
+      ],
+      "confirmed": true,
+      "announcement_date": null,
+      "implementation_date": null,
+      "effective_date": null
+     },
+     {
+      "id": "us_cpi:2026-11-10",
+      "category": "us_cpi",
+      "title": "미국 CPI(소비자물가) 발표",
+      "market": "US",
+      "trade_date": "2026-11-10",
+      "slot": "evening",
+      "phase": "release",
+      "occurs_at": "2026-11-10T22:30:00+09:00",
+      "details": [
+       "오늘 22:30 KST (08:30 ET) 발표 · 10월분"
+      ],
+      "sources": [
+       "https://www.bls.gov/schedule/news_release/cpi.htm"
+      ],
+      "confirmed": true,
+      "announcement_date": null,
+      "implementation_date": null,
+      "effective_date": null
+     },
+     {
+      "id": "us_pce:2026-11-25",
+      "category": "us_pce",
+      "title": "미국 PCE(개인소비지출 물가) 발표",
+      "market": "US",
+      "trade_date": "2026-11-25",
+      "slot": "evening",
+      "phase": "release",
+      "occurs_at": "2026-11-25T22:30:00+09:00",
+      "details": [
+       "오늘 22:30 KST (08:30 ET) 발표 · 10월분"
+      ],
+      "sources": [
+       "https://www.bea.gov/news/schedule"
+      ],
+      "confirmed": true,
+      "announcement_date": null,
+      "implementation_date": null,
+      "effective_date": null
+     },
+     {
+      "id": "kr_cpi:2026-12-02",
+      "category": "kr_cpi",
+      "title": "한국 소비자물가 발표",
+      "market": "KR",
+      "trade_date": "2026-12-02",
+      "slot": "morning",
+      "phase": "release",
+      "occurs_at": null,
+      "details": [
+       "통계청 소비자물가동향 · 11월분 · 발표 시각은 당일 공지 확인"
+      ],
+      "sources": [
+       "https://kostat.go.kr/ansk/file/schedule_2026.pdf"
+      ],
+      "confirmed": true,
+      "announcement_date": null,
+      "implementation_date": null,
+      "effective_date": null
+     },
+     {
+      "id": "us_jobs:2026-12-04",
+      "category": "us_jobs",
+      "title": "미국 고용보고서 발표",
+      "market": "US",
+      "trade_date": "2026-12-04",
+      "slot": "evening",
+      "phase": "release",
+      "occurs_at": "2026-12-04T22:30:00+09:00",
+      "details": [
+       "오늘 22:30 KST (08:30 ET) 발표 · 11월분"
+      ],
+      "sources": [
+       "https://www.bls.gov/schedule/news_release/empsit.htm"
+      ],
+      "confirmed": true,
+      "announcement_date": null,
+      "implementation_date": null,
+      "effective_date": null
+     },
+     {
+      "id": "us_cpi:2026-12-10",
+      "category": "us_cpi",
+      "title": "미국 CPI(소비자물가) 발표",
+      "market": "US",
+      "trade_date": "2026-12-10",
+      "slot": "evening",
+      "phase": "release",
+      "occurs_at": "2026-12-10T22:30:00+09:00",
+      "details": [
+       "오늘 22:30 KST (08:30 ET) 발표 · 11월분"
+      ],
+      "sources": [
+       "https://www.bls.gov/schedule/news_release/cpi.htm"
+      ],
+      "confirmed": true,
+      "announcement_date": null,
+      "implementation_date": null,
+      "effective_date": null
+     },
+     {
       "id": "boj:2026-12-18",
       "category": "boj",
       "title": "일본은행(BOJ) 금리 결정",
@@ -623,6 +223,86 @@
       ],
       "sources": [
        "https://www.boj.or.jp/en/mopo/mpmsche_minu/index.htm"
+      ],
+      "confirmed": true,
+      "announcement_date": null,
+      "implementation_date": null,
+      "effective_date": null
+     },
+     {
+      "id": "us_pce:2026-12-23",
+      "category": "us_pce",
+      "title": "미국 PCE(개인소비지출 물가) 발표",
+      "market": "US",
+      "trade_date": "2026-12-23",
+      "slot": "evening",
+      "phase": "release",
+      "occurs_at": "2026-12-23T22:30:00+09:00",
+      "details": [
+       "오늘 22:30 KST (08:30 ET) 발표 · 11월분"
+      ],
+      "sources": [
+       "https://www.bea.gov/news/schedule"
+      ],
+      "confirmed": true,
+      "announcement_date": null,
+      "implementation_date": null,
+      "effective_date": null
+     },
+     {
+      "id": "kr_cpi:2026-12-31",
+      "category": "kr_cpi",
+      "title": "한국 소비자물가 발표",
+      "market": "KR",
+      "trade_date": "2026-12-31",
+      "slot": "morning",
+      "phase": "release",
+      "occurs_at": null,
+      "details": [
+       "통계청 소비자물가동향 · 12월분 · 연간 · 발표 시각은 당일 공지 확인"
+      ],
+      "sources": [
+       "https://kostat.go.kr/ansk/file/schedule_2026.pdf"
+      ],
+      "confirmed": true,
+      "announcement_date": null,
+      "implementation_date": null,
+      "effective_date": null
+     },
+     {
+      "id": "us_jobs:2027-01-08",
+      "category": "us_jobs",
+      "title": "미국 고용보고서 발표",
+      "market": "US",
+      "trade_date": "2027-01-08",
+      "slot": "evening",
+      "phase": "release",
+      "occurs_at": "2027-01-08T22:30:00+09:00",
+      "details": [
+       "오늘 22:30 KST (08:30 ET) 발표 · 12월분"
+      ],
+      "sources": [
+       "https://www.bls.gov/schedule/news_release/empsit.htm"
+      ],
+      "confirmed": true,
+      "announcement_date": null,
+      "implementation_date": null,
+      "effective_date": null
+     },
+     {
+      "id": "us_cpi:2027-01-13",
+      "category": "us_cpi",
+      "title": "미국 CPI(소비자물가) 발표",
+      "market": "US",
+      "trade_date": "2027-01-13",
+      "slot": "evening",
+      "phase": "release",
+      "occurs_at": "2027-01-13T22:30:00+09:00",
+      "details": [
+       "오늘 22:30 KST (08:30 ET) 발표 · 12월분"
+      ],
+      "sources": [
+       "https://www.bls.gov/schedule/news_release/cpi.htm"
       ],
       "confirmed": true,
       "announcement_date": null,
@@ -651,6 +331,86 @@
       "effective_date": null
      },
      {
+      "id": "us_jobs:2027-02-05",
+      "category": "us_jobs",
+      "title": "미국 고용보고서 발표",
+      "market": "US",
+      "trade_date": "2027-02-05",
+      "slot": "evening",
+      "phase": "release",
+      "occurs_at": "2027-02-05T22:30:00+09:00",
+      "details": [
+       "오늘 22:30 KST (08:30 ET) 발표 · 1월분"
+      ],
+      "sources": [
+       "https://www.bls.gov/schedule/news_release/empsit.htm"
+      ],
+      "confirmed": true,
+      "announcement_date": null,
+      "implementation_date": null,
+      "effective_date": null
+     },
+     {
+      "id": "us_cpi:2027-02-11",
+      "category": "us_cpi",
+      "title": "미국 CPI(소비자물가) 발표",
+      "market": "US",
+      "trade_date": "2027-02-11",
+      "slot": "evening",
+      "phase": "release",
+      "occurs_at": "2027-02-11T22:30:00+09:00",
+      "details": [
+       "오늘 22:30 KST (08:30 ET) 발표 · 1월분"
+      ],
+      "sources": [
+       "https://www.bls.gov/schedule/news_release/cpi.htm"
+      ],
+      "confirmed": true,
+      "announcement_date": null,
+      "implementation_date": null,
+      "effective_date": null
+     },
+     {
+      "id": "us_jobs:2027-03-05",
+      "category": "us_jobs",
+      "title": "미국 고용보고서 발표",
+      "market": "US",
+      "trade_date": "2027-03-05",
+      "slot": "evening",
+      "phase": "release",
+      "occurs_at": "2027-03-05T22:30:00+09:00",
+      "details": [
+       "오늘 22:30 KST (08:30 ET) 발표 · 2월분"
+      ],
+      "sources": [
+       "https://www.bls.gov/schedule/news_release/empsit.htm"
+      ],
+      "confirmed": true,
+      "announcement_date": null,
+      "implementation_date": null,
+      "effective_date": null
+     },
+     {
+      "id": "us_cpi:2027-03-10",
+      "category": "us_cpi",
+      "title": "미국 CPI(소비자물가) 발표",
+      "market": "US",
+      "trade_date": "2027-03-10",
+      "slot": "evening",
+      "phase": "release",
+      "occurs_at": "2027-03-10T22:30:00+09:00",
+      "details": [
+       "오늘 22:30 KST (08:30 ET) 발표 · 2월분"
+      ],
+      "sources": [
+       "https://www.bls.gov/schedule/news_release/cpi.htm"
+      ],
+      "confirmed": true,
+      "announcement_date": null,
+      "implementation_date": null,
+      "effective_date": null
+     },
+     {
       "id": "boj:2027-03-18",
       "category": "boj",
       "title": "일본은행(BOJ) 금리 결정",
@@ -664,6 +424,46 @@
       ],
       "sources": [
        "https://www.boj.or.jp/en/mopo/mpmsche_minu/index.htm"
+      ],
+      "confirmed": true,
+      "announcement_date": null,
+      "implementation_date": null,
+      "effective_date": null
+     },
+     {
+      "id": "us_jobs:2027-04-02",
+      "category": "us_jobs",
+      "title": "미국 고용보고서 발표",
+      "market": "US",
+      "trade_date": "2027-04-02",
+      "slot": "evening",
+      "phase": "release",
+      "occurs_at": "2027-04-02T21:30:00+09:00",
+      "details": [
+       "오늘 21:30 KST (08:30 ET) 발표 · 3월분"
+      ],
+      "sources": [
+       "https://www.bls.gov/schedule/news_release/empsit.htm"
+      ],
+      "confirmed": true,
+      "announcement_date": null,
+      "implementation_date": null,
+      "effective_date": null
+     },
+     {
+      "id": "us_cpi:2027-04-13",
+      "category": "us_cpi",
+      "title": "미국 CPI(소비자물가) 발표",
+      "market": "US",
+      "trade_date": "2027-04-13",
+      "slot": "evening",
+      "phase": "release",
+      "occurs_at": "2027-04-13T21:30:00+09:00",
+      "details": [
+       "오늘 21:30 KST (08:30 ET) 발표 · 3월분"
+      ],
+      "sources": [
+       "https://www.bls.gov/schedule/news_release/cpi.htm"
       ],
       "confirmed": true,
       "announcement_date": null,
@@ -692,6 +492,86 @@
       "effective_date": null
      },
      {
+      "id": "us_jobs:2027-05-07",
+      "category": "us_jobs",
+      "title": "미국 고용보고서 발표",
+      "market": "US",
+      "trade_date": "2027-05-07",
+      "slot": "evening",
+      "phase": "release",
+      "occurs_at": "2027-05-07T21:30:00+09:00",
+      "details": [
+       "오늘 21:30 KST (08:30 ET) 발표 · 4월분"
+      ],
+      "sources": [
+       "https://www.bls.gov/schedule/news_release/empsit.htm"
+      ],
+      "confirmed": true,
+      "announcement_date": null,
+      "implementation_date": null,
+      "effective_date": null
+     },
+     {
+      "id": "us_cpi:2027-05-12",
+      "category": "us_cpi",
+      "title": "미국 CPI(소비자물가) 발표",
+      "market": "US",
+      "trade_date": "2027-05-12",
+      "slot": "evening",
+      "phase": "release",
+      "occurs_at": "2027-05-12T21:30:00+09:00",
+      "details": [
+       "오늘 21:30 KST (08:30 ET) 발표 · 4월분"
+      ],
+      "sources": [
+       "https://www.bls.gov/schedule/news_release/cpi.htm"
+      ],
+      "confirmed": true,
+      "announcement_date": null,
+      "implementation_date": null,
+      "effective_date": null
+     },
+     {
+      "id": "us_jobs:2027-06-04",
+      "category": "us_jobs",
+      "title": "미국 고용보고서 발표",
+      "market": "US",
+      "trade_date": "2027-06-04",
+      "slot": "evening",
+      "phase": "release",
+      "occurs_at": "2027-06-04T21:30:00+09:00",
+      "details": [
+       "오늘 21:30 KST (08:30 ET) 발표 · 5월분"
+      ],
+      "sources": [
+       "https://www.bls.gov/schedule/news_release/empsit.htm"
+      ],
+      "confirmed": true,
+      "announcement_date": null,
+      "implementation_date": null,
+      "effective_date": null
+     },
+     {
+      "id": "us_cpi:2027-06-10",
+      "category": "us_cpi",
+      "title": "미국 CPI(소비자물가) 발표",
+      "market": "US",
+      "trade_date": "2027-06-10",
+      "slot": "evening",
+      "phase": "release",
+      "occurs_at": "2027-06-10T21:30:00+09:00",
+      "details": [
+       "오늘 21:30 KST (08:30 ET) 발표 · 5월분"
+      ],
+      "sources": [
+       "https://www.bls.gov/schedule/news_release/cpi.htm"
+      ],
+      "confirmed": true,
+      "announcement_date": null,
+      "implementation_date": null,
+      "effective_date": null
+     },
+     {
       "id": "boj:2027-06-11",
       "category": "boj",
       "title": "일본은행(BOJ) 금리 결정",
@@ -705,6 +585,46 @@
       ],
       "sources": [
        "https://www.boj.or.jp/en/mopo/mpmsche_minu/index.htm"
+      ],
+      "confirmed": true,
+      "announcement_date": null,
+      "implementation_date": null,
+      "effective_date": null
+     },
+     {
+      "id": "us_jobs:2027-07-02",
+      "category": "us_jobs",
+      "title": "미국 고용보고서 발표",
+      "market": "US",
+      "trade_date": "2027-07-02",
+      "slot": "evening",
+      "phase": "release",
+      "occurs_at": "2027-07-02T21:30:00+09:00",
+      "details": [
+       "오늘 21:30 KST (08:30 ET) 발표 · 6월분"
+      ],
+      "sources": [
+       "https://www.bls.gov/schedule/news_release/empsit.htm"
+      ],
+      "confirmed": true,
+      "announcement_date": null,
+      "implementation_date": null,
+      "effective_date": null
+     },
+     {
+      "id": "us_cpi:2027-07-14",
+      "category": "us_cpi",
+      "title": "미국 CPI(소비자물가) 발표",
+      "market": "US",
+      "trade_date": "2027-07-14",
+      "slot": "evening",
+      "phase": "release",
+      "occurs_at": "2027-07-14T21:30:00+09:00",
+      "details": [
+       "오늘 21:30 KST (08:30 ET) 발표 · 6월분"
+      ],
+      "sources": [
+       "https://www.bls.gov/schedule/news_release/cpi.htm"
       ],
       "confirmed": true,
       "announcement_date": null,
@@ -733,6 +653,86 @@
       "effective_date": null
      },
      {
+      "id": "us_jobs:2027-08-06",
+      "category": "us_jobs",
+      "title": "미국 고용보고서 발표",
+      "market": "US",
+      "trade_date": "2027-08-06",
+      "slot": "evening",
+      "phase": "release",
+      "occurs_at": "2027-08-06T21:30:00+09:00",
+      "details": [
+       "오늘 21:30 KST (08:30 ET) 발표 · 7월분"
+      ],
+      "sources": [
+       "https://www.bls.gov/schedule/news_release/empsit.htm"
+      ],
+      "confirmed": true,
+      "announcement_date": null,
+      "implementation_date": null,
+      "effective_date": null
+     },
+     {
+      "id": "us_cpi:2027-08-11",
+      "category": "us_cpi",
+      "title": "미국 CPI(소비자물가) 발표",
+      "market": "US",
+      "trade_date": "2027-08-11",
+      "slot": "evening",
+      "phase": "release",
+      "occurs_at": "2027-08-11T21:30:00+09:00",
+      "details": [
+       "오늘 21:30 KST (08:30 ET) 발표 · 7월분"
+      ],
+      "sources": [
+       "https://www.bls.gov/schedule/news_release/cpi.htm"
+      ],
+      "confirmed": true,
+      "announcement_date": null,
+      "implementation_date": null,
+      "effective_date": null
+     },
+     {
+      "id": "us_jobs:2027-09-03",
+      "category": "us_jobs",
+      "title": "미국 고용보고서 발표",
+      "market": "US",
+      "trade_date": "2027-09-03",
+      "slot": "evening",
+      "phase": "release",
+      "occurs_at": "2027-09-03T21:30:00+09:00",
+      "details": [
+       "오늘 21:30 KST (08:30 ET) 발표 · 8월분"
+      ],
+      "sources": [
+       "https://www.bls.gov/schedule/news_release/empsit.htm"
+      ],
+      "confirmed": true,
+      "announcement_date": null,
+      "implementation_date": null,
+      "effective_date": null
+     },
+     {
+      "id": "us_cpi:2027-09-14",
+      "category": "us_cpi",
+      "title": "미국 CPI(소비자물가) 발표",
+      "market": "US",
+      "trade_date": "2027-09-14",
+      "slot": "evening",
+      "phase": "release",
+      "occurs_at": "2027-09-14T21:30:00+09:00",
+      "details": [
+       "오늘 21:30 KST (08:30 ET) 발표 · 8월분"
+      ],
+      "sources": [
+       "https://www.bls.gov/schedule/news_release/cpi.htm"
+      ],
+      "confirmed": true,
+      "announcement_date": null,
+      "implementation_date": null,
+      "effective_date": null
+     },
+     {
       "id": "boj:2027-09-22",
       "category": "boj",
       "title": "일본은행(BOJ) 금리 결정",
@@ -746,6 +746,46 @@
       ],
       "sources": [
        "https://www.boj.or.jp/en/mopo/mpmsche_minu/index.htm"
+      ],
+      "confirmed": true,
+      "announcement_date": null,
+      "implementation_date": null,
+      "effective_date": null
+     },
+     {
+      "id": "us_jobs:2027-10-08",
+      "category": "us_jobs",
+      "title": "미국 고용보고서 발표",
+      "market": "US",
+      "trade_date": "2027-10-08",
+      "slot": "evening",
+      "phase": "release",
+      "occurs_at": "2027-10-08T21:30:00+09:00",
+      "details": [
+       "오늘 21:30 KST (08:30 ET) 발표 · 9월분"
+      ],
+      "sources": [
+       "https://www.bls.gov/schedule/news_release/empsit.htm"
+      ],
+      "confirmed": true,
+      "announcement_date": null,
+      "implementation_date": null,
+      "effective_date": null
+     },
+     {
+      "id": "us_cpi:2027-10-14",
+      "category": "us_cpi",
+      "title": "미국 CPI(소비자물가) 발표",
+      "market": "US",
+      "trade_date": "2027-10-14",
+      "slot": "evening",
+      "phase": "release",
+      "occurs_at": "2027-10-14T21:30:00+09:00",
+      "details": [
+       "오늘 21:30 KST (08:30 ET) 발표 · 9월분"
+      ],
+      "sources": [
+       "https://www.bls.gov/schedule/news_release/cpi.htm"
       ],
       "confirmed": true,
       "announcement_date": null,
@@ -774,19 +814,19 @@
       "effective_date": null
      },
      {
-      "id": "kr_cpi:2026-10-02",
-      "category": "kr_cpi",
-      "title": "한국 소비자물가 발표",
-      "market": "KR",
-      "trade_date": "2026-10-02",
-      "slot": "morning",
+      "id": "us_jobs:2027-11-05",
+      "category": "us_jobs",
+      "title": "미국 고용보고서 발표",
+      "market": "US",
+      "trade_date": "2027-11-05",
+      "slot": "evening",
       "phase": "release",
-      "occurs_at": null,
+      "occurs_at": "2027-11-05T21:30:00+09:00",
       "details": [
-       "통계청 소비자물가동향 · 9월분 · 발표 시각은 당일 공지 확인"
+       "오늘 21:30 KST (08:30 ET) 발표 · 10월분"
       ],
       "sources": [
-       "https://kostat.go.kr/ansk/file/schedule_2026.pdf"
+       "https://www.bls.gov/schedule/news_release/empsit.htm"
       ],
       "confirmed": true,
       "announcement_date": null,
@@ -794,59 +834,19 @@
       "effective_date": null
      },
      {
-      "id": "kr_cpi:2026-11-03",
-      "category": "kr_cpi",
-      "title": "한국 소비자물가 발표",
-      "market": "KR",
-      "trade_date": "2026-11-03",
-      "slot": "morning",
+      "id": "us_cpi:2027-11-10",
+      "category": "us_cpi",
+      "title": "미국 CPI(소비자물가) 발표",
+      "market": "US",
+      "trade_date": "2027-11-10",
+      "slot": "evening",
       "phase": "release",
-      "occurs_at": null,
+      "occurs_at": "2027-11-10T22:30:00+09:00",
       "details": [
-       "통계청 소비자물가동향 · 10월분 · 발표 시각은 당일 공지 확인"
+       "오늘 22:30 KST (08:30 ET) 발표 · 10월분"
       ],
       "sources": [
-       "https://kostat.go.kr/ansk/file/schedule_2026.pdf"
-      ],
-      "confirmed": true,
-      "announcement_date": null,
-      "implementation_date": null,
-      "effective_date": null
-     },
-     {
-      "id": "kr_cpi:2026-12-02",
-      "category": "kr_cpi",
-      "title": "한국 소비자물가 발표",
-      "market": "KR",
-      "trade_date": "2026-12-02",
-      "slot": "morning",
-      "phase": "release",
-      "occurs_at": null,
-      "details": [
-       "통계청 소비자물가동향 · 11월분 · 발표 시각은 당일 공지 확인"
-      ],
-      "sources": [
-       "https://kostat.go.kr/ansk/file/schedule_2026.pdf"
-      ],
-      "confirmed": true,
-      "announcement_date": null,
-      "implementation_date": null,
-      "effective_date": null
-     },
-     {
-      "id": "kr_cpi:2026-12-31",
-      "category": "kr_cpi",
-      "title": "한국 소비자물가 발표",
-      "market": "KR",
-      "trade_date": "2026-12-31",
-      "slot": "morning",
-      "phase": "release",
-      "occurs_at": null,
-      "details": [
-       "통계청 소비자물가동향 · 12월분 · 연간 · 발표 시각은 당일 공지 확인"
-      ],
-      "sources": [
-       "https://kostat.go.kr/ansk/file/schedule_2026.pdf"
+       "https://www.bls.gov/schedule/news_release/cpi.htm"
       ],
       "confirmed": true,
       "announcement_date": null,
@@ -875,12 +875,12 @@
     "failed_scopes": [],
     "coverage_start": "2026-10-01",
     "coverage_end": "2027-11-20",
-    "fetched_at": "2026-10-15T20:01:24.822840+00:00"
+    "fetched_at": "2026-10-16T09:01:24.318589+00:00"
    }
   },
   {
    "provider": "markets",
-   "updated_at": "2026-10-15T20:00:31.963466+00:00",
+   "updated_at": "2026-10-16T09:00:30.118889+00:00",
    "payload": {
     "provider": "markets",
     "events": [],
@@ -16419,12 +16419,12 @@
     "failed_scopes": [],
     "coverage_start": "2026-10-01",
     "coverage_end": "2027-11-20",
-    "fetched_at": "2026-10-15T20:00:28.957472+00:00"
+    "fetched_at": "2026-10-16T09:00:27.267773+00:00"
    }
   },
   {
    "provider": "monetary",
-   "updated_at": "2026-10-15T20:01:00.911692+00:00",
+   "updated_at": "2026-10-16T09:00:57.861761+00:00",
    "payload": {
     "provider": "monetary",
     "events": [
@@ -16756,12 +16756,12 @@
     ],
     "coverage_start": "2026-10-01",
     "coverage_end": "2027-11-20",
-    "fetched_at": "2026-10-15T20:00:31.973759+00:00"
+    "fetched_at": "2026-10-16T09:00:30.129291+00:00"
    }
   },
   {
    "provider": "options",
-   "updated_at": "2026-10-15T20:01:08.074517+00:00",
+   "updated_at": "2026-10-16T09:01:08.746986+00:00",
    "payload": {
     "provider": "options",
     "events": [
@@ -17529,12 +17529,12 @@
     ],
     "coverage_start": "2026-10-01",
     "coverage_end": "2027-11-20",
-    "fetched_at": "2026-10-15T20:01:00.913306+00:00"
+    "fetched_at": "2026-10-16T09:00:57.863465+00:00"
    }
   },
   {
    "provider": "rebalances",
-   "updated_at": "2026-10-15T20:01:24.821229+00:00",
+   "updated_at": "2026-10-16T09:01:24.317663+00:00",
    "payload": {
     "provider": "rebalances",
     "events": [
@@ -17856,7 +17856,7 @@
     ],
     "coverage_start": null,
     "coverage_end": null,
-    "fetched_at": "2026-10-15T20:01:08.076241+00:00"
+    "fetched_at": "2026-10-16T09:01:08.748762+00:00"
    }
   }
  ],
@@ -18104,6 +18104,10 @@
   {
    "idempotency_key": "2026-10-16:week-image",
    "sent_at": "2026-10-15T23:00:05.429201+00:00"
+  },
+  {
+   "idempotency_key": "2026-10-16:evening",
+   "sent_at": "2026-10-16T12:00:02.665942+00:00"
   }
  ],
  "changes": []
