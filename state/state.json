@@ -1,10 +1,10 @@
 {
  "version": 1,
- "exported_at": "2026-10-20T23:00:03.629654+00:00",
+ "exported_at": "2026-10-20T12:00:01.960884+00:00",
  "provider_cache": [
   {
    "provider": "indicators",
-   "updated_at": "2026-10-20T20:01:44.134382+00:00",
+   "updated_at": "2026-10-20T09:01:45.043757+00:00",
    "payload": {
     "provider": "indicators",
     "events": [
@@ -853,18 +853,54 @@
      "kr_cpi"
     ],
     "failed_scopes": [],
-    "coverage_start": "2026-10-06",
-    "coverage_end": "2027-11-25",
-    "fetched_at": "2026-10-20T20:01:23.230540+00:00"
+    "coverage_start": "2026-10-05",
+    "coverage_end": "2027-11-24",
+    "fetched_at": "2026-10-20T09:01:24.733785+00:00"
    }
   },
   {
    "provider": "markets",
-   "updated_at": "2026-10-20T20:00:29.058324+00:00",
+   "updated_at": "2026-10-20T09:00:34.765715+00:00",
    "payload": {
     "provider": "markets",
     "events": [],
     "sessions": [
+     {
+      "market": "JP",
+      "date": "2026-09-20",
+      "status": "closed",
+      "reason": "주말",
+      "open_at": null,
+      "close_at": null,
+      "sources": [
+       "https://www.jpx.co.jp/english/corporate/about-jpx/calendar/"
+      ],
+      "confirmed": true
+     },
+     {
+      "market": "KR",
+      "date": "2026-09-20",
+      "status": "closed",
+      "reason": "주말",
+      "open_at": null,
+      "close_at": null,
+      "sources": [
+       "https://open.krx.co.kr/contents/MKD/01/0110/01100305/MKD01100305.jsp"
+      ],
+      "confirmed": true
+     },
+     {
+      "market": "US",
+      "date": "2026-09-20",
+      "status": "closed",
+      "reason": "주말",
+      "open_at": null,
+      "close_at": null,
+      "sources": [
+       "https://www.nyse.com/trade/hours-calendars"
+      ],
+      "confirmed": true
+     },
      {
       "market": "JP",
       "date": "2026-09-21",
@@ -16344,42 +16380,6 @@
        "https://www.nyse.com/trade/hours-calendars"
       ],
       "confirmed": true
-     },
-     {
-      "market": "JP",
-      "date": "2027-11-25",
-      "status": "open",
-      "reason": "정상 개장",
-      "open_at": "2027-11-25T09:00:00+09:00",
-      "close_at": "2027-11-25T15:30:00+09:00",
-      "sources": [
-       "https://www.jpx.co.jp/english/corporate/about-jpx/calendar/"
-      ],
-      "confirmed": true
-     },
-     {
-      "market": "KR",
-      "date": "2027-11-25",
-      "status": "open",
-      "reason": "정상 개장",
-      "open_at": "2027-11-25T09:00:00+09:00",
-      "close_at": "2027-11-25T15:30:00+09:00",
-      "sources": [
-       "https://open.krx.co.kr/contents/MKD/01/0110/01100305/MKD01100305.jsp"
-      ],
-      "confirmed": true
-     },
-     {
-      "market": "US",
-      "date": "2027-11-25",
-      "status": "closed",
-      "reason": "Thanksgiving Day",
-      "open_at": null,
-      "close_at": null,
-      "sources": [
-       "https://www.nyse.com/trade/hours-calendars"
-      ],
-      "confirmed": true
      }
     ],
     "sources": [
@@ -16397,14 +16397,14 @@
      "KR"
     ],
     "failed_scopes": [],
-    "coverage_start": "2026-10-06",
-    "coverage_end": "2027-11-25",
-    "fetched_at": "2026-10-20T20:00:26.542089+00:00"
+    "coverage_start": "2026-10-05",
+    "coverage_end": "2027-11-24",
+    "fetched_at": "2026-10-20T09:00:31.212633+00:00"
    }
   },
   {
    "provider": "monetary",
-   "updated_at": "2026-10-20T20:00:57.580156+00:00",
+   "updated_at": "2026-10-20T09:01:03.626001+00:00",
    "payload": {
     "provider": "monetary",
     "events": [
@@ -16734,14 +16734,14 @@
     "failed_scopes": [
      "bok"
     ],
-    "coverage_start": "2026-10-06",
-    "coverage_end": "2027-11-25",
-    "fetched_at": "2026-10-20T20:00:29.384617+00:00"
+    "coverage_start": "2026-10-05",
+    "coverage_end": "2027-11-24",
+    "fetched_at": "2026-10-20T09:00:35.073938+00:00"
    }
   },
   {
    "provider": "options",
-   "updated_at": "2026-10-20T20:01:08.481688+00:00",
+   "updated_at": "2026-10-20T09:01:13.438531+00:00",
    "payload": {
     "provider": "options",
     "events": [
@@ -17507,40 +17507,17 @@
     "failed_scopes": [
      "us_options"
     ],
-    "coverage_start": "2026-10-06",
-    "coverage_end": "2027-11-25",
-    "fetched_at": "2026-10-20T20:00:57.581484+00:00"
+    "coverage_start": "2026-10-05",
+    "coverage_end": "2027-11-24",
+    "fetched_at": "2026-10-20T09:01:03.627482+00:00"
    }
   },
   {
    "provider": "rebalances",
-   "updated_at": "2026-10-20T20:01:23.229344+00:00",
+   "updated_at": "2026-10-20T09:01:24.732345+00:00",
    "payload": {
     "provider": "rebalances",
     "events": [
-     {
-      "id": "sp500:US:2026-09-21",
-      "category": "sp500",
-      "title": "S&P 500 분기 리밸런싱 종가 반영",
-      "market": "US",
-      "trade_date": "2026-09-18",
-      "slot": "evening",
-      "phase": "implementation",
-      "occurs_at": "2026-09-18T16:00:00-04:00",
-      "details": [
-       "구분: 분기 리밸런싱. 종목 내역은 공식 공지 원문에서 확인하세요.",
-       "공식 효력일: 2026-09-21 미국 개장 전.",
-       "공식 효력일과 거래소 거래일에서 종가 반영일을 계산했습니다."
-      ],
-      "sources": [
-       "https://press.spglobal.com/2026-09-04-Bloom-Energy,-Illumina,-and-Everpure-Set-to-Join-S-P-500-Others-to-Join-S-P-100,-S-P-MidCap-400,-and-S-P-SmallCap-600",
-       "https://www.nyse.com/trade/hours-calendars"
-      ],
-      "confirmed": true,
-      "announcement_date": "2026-09-04",
-      "implementation_date": "2026-09-18",
-      "effective_date": "2026-09-21"
-     },
      {
       "id": "msci:KR:2026-12-01",
       "category": "msci",
@@ -17824,8 +17801,7 @@
      "sp500 개별 공지 2026-10-01-Vylor-Added-to-the-S-P-500-Twilio-Set-to-Join-S-P-500-Others-to-Join-S-P-MidCap: 수집 또는 해석 실패 (ValueError). 일정 없음으로 판단할 수 없습니다.",
      "sp500 개별 공지 2026-08-13-Reddit-Set-to-Join-S-P-500-and-Sun-Communities-to-Join-S-P-MidCap-400: 수집 또는 해석 실패 (ValueError). 일정 없음으로 판단할 수 없습니다.",
      "sp500 개별 공지 2026-07-31-Ferguson-Enterprises-Set-to-Join-S-P-500-and-ADI-Global-Distribution-to-Join-S-: 수집 또는 해석 실패 (ValueError). 일정 없음으로 판단할 수 없습니다.",
-     "리밸런싱 확인범위: MSCI 공개 정기 리뷰 자료와 Nasdaq/S&P 공개 최신 뉴스 및 최대 3개 추가 페이지입니다. 향후 미발표 일정·수시 편출입·특별 변경 전체의 부재는 보장하지 않습니다.",
-     "현재 확인 실패 항목 1개에 이전의 공식 확인값을 유지했습니다."
+     "리밸런싱 확인범위: MSCI 공개 정기 리뷰 자료와 Nasdaq/S&P 공개 최신 뉴스 및 최대 3개 추가 페이지입니다. 향후 미발표 일정·수시 편출입·특별 변경 전체의 부재는 보장하지 않습니다."
     ],
     "successful_scopes": [
      "msci",
@@ -17836,7 +17812,7 @@
     ],
     "coverage_start": null,
     "coverage_end": null,
-    "fetched_at": "2026-10-20T20:01:08.482991+00:00"
+    "fetched_at": "2026-10-20T09:01:13.439904+00:00"
    }
   }
  ],
@@ -18136,14 +18112,6 @@
   {
    "idempotency_key": "2026-10-20:evening",
    "sent_at": "2026-10-20T12:00:01.959560+00:00"
-  },
-  {
-   "idempotency_key": "2026-10-21:morning",
-   "sent_at": "2026-10-20T23:00:01.480794+00:00"
-  },
-  {
-   "idempotency_key": "2026-10-21:week-image",
-   "sent_at": "2026-10-20T23:00:03.628516+00:00"
   }
  ],
  "changes": []
