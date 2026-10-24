@@ -1,10 +1,10 @@
 {
  "version": 1,
- "exported_at": "2026-10-24T12:00:02.814654+00:00",
+ "exported_at": "2026-10-23T23:00:05.211961+00:00",
  "provider_cache": [
   {
    "provider": "indicators",
-   "updated_at": "2026-10-24T09:01:50.609932+00:00",
+   "updated_at": "2026-10-23T20:05:18.603239+00:00",
    "payload": {
     "provider": "indicators",
     "events": [
@@ -855,12 +855,12 @@
     "failed_scopes": [],
     "coverage_start": "2026-10-09",
     "coverage_end": "2027-11-28",
-    "fetched_at": "2026-10-24T09:01:31.210940+00:00"
+    "fetched_at": "2026-10-23T20:04:58.219017+00:00"
    }
   },
   {
    "provider": "markets",
-   "updated_at": "2026-10-24T09:00:45.286593+00:00",
+   "updated_at": "2026-10-23T20:04:12.300341+00:00",
    "payload": {
     "provider": "markets",
     "events": [],
@@ -16399,12 +16399,12 @@
     "failed_scopes": [],
     "coverage_start": "2026-10-09",
     "coverage_end": "2027-11-28",
-    "fetched_at": "2026-10-24T09:00:43.253825+00:00"
+    "fetched_at": "2026-10-23T20:04:09.328816+00:00"
    }
   },
   {
    "provider": "monetary",
-   "updated_at": "2026-10-24T09:01:12.714738+00:00",
+   "updated_at": "2026-10-23T20:04:40.355036+00:00",
    "payload": {
     "provider": "monetary",
     "events": [
@@ -16736,12 +16736,12 @@
     ],
     "coverage_start": "2026-10-09",
     "coverage_end": "2027-11-28",
-    "fetched_at": "2026-10-24T09:00:45.297113+00:00"
+    "fetched_at": "2026-10-23T20:04:12.306436+00:00"
    }
   },
   {
    "provider": "options",
-   "updated_at": "2026-10-24T09:01:19.850507+00:00",
+   "updated_at": "2026-10-23T20:04:47.311832+00:00",
    "payload": {
     "provider": "options",
     "events": [
@@ -17487,15 +17487,38 @@
     ],
     "coverage_start": "2026-10-09",
     "coverage_end": "2027-11-28",
-    "fetched_at": "2026-10-24T09:01:12.716219+00:00"
+    "fetched_at": "2026-10-23T20:04:40.355762+00:00"
    }
   },
   {
    "provider": "rebalances",
-   "updated_at": "2026-10-24T09:01:31.209998+00:00",
+   "updated_at": "2026-10-23T20:04:58.218288+00:00",
    "payload": {
     "provider": "rebalances",
     "events": [
+     {
+      "id": "sp500:US:2026-09-21",
+      "category": "sp500",
+      "title": "S&P 500 분기 리밸런싱 종가 반영",
+      "market": "US",
+      "trade_date": "2026-09-18",
+      "slot": "evening",
+      "phase": "implementation",
+      "occurs_at": "2026-09-18T16:00:00-04:00",
+      "details": [
+       "구분: 분기 리밸런싱. 종목 내역은 공식 공지 원문에서 확인하세요.",
+       "공식 효력일: 2026-09-21 미국 개장 전.",
+       "공식 효력일과 거래소 거래일에서 종가 반영일을 계산했습니다."
+      ],
+      "sources": [
+       "https://press.spglobal.com/2026-09-04-Bloom-Energy,-Illumina,-and-Everpure-Set-to-Join-S-P-500-Others-to-Join-S-P-100,-S-P-MidCap-400,-and-S-P-SmallCap-600",
+       "https://www.nyse.com/trade/hours-calendars"
+      ],
+      "confirmed": true,
+      "announcement_date": "2026-09-04",
+      "implementation_date": "2026-09-18",
+      "effective_date": "2026-09-21"
+     },
      {
       "id": "msci:KR:2026-12-01",
       "category": "msci",
@@ -17779,7 +17802,8 @@
      "sp500 개별 공지 2026-10-01-Vylor-Added-to-the-S-P-500-Twilio-Set-to-Join-S-P-500-Others-to-Join-S-P-MidCap: 수집 또는 해석 실패 (ValueError). 일정 없음으로 판단할 수 없습니다.",
      "sp500 개별 공지 2026-08-13-Reddit-Set-to-Join-S-P-500-and-Sun-Communities-to-Join-S-P-MidCap-400: 수집 또는 해석 실패 (ValueError). 일정 없음으로 판단할 수 없습니다.",
      "sp500 개별 공지 2026-07-31-Ferguson-Enterprises-Set-to-Join-S-P-500-and-ADI-Global-Distribution-to-Join-S-: 수집 또는 해석 실패 (ValueError). 일정 없음으로 판단할 수 없습니다.",
-     "리밸런싱 확인범위: MSCI 공개 정기 리뷰 자료와 Nasdaq/S&P 공개 최신 뉴스 및 최대 3개 추가 페이지입니다. 향후 미발표 일정·수시 편출입·특별 변경 전체의 부재는 보장하지 않습니다."
+     "리밸런싱 확인범위: MSCI 공개 정기 리뷰 자료와 Nasdaq/S&P 공개 최신 뉴스 및 최대 3개 추가 페이지입니다. 향후 미발표 일정·수시 편출입·특별 변경 전체의 부재는 보장하지 않습니다.",
+     "현재 확인 실패 항목 1개에 이전의 공식 확인값을 유지했습니다."
     ],
     "successful_scopes": [
      "msci",
@@ -17790,7 +17814,7 @@
     ],
     "coverage_start": null,
     "coverage_end": null,
-    "fetched_at": "2026-10-24T09:01:19.852116+00:00"
+    "fetched_at": "2026-10-23T20:04:47.312759+00:00"
    }
   }
  ],
@@ -18134,10 +18158,6 @@
   {
    "idempotency_key": "2026-10-24:week-image",
    "sent_at": "2026-10-23T23:00:05.210945+00:00"
-  },
-  {
-   "idempotency_key": "2026-10-24:evening",
-   "sent_at": "2026-10-24T12:00:02.813439+00:00"
   }
  ],
  "changes": []
