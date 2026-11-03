@@ -1,10 +1,10 @@
 {
  "version": 1,
- "exported_at": "2026-11-02T23:00:04.758312+00:00",
+ "exported_at": "2026-11-02T12:00:02.078218+00:00",
  "provider_cache": [
   {
    "provider": "indicators",
-   "updated_at": "2026-11-02T20:01:57.546096+00:00",
+   "updated_at": "2026-11-02T09:01:36.106714+00:00",
    "payload": {
     "provider": "indicators",
     "events": [
@@ -853,18 +853,54 @@
      "kr_cpi"
     ],
     "failed_scopes": [],
-    "coverage_start": "2026-10-19",
-    "coverage_end": "2027-12-08",
-    "fetched_at": "2026-11-02T20:01:38.923457+00:00"
+    "coverage_start": "2026-10-18",
+    "coverage_end": "2027-12-07",
+    "fetched_at": "2026-11-02T09:01:15.004227+00:00"
    }
   },
   {
    "provider": "markets",
-   "updated_at": "2026-11-02T20:00:39.660976+00:00",
+   "updated_at": "2026-11-02T09:00:29.745780+00:00",
    "payload": {
     "provider": "markets",
     "events": [],
     "sessions": [
+     {
+      "market": "JP",
+      "date": "2026-10-03",
+      "status": "closed",
+      "reason": "주말",
+      "open_at": null,
+      "close_at": null,
+      "sources": [
+       "https://www.jpx.co.jp/english/corporate/about-jpx/calendar/"
+      ],
+      "confirmed": true
+     },
+     {
+      "market": "KR",
+      "date": "2026-10-03",
+      "status": "closed",
+      "reason": "주말",
+      "open_at": null,
+      "close_at": null,
+      "sources": [
+       "https://open.krx.co.kr/contents/MKD/01/0110/01100305/MKD01100305.jsp"
+      ],
+      "confirmed": true
+     },
+     {
+      "market": "US",
+      "date": "2026-10-03",
+      "status": "closed",
+      "reason": "주말",
+      "open_at": null,
+      "close_at": null,
+      "sources": [
+       "https://www.nyse.com/trade/hours-calendars"
+      ],
+      "confirmed": true
+     },
      {
       "market": "JP",
       "date": "2026-10-04",
@@ -16344,42 +16380,6 @@
        "https://www.nyse.com/trade/hours-calendars"
       ],
       "confirmed": true
-     },
-     {
-      "market": "JP",
-      "date": "2027-12-08",
-      "status": "open",
-      "reason": "정상 개장",
-      "open_at": "2027-12-08T09:00:00+09:00",
-      "close_at": "2027-12-08T15:30:00+09:00",
-      "sources": [
-       "https://www.jpx.co.jp/english/corporate/about-jpx/calendar/"
-      ],
-      "confirmed": true
-     },
-     {
-      "market": "KR",
-      "date": "2027-12-08",
-      "status": "open",
-      "reason": "정상 개장",
-      "open_at": "2027-12-08T09:00:00+09:00",
-      "close_at": "2027-12-08T15:30:00+09:00",
-      "sources": [
-       "https://open.krx.co.kr/contents/MKD/01/0110/01100305/MKD01100305.jsp"
-      ],
-      "confirmed": true
-     },
-     {
-      "market": "US",
-      "date": "2027-12-08",
-      "status": "open",
-      "reason": "정상 개장",
-      "open_at": "2027-12-08T09:30:00-05:00",
-      "close_at": "2027-12-08T16:00:00-05:00",
-      "sources": [
-       "https://www.nyse.com/trade/hours-calendars"
-      ],
-      "confirmed": true
      }
     ],
     "sources": [
@@ -16397,14 +16397,14 @@
      "KR"
     ],
     "failed_scopes": [],
-    "coverage_start": "2026-10-19",
-    "coverage_end": "2027-12-08",
-    "fetched_at": "2026-11-02T20:00:37.396978+00:00"
+    "coverage_start": "2026-10-18",
+    "coverage_end": "2027-12-07",
+    "fetched_at": "2026-11-02T09:00:27.255679+00:00"
    }
   },
   {
    "provider": "monetary",
-   "updated_at": "2026-11-02T20:01:10.978682+00:00",
+   "updated_at": "2026-11-02T09:00:56.801190+00:00",
    "payload": {
     "provider": "monetary",
     "events": [
@@ -16709,27 +16709,6 @@
       "announcement_date": null,
       "implementation_date": null,
       "effective_date": null
-     },
-     {
-      "id": "fomc:2027-12-08",
-      "category": "fomc",
-      "title": "FOMC 금리 결정",
-      "market": "US",
-      "trade_date": "2027-12-08",
-      "slot": "evening",
-      "phase": "rate_decision",
-      "occurs_at": null,
-      "details": [
-       "미국 결정일 2027-12-08 · 정례회의 마지막 날",
-       "회의일 확인 완료 · 해당 월 공식 발표 시각은 확인하지 못했습니다"
-      ],
-      "sources": [
-       "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
-      ],
-      "confirmed": true,
-      "announcement_date": null,
-      "implementation_date": null,
-      "effective_date": null
      }
     ],
     "sessions": [],
@@ -16746,7 +16725,6 @@
      "FOMC 2027-07-28: 공식 발표 시각 미확인",
      "FOMC 2027-09-15: 공식 발표 시각 미확인",
      "FOMC 2027-10-27: 공식 발표 시각 미확인",
-     "FOMC 2027-12-08: 공식 발표 시각 미확인",
      "한국은행 2027년 수집 실패: ValueError: 한국은행 2027년 일정 제목을 확인할 수 없습니다"
     ],
     "successful_scopes": [
@@ -16756,14 +16734,14 @@
     "failed_scopes": [
      "bok"
     ],
-    "coverage_start": "2026-10-19",
-    "coverage_end": "2027-12-08",
-    "fetched_at": "2026-11-02T20:00:39.671393+00:00"
+    "coverage_start": "2026-10-18",
+    "coverage_end": "2027-12-07",
+    "fetched_at": "2026-11-02T09:00:29.756059+00:00"
    }
   },
   {
    "provider": "options",
-   "updated_at": "2026-11-02T20:01:17.493973+00:00",
+   "updated_at": "2026-11-02T09:01:03.454877+00:00",
    "payload": {
     "provider": "options",
     "events": [
@@ -17507,14 +17485,14 @@
     "failed_scopes": [
      "us_options"
     ],
-    "coverage_start": "2026-10-19",
-    "coverage_end": "2027-12-08",
-    "fetched_at": "2026-11-02T20:01:10.980103+00:00"
+    "coverage_start": "2026-10-18",
+    "coverage_end": "2027-12-07",
+    "fetched_at": "2026-11-02T09:00:56.802281+00:00"
    }
   },
   {
    "provider": "rebalances",
-   "updated_at": "2026-11-02T20:01:38.922331+00:00",
+   "updated_at": "2026-11-02T09:01:15.002905+00:00",
    "payload": {
     "provider": "rebalances",
     "events": [
@@ -17878,7 +17856,7 @@
     ],
     "coverage_start": null,
     "coverage_end": null,
-    "fetched_at": "2026-11-02T20:01:17.495304+00:00"
+    "fetched_at": "2026-11-02T09:01:03.456176+00:00"
    }
   }
  ],
@@ -18330,14 +18308,6 @@
   {
    "idempotency_key": "2026-11-02:evening",
    "sent_at": "2026-11-02T12:00:02.076871+00:00"
-  },
-  {
-   "idempotency_key": "2026-11-03:morning",
-   "sent_at": "2026-11-02T23:00:02.053496+00:00"
-  },
-  {
-   "idempotency_key": "2026-11-03:week-image",
-   "sent_at": "2026-11-02T23:00:04.757083+00:00"
   }
  ],
  "changes": []
