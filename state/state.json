@@ -1,10 +1,10 @@
 {
  "version": 1,
- "exported_at": "2026-11-07T23:00:04.648253+00:00",
+ "exported_at": "2026-11-08T12:00:03.208902+00:00",
  "provider_cache": [
   {
    "provider": "indicators",
-   "updated_at": "2026-11-07T20:01:40.403893+00:00",
+   "updated_at": "2026-11-08T09:01:46.253038+00:00",
    "payload": {
     "provider": "indicators",
     "events": [
@@ -875,12 +875,12 @@
     "failed_scopes": [],
     "coverage_start": "2026-10-24",
     "coverage_end": "2027-12-13",
-    "fetched_at": "2026-11-07T20:01:17.186091+00:00"
+    "fetched_at": "2026-11-08T09:01:26.003337+00:00"
    }
   },
   {
    "provider": "markets",
-   "updated_at": "2026-11-07T20:00:29.388520+00:00",
+   "updated_at": "2026-11-08T09:00:32.947754+00:00",
    "payload": {
     "provider": "markets",
     "events": [],
@@ -16419,12 +16419,12 @@
     "failed_scopes": [],
     "coverage_start": "2026-10-24",
     "coverage_end": "2027-12-13",
-    "fetched_at": "2026-11-07T20:00:27.111961+00:00"
+    "fetched_at": "2026-11-08T09:00:30.249300+00:00"
    }
   },
   {
    "provider": "monetary",
-   "updated_at": "2026-11-07T20:00:59.668115+00:00",
+   "updated_at": "2026-11-08T09:01:02.880904+00:00",
    "payload": {
     "provider": "monetary",
     "events": [
@@ -16779,12 +16779,12 @@
     ],
     "coverage_start": "2026-10-24",
     "coverage_end": "2027-12-13",
-    "fetched_at": "2026-11-07T20:00:29.399554+00:00"
+    "fetched_at": "2026-11-08T09:00:32.956665+00:00"
    }
   },
   {
    "provider": "options",
-   "updated_at": "2026-11-07T20:01:05.812135+00:00",
+   "updated_at": "2026-11-08T09:01:10.125131+00:00",
    "payload": {
     "provider": "options",
     "events": [
@@ -17552,12 +17552,12 @@
     ],
     "coverage_start": "2026-10-24",
     "coverage_end": "2027-12-13",
-    "fetched_at": "2026-11-07T20:00:59.669864+00:00"
+    "fetched_at": "2026-11-08T09:01:02.882215+00:00"
    }
   },
   {
    "provider": "rebalances",
-   "updated_at": "2026-11-07T20:01:17.185034+00:00",
+   "updated_at": "2026-11-08T09:01:26.002104+00:00",
    "payload": {
     "provider": "rebalances",
     "events": [
@@ -17921,7 +17921,7 @@
     ],
     "coverage_start": null,
     "coverage_end": null,
-    "fetched_at": "2026-11-07T20:01:05.813529+00:00"
+    "fetched_at": "2026-11-08T09:01:10.126251+00:00"
    }
   }
  ],
@@ -18441,6 +18441,10 @@
   {
    "idempotency_key": "2026-11-08:week-image",
    "sent_at": "2026-11-07T23:00:04.646885+00:00"
+  },
+  {
+   "idempotency_key": "2026-11-08:evening",
+   "sent_at": "2026-11-08T12:00:03.207710+00:00"
   }
  ],
  "changes": []
