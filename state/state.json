@@ -1,10 +1,10 @@
 {
  "version": 1,
- "exported_at": "2026-11-08T23:00:03.600525+00:00",
+ "exported_at": "2026-11-08T12:00:03.208902+00:00",
  "provider_cache": [
   {
    "provider": "indicators",
-   "updated_at": "2026-11-08T20:01:40.212182+00:00",
+   "updated_at": "2026-11-08T09:01:46.253038+00:00",
    "payload": {
     "provider": "indicators",
     "events": [
@@ -873,18 +873,54 @@
      "kr_cpi"
     ],
     "failed_scopes": [],
-    "coverage_start": "2026-10-25",
-    "coverage_end": "2027-12-14",
-    "fetched_at": "2026-11-08T20:01:19.871023+00:00"
+    "coverage_start": "2026-10-24",
+    "coverage_end": "2027-12-13",
+    "fetched_at": "2026-11-08T09:01:26.003337+00:00"
    }
   },
   {
    "provider": "markets",
-   "updated_at": "2026-11-08T20:00:28.770780+00:00",
+   "updated_at": "2026-11-08T09:00:32.947754+00:00",
    "payload": {
     "provider": "markets",
     "events": [],
     "sessions": [
+     {
+      "market": "JP",
+      "date": "2026-10-09",
+      "status": "open",
+      "reason": "정상 개장",
+      "open_at": "2026-10-09T09:00:00+09:00",
+      "close_at": "2026-10-09T15:30:00+09:00",
+      "sources": [
+       "https://www.jpx.co.jp/english/corporate/about-jpx/calendar/"
+      ],
+      "confirmed": true
+     },
+     {
+      "market": "KR",
+      "date": "2026-10-09",
+      "status": "closed",
+      "reason": "한글날",
+      "open_at": null,
+      "close_at": null,
+      "sources": [
+       "https://open.krx.co.kr/contents/MKD/01/0110/01100305/MKD01100305.jsp"
+      ],
+      "confirmed": true
+     },
+     {
+      "market": "US",
+      "date": "2026-10-09",
+      "status": "open",
+      "reason": "정상 개장",
+      "open_at": "2026-10-09T09:30:00-04:00",
+      "close_at": "2026-10-09T16:00:00-04:00",
+      "sources": [
+       "https://www.nyse.com/trade/hours-calendars"
+      ],
+      "confirmed": true
+     },
      {
       "market": "JP",
       "date": "2026-10-10",
@@ -16364,42 +16400,6 @@
        "https://www.nyse.com/trade/hours-calendars"
       ],
       "confirmed": true
-     },
-     {
-      "market": "JP",
-      "date": "2027-12-14",
-      "status": "open",
-      "reason": "정상 개장",
-      "open_at": "2027-12-14T09:00:00+09:00",
-      "close_at": "2027-12-14T15:30:00+09:00",
-      "sources": [
-       "https://www.jpx.co.jp/english/corporate/about-jpx/calendar/"
-      ],
-      "confirmed": true
-     },
-     {
-      "market": "KR",
-      "date": "2027-12-14",
-      "status": "open",
-      "reason": "정상 개장",
-      "open_at": "2027-12-14T09:00:00+09:00",
-      "close_at": "2027-12-14T15:30:00+09:00",
-      "sources": [
-       "https://open.krx.co.kr/contents/MKD/01/0110/01100305/MKD01100305.jsp"
-      ],
-      "confirmed": true
-     },
-     {
-      "market": "US",
-      "date": "2027-12-14",
-      "status": "open",
-      "reason": "정상 개장",
-      "open_at": "2027-12-14T09:30:00-05:00",
-      "close_at": "2027-12-14T16:00:00-05:00",
-      "sources": [
-       "https://www.nyse.com/trade/hours-calendars"
-      ],
-      "confirmed": true
      }
     ],
     "sources": [
@@ -16417,14 +16417,14 @@
      "KR"
     ],
     "failed_scopes": [],
-    "coverage_start": "2026-10-25",
-    "coverage_end": "2027-12-14",
-    "fetched_at": "2026-11-08T20:00:26.323815+00:00"
+    "coverage_start": "2026-10-24",
+    "coverage_end": "2027-12-13",
+    "fetched_at": "2026-11-08T09:00:30.249300+00:00"
    }
   },
   {
    "provider": "monetary",
-   "updated_at": "2026-11-08T20:00:59.854377+00:00",
+   "updated_at": "2026-11-08T09:01:02.880904+00:00",
    "payload": {
     "provider": "monetary",
     "events": [
@@ -16777,14 +16777,14 @@
     "failed_scopes": [
      "bok"
     ],
-    "coverage_start": "2026-10-25",
-    "coverage_end": "2027-12-14",
-    "fetched_at": "2026-11-08T20:00:29.028902+00:00"
+    "coverage_start": "2026-10-24",
+    "coverage_end": "2027-12-13",
+    "fetched_at": "2026-11-08T09:00:32.956665+00:00"
    }
   },
   {
    "provider": "options",
-   "updated_at": "2026-11-08T20:01:07.368854+00:00",
+   "updated_at": "2026-11-08T09:01:10.125131+00:00",
    "payload": {
     "provider": "options",
     "events": [
@@ -17550,14 +17550,14 @@
     "failed_scopes": [
      "us_options"
     ],
-    "coverage_start": "2026-10-25",
-    "coverage_end": "2027-12-14",
-    "fetched_at": "2026-11-08T20:00:59.855858+00:00"
+    "coverage_start": "2026-10-24",
+    "coverage_end": "2027-12-13",
+    "fetched_at": "2026-11-08T09:01:02.882215+00:00"
    }
   },
   {
    "provider": "rebalances",
-   "updated_at": "2026-11-08T20:01:19.869214+00:00",
+   "updated_at": "2026-11-08T09:01:26.002104+00:00",
    "payload": {
     "provider": "rebalances",
     "events": [
@@ -17921,7 +17921,7 @@
     ],
     "coverage_start": null,
     "coverage_end": null,
-    "fetched_at": "2026-11-08T20:01:07.370578+00:00"
+    "fetched_at": "2026-11-08T09:01:10.126251+00:00"
    }
   }
  ],
@@ -18445,14 +18445,6 @@
   {
    "idempotency_key": "2026-11-08:evening",
    "sent_at": "2026-11-08T12:00:03.207710+00:00"
-  },
-  {
-   "idempotency_key": "2026-11-09:morning",
-   "sent_at": "2026-11-08T23:00:01.736917+00:00"
-  },
-  {
-   "idempotency_key": "2026-11-09:week-image",
-   "sent_at": "2026-11-08T23:00:03.598678+00:00"
   }
  ],
  "changes": []
