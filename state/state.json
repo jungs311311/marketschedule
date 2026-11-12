@@ -1,10 +1,10 @@
 {
  "version": 1,
- "exported_at": "2026-11-11T23:00:04.423722+00:00",
+ "exported_at": "2026-11-11T12:00:01.706516+00:00",
  "provider_cache": [
   {
    "provider": "indicators",
-   "updated_at": "2026-11-11T20:02:05.565796+00:00",
+   "updated_at": "2026-11-11T09:01:41.970004+00:00",
    "payload": {
     "provider": "indicators",
     "events": [
@@ -852,26 +852,6 @@
       "announcement_date": null,
       "implementation_date": null,
       "effective_date": null
-     },
-     {
-      "id": "boj:2027-12-17",
-      "category": "boj",
-      "title": "일본은행(BOJ) 금리 결정",
-      "market": "JP",
-      "trade_date": "2027-12-17",
-      "slot": "morning",
-      "phase": "rate_decision",
-      "occurs_at": null,
-      "details": [
-       "금융정책결정회의 마지막 날 · 결정문은 회의 종료 직후 발표(시각 고정 아님)"
-      ],
-      "sources": [
-       "https://www.boj.or.jp/en/mopo/mpmsche_minu/index.htm"
-      ],
-      "confirmed": true,
-      "announcement_date": null,
-      "implementation_date": null,
-      "effective_date": null
      }
     ],
     "sessions": [],
@@ -893,18 +873,54 @@
      "kr_cpi"
     ],
     "failed_scopes": [],
-    "coverage_start": "2026-10-28",
-    "coverage_end": "2027-12-17",
-    "fetched_at": "2026-11-11T20:01:33.830182+00:00"
+    "coverage_start": "2026-10-27",
+    "coverage_end": "2027-12-16",
+    "fetched_at": "2026-11-11T09:01:19.194892+00:00"
    }
   },
   {
    "provider": "markets",
-   "updated_at": "2026-11-11T20:00:37.305700+00:00",
+   "updated_at": "2026-11-11T09:00:29.765581+00:00",
    "payload": {
     "provider": "markets",
     "events": [],
     "sessions": [
+     {
+      "market": "JP",
+      "date": "2026-10-12",
+      "status": "closed",
+      "reason": "Sports Day",
+      "open_at": null,
+      "close_at": null,
+      "sources": [
+       "https://www.jpx.co.jp/english/corporate/about-jpx/calendar/"
+      ],
+      "confirmed": true
+     },
+     {
+      "market": "KR",
+      "date": "2026-10-12",
+      "status": "open",
+      "reason": "정상 개장",
+      "open_at": "2026-10-12T09:00:00+09:00",
+      "close_at": "2026-10-12T15:30:00+09:00",
+      "sources": [
+       "https://open.krx.co.kr/contents/MKD/01/0110/01100305/MKD01100305.jsp"
+      ],
+      "confirmed": true
+     },
+     {
+      "market": "US",
+      "date": "2026-10-12",
+      "status": "open",
+      "reason": "정상 개장",
+      "open_at": "2026-10-12T09:30:00-04:00",
+      "close_at": "2026-10-12T16:00:00-04:00",
+      "sources": [
+       "https://www.nyse.com/trade/hours-calendars"
+      ],
+      "confirmed": true
+     },
      {
       "market": "JP",
       "date": "2026-10-13",
@@ -16384,42 +16400,6 @@
        "https://www.nyse.com/trade/hours-calendars"
       ],
       "confirmed": true
-     },
-     {
-      "market": "JP",
-      "date": "2027-12-17",
-      "status": "open",
-      "reason": "정상 개장",
-      "open_at": "2027-12-17T09:00:00+09:00",
-      "close_at": "2027-12-17T15:30:00+09:00",
-      "sources": [
-       "https://www.jpx.co.jp/english/corporate/about-jpx/calendar/"
-      ],
-      "confirmed": true
-     },
-     {
-      "market": "KR",
-      "date": "2027-12-17",
-      "status": "open",
-      "reason": "정상 개장",
-      "open_at": "2027-12-17T09:00:00+09:00",
-      "close_at": "2027-12-17T15:30:00+09:00",
-      "sources": [
-       "https://open.krx.co.kr/contents/MKD/01/0110/01100305/MKD01100305.jsp"
-      ],
-      "confirmed": true
-     },
-     {
-      "market": "US",
-      "date": "2027-12-17",
-      "status": "open",
-      "reason": "정상 개장",
-      "open_at": "2027-12-17T09:30:00-05:00",
-      "close_at": "2027-12-17T16:00:00-05:00",
-      "sources": [
-       "https://www.nyse.com/trade/hours-calendars"
-      ],
-      "confirmed": true
      }
     ],
     "sources": [
@@ -16437,14 +16417,14 @@
      "KR"
     ],
     "failed_scopes": [],
-    "coverage_start": "2026-10-28",
-    "coverage_end": "2027-12-17",
-    "fetched_at": "2026-11-11T20:00:33.632593+00:00"
+    "coverage_start": "2026-10-27",
+    "coverage_end": "2027-12-16",
+    "fetched_at": "2026-11-11T09:00:25.510624+00:00"
    }
   },
   {
    "provider": "monetary",
-   "updated_at": "2026-11-11T20:01:09.579662+00:00",
+   "updated_at": "2026-11-11T09:00:59.027224+00:00",
    "payload": {
     "provider": "monetary",
     "events": [
@@ -16797,14 +16777,14 @@
     "failed_scopes": [
      "bok"
     ],
-    "coverage_start": "2026-10-28",
-    "coverage_end": "2027-12-17",
-    "fetched_at": "2026-11-11T20:00:37.315616+00:00"
+    "coverage_start": "2026-10-27",
+    "coverage_end": "2027-12-16",
+    "fetched_at": "2026-11-11T09:00:29.776425+00:00"
    }
   },
   {
    "provider": "options",
-   "updated_at": "2026-11-11T20:01:18.981788+00:00",
+   "updated_at": "2026-11-11T09:01:08.335777+00:00",
    "payload": {
     "provider": "options",
     "events": [
@@ -17548,35 +17528,6 @@
       "announcement_date": null,
       "implementation_date": null,
       "effective_date": null
-     },
-     {
-      "id": "us_options:2027-12-17",
-      "category": "us_options",
-      "title": "미장 월간 옵션 만기",
-      "market": "US",
-      "trade_date": "2027-12-17",
-      "slot": "evening",
-      "phase": "expiration",
-      "occurs_at": "2027-12-17T09:30:00-05:00",
-      "details": [
-       "[지수 AM] SPX·NDX 표준 월물: 구성종목 개장가격 기준 결제 (2027-12-17 23:30 KST)",
-       "[개별주식] 표준 월물: 장 마감 종가 기준 자동행사 판단 (2027-12-18 06:00 KST)",
-       "SPX·NDX AM의 결제시점과 최종거래시점은 다름: 상품별 최신 명세 확인",
-       "SPXW·NDXP 같은 PM 결제 지수옵션과 위클리·일일 옵션은 기본 알림에서 제외",
-       "공식 연간 만기 캘린더 또는 거래일 확인 실패 · 기본 발송 제외"
-      ],
-      "sources": [
-       "https://www.optionseducation.org/optionsoverview/options-basics",
-       "https://www.optionseducation.org/referencelibrary/faq/options-exercise",
-       "https://www.optionseducation.org/advancedconcepts/equity-vs-index-options",
-       "https://www.cboe.com/tradable-products/sp-500/spx-options/spx-specifications",
-       "https://www.nasdaq.com/NDX_NDXP_Factsheet",
-       "https://cdn.cboe.com/resources/options/Cboe2027OPTIONSCalendar.pdf"
-      ],
-      "confirmed": false,
-      "announcement_date": null,
-      "implementation_date": null,
-      "effective_date": null
      }
     ],
     "sessions": [],
@@ -17595,14 +17546,14 @@
     "failed_scopes": [
      "us_options"
     ],
-    "coverage_start": "2026-10-28",
-    "coverage_end": "2027-12-17",
-    "fetched_at": "2026-11-11T20:01:09.580798+00:00"
+    "coverage_start": "2026-10-27",
+    "coverage_end": "2027-12-16",
+    "fetched_at": "2026-11-11T09:00:59.029047+00:00"
    }
   },
   {
    "provider": "rebalances",
-   "updated_at": "2026-11-11T20:01:33.828920+00:00",
+   "updated_at": "2026-11-11T09:01:19.193902+00:00",
    "payload": {
     "provider": "rebalances",
     "events": [
@@ -17918,26 +17869,6 @@
       "announcement_date": "2027-11-11",
       "implementation_date": "2027-11-30",
       "effective_date": "2027-12-01"
-     },
-     {
-      "id": "nasdaq:US:2027-12-20",
-      "category": "nasdaq",
-      "title": "Nasdaq-100 분기 리밸런싱 예정 (미확정)",
-      "market": "US",
-      "trade_date": "2027-12-17",
-      "slot": "evening",
-      "phase": "implementation",
-      "occurs_at": null,
-      "details": [
-       "정기 규칙으로 계산한 예정일입니다. 해당 회차 공식 공지 확인 전에는 기본 알림에서 제외됩니다."
-      ],
-      "sources": [
-       "https://indexes.nasdaq.com/docs/Methodology_NDX.pdf"
-      ],
-      "confirmed": false,
-      "announcement_date": null,
-      "implementation_date": "2027-12-17",
-      "effective_date": "2027-12-20"
      }
     ],
     "sessions": [],
@@ -17986,7 +17917,7 @@
     ],
     "coverage_start": null,
     "coverage_end": null,
-    "fetched_at": "2026-11-11T20:01:18.983448+00:00"
+    "fetched_at": "2026-11-11T09:01:08.337745+00:00"
    }
   }
  ],
@@ -18546,14 +18477,6 @@
   {
    "idempotency_key": "2026-11-11:evening",
    "sent_at": "2026-11-11T12:00:01.704974+00:00"
-  },
-  {
-   "idempotency_key": "2026-11-12:morning",
-   "sent_at": "2026-11-11T23:00:01.956455+00:00"
-  },
-  {
-   "idempotency_key": "2026-11-12:week-image",
-   "sent_at": "2026-11-11T23:00:04.422398+00:00"
   }
  ],
  "changes": []
