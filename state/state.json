@@ -1,10 +1,10 @@
 {
  "version": 1,
- "exported_at": "2026-11-11T23:00:04.423722+00:00",
+ "exported_at": "2026-11-12T12:00:02.137996+00:00",
  "provider_cache": [
   {
    "provider": "indicators",
-   "updated_at": "2026-11-11T20:02:05.565796+00:00",
+   "updated_at": "2026-11-12T09:01:41.148285+00:00",
    "payload": {
     "provider": "indicators",
     "events": [
@@ -895,12 +895,12 @@
     "failed_scopes": [],
     "coverage_start": "2026-10-28",
     "coverage_end": "2027-12-17",
-    "fetched_at": "2026-11-11T20:01:33.830182+00:00"
+    "fetched_at": "2026-11-12T09:01:18.528937+00:00"
    }
   },
   {
    "provider": "markets",
-   "updated_at": "2026-11-11T20:00:37.305700+00:00",
+   "updated_at": "2026-11-12T09:00:28.579472+00:00",
    "payload": {
     "provider": "markets",
     "events": [],
@@ -16439,12 +16439,12 @@
     "failed_scopes": [],
     "coverage_start": "2026-10-28",
     "coverage_end": "2027-12-17",
-    "fetched_at": "2026-11-11T20:00:33.632593+00:00"
+    "fetched_at": "2026-11-12T09:00:25.834492+00:00"
    }
   },
   {
    "provider": "monetary",
-   "updated_at": "2026-11-11T20:01:09.579662+00:00",
+   "updated_at": "2026-11-12T09:00:57.631493+00:00",
    "payload": {
     "provider": "monetary",
     "events": [
@@ -16799,12 +16799,12 @@
     ],
     "coverage_start": "2026-10-28",
     "coverage_end": "2027-12-17",
-    "fetched_at": "2026-11-11T20:00:37.315616+00:00"
+    "fetched_at": "2026-11-12T09:00:28.603458+00:00"
    }
   },
   {
    "provider": "options",
-   "updated_at": "2026-11-11T20:01:18.981788+00:00",
+   "updated_at": "2026-11-12T09:01:05.634142+00:00",
    "payload": {
     "provider": "options",
     "events": [
@@ -17597,12 +17597,12 @@
     ],
     "coverage_start": "2026-10-28",
     "coverage_end": "2027-12-17",
-    "fetched_at": "2026-11-11T20:01:09.580798+00:00"
+    "fetched_at": "2026-11-12T09:00:57.635266+00:00"
    }
   },
   {
    "provider": "rebalances",
-   "updated_at": "2026-11-11T20:01:33.828920+00:00",
+   "updated_at": "2026-11-12T09:01:18.527550+00:00",
    "payload": {
     "provider": "rebalances",
     "events": [
@@ -17630,46 +17630,44 @@
       "effective_date": "2026-09-21"
      },
      {
-      "id": "msci:KR:2026-12-01",
+      "id": "msci:KR:2026-11-30",
       "category": "msci",
-      "title": "MSCI 정기 리뷰 반영 예정 (미확정)",
+      "title": "MSCI 정기 리뷰 종가 반영",
       "market": "KR",
       "trade_date": "2026-11-30",
       "slot": "morning",
       "phase": "implementation",
-      "occurs_at": null,
+      "occurs_at": "2026-11-30T15:30:00+09:00",
       "details": [
-       "공식 발표일과 효력일은 확인됨. 종가 반영일은 개별 리뷰 발표문 확인 전 추정값입니다.",
-       "리뷰: November 2026 / 효력일: 2026-12-01"
+       "MSCI 공식 발표문의 종가 반영일입니다. 개별 종목 편출입 내역은 원문에서 확인하세요."
       ],
       "sources": [
-       "https://www.msci.com/eqb/pressreleases/archive/ir_dates.pdf"
+       "https://www.msci.com/eqb/pressreleases/archive/MSCI_Nov26_QIRPR.pdf"
       ],
-      "confirmed": false,
+      "confirmed": true,
       "announcement_date": "2026-11-11",
       "implementation_date": "2026-11-30",
-      "effective_date": "2026-12-01"
+      "effective_date": null
      },
      {
-      "id": "msci:US:2026-12-01",
+      "id": "msci:US:2026-11-30",
       "category": "msci",
-      "title": "MSCI 정기 리뷰 반영 예정 (미확정)",
+      "title": "MSCI 정기 리뷰 종가 반영",
       "market": "US",
       "trade_date": "2026-11-30",
       "slot": "evening",
       "phase": "implementation",
-      "occurs_at": null,
+      "occurs_at": "2026-11-30T16:00:00-05:00",
       "details": [
-       "공식 발표일과 효력일은 확인됨. 종가 반영일은 개별 리뷰 발표문 확인 전 추정값입니다.",
-       "리뷰: November 2026 / 효력일: 2026-12-01"
+       "MSCI 공식 발표문의 종가 반영일입니다. 개별 종목 편출입 내역은 원문에서 확인하세요."
       ],
       "sources": [
-       "https://www.msci.com/eqb/pressreleases/archive/ir_dates.pdf"
+       "https://www.msci.com/eqb/pressreleases/archive/MSCI_Nov26_QIRPR.pdf"
       ],
-      "confirmed": false,
+      "confirmed": true,
       "announcement_date": "2026-11-11",
       "implementation_date": "2026-11-30",
-      "effective_date": "2026-12-01"
+      "effective_date": null
      },
      {
       "id": "nasdaq:US:2026-12-21",
@@ -17944,6 +17942,7 @@
     "sources": [
      "https://www.msci.com/eqb/pressreleases/archive/ir_dates.pdf",
      "https://www.msci.com/eqb/gimi/stdindex/index_review.html",
+     "https://www.msci.com/eqb/pressreleases/archive/MSCI_Nov26_QIRPR.pdf",
      "https://www.msci.com/eqb/pressreleases/archive/MSCI_Aug26_QIRPR.pdf",
      "https://www.msci.com/eqb/pressreleases/archive/MSCI_May26_QIRPR.pdf",
      "https://www.msci.com/eqb/pressreleases/archive/MSCI_Feb26_QIRPR.pdf",
@@ -17973,7 +17972,6 @@
      "nasdaq 개별 공지 pdf: 수집 또는 해석 실패 (ValueError). 일정 없음으로 판단할 수 없습니다.",
      "sp500 개별 공지 2026-10-30-Okta-Set-to-Join-S-P-500-Others-to-Join-S-P-MidCap-400-and-S-P-SmallCap-600: 수집 또는 해석 실패 (ValueError). 일정 없음으로 판단할 수 없습니다.",
      "sp500 개별 공지 2026-10-01-Vylor-Added-to-the-S-P-500-Twilio-Set-to-Join-S-P-500-Others-to-Join-S-P-MidCap: 수집 또는 해석 실패 (ValueError). 일정 없음으로 판단할 수 없습니다.",
-     "sp500 개별 공지 2026-08-13-Reddit-Set-to-Join-S-P-500-and-Sun-Communities-to-Join-S-P-MidCap-400: 수집 또는 해석 실패 (ValueError). 일정 없음으로 판단할 수 없습니다.",
      "리밸런싱 확인범위: MSCI 공개 정기 리뷰 자료와 Nasdaq/S&P 공개 최신 뉴스 및 최대 3개 추가 페이지입니다. 향후 미발표 일정·수시 편출입·특별 변경 전체의 부재는 보장하지 않습니다.",
      "현재 확인 실패 항목 1개에 이전의 공식 확인값을 유지했습니다."
     ],
@@ -17986,7 +17984,7 @@
     ],
     "coverage_start": null,
     "coverage_end": null,
-    "fetched_at": "2026-11-11T20:01:18.983448+00:00"
+    "fetched_at": "2026-11-12T09:01:05.638002+00:00"
    }
   }
  ],
@@ -18554,6 +18552,10 @@
   {
    "idempotency_key": "2026-11-12:week-image",
    "sent_at": "2026-11-11T23:00:04.422398+00:00"
+  },
+  {
+   "idempotency_key": "2026-11-12:evening",
+   "sent_at": "2026-11-12T12:00:02.136798+00:00"
   }
  ],
  "changes": []
