@@ -1,34 +1,13 @@
 {
  "version": 1,
- "exported_at": "2026-11-14T12:00:02.830548+00:00",
+ "exported_at": "2026-11-14T23:00:04.460022+00:00",
  "provider_cache": [
   {
    "provider": "indicators",
-   "updated_at": "2026-11-14T09:01:32.809747+00:00",
+   "updated_at": "2026-11-14T20:02:01.219561+00:00",
    "payload": {
     "provider": "indicators",
     "events": [
-     {
-      "id": "boj:2026-10-30",
-      "category": "boj",
-      "title": "일본은행(BOJ) 금리 결정",
-      "market": "JP",
-      "trade_date": "2026-10-30",
-      "slot": "morning",
-      "phase": "rate_decision",
-      "occurs_at": null,
-      "details": [
-       "금융정책결정회의 마지막 날 · 결정문은 회의 종료 직후 발표(시각 고정 아님)",
-       "경제·물가 전망보고서 함께 발표되는 회의"
-      ],
-      "sources": [
-       "https://www.boj.or.jp/en/mopo/mpmsche_minu/index.htm"
-      ],
-      "confirmed": true,
-      "announcement_date": null,
-      "implementation_date": null,
-      "effective_date": null
-     },
      {
       "id": "kr_cpi:2026-11-03",
       "category": "kr_cpi",
@@ -893,54 +872,18 @@
      "kr_cpi"
     ],
     "failed_scopes": [],
-    "coverage_start": "2026-10-30",
-    "coverage_end": "2027-12-19",
-    "fetched_at": "2026-11-14T09:01:13.939330+00:00"
+    "coverage_start": "2026-10-31",
+    "coverage_end": "2027-12-20",
+    "fetched_at": "2026-11-14T20:01:29.245218+00:00"
    }
   },
   {
    "provider": "markets",
-   "updated_at": "2026-11-14T09:00:26.385734+00:00",
+   "updated_at": "2026-11-14T20:00:36.481004+00:00",
    "payload": {
     "provider": "markets",
     "events": [],
     "sessions": [
-     {
-      "market": "JP",
-      "date": "2026-10-15",
-      "status": "open",
-      "reason": "정상 개장",
-      "open_at": "2026-10-15T09:00:00+09:00",
-      "close_at": "2026-10-15T15:30:00+09:00",
-      "sources": [
-       "https://www.jpx.co.jp/english/corporate/about-jpx/calendar/"
-      ],
-      "confirmed": true
-     },
-     {
-      "market": "KR",
-      "date": "2026-10-15",
-      "status": "open",
-      "reason": "정상 개장",
-      "open_at": "2026-10-15T09:00:00+09:00",
-      "close_at": "2026-10-15T15:30:00+09:00",
-      "sources": [
-       "https://open.krx.co.kr/contents/MKD/01/0110/01100305/MKD01100305.jsp"
-      ],
-      "confirmed": true
-     },
-     {
-      "market": "US",
-      "date": "2026-10-15",
-      "status": "open",
-      "reason": "정상 개장",
-      "open_at": "2026-10-15T09:30:00-04:00",
-      "close_at": "2026-10-15T16:00:00-04:00",
-      "sources": [
-       "https://www.nyse.com/trade/hours-calendars"
-      ],
-      "confirmed": true
-     },
      {
       "market": "JP",
       "date": "2026-10-16",
@@ -16420,6 +16363,42 @@
        "https://www.nyse.com/trade/hours-calendars"
       ],
       "confirmed": true
+     },
+     {
+      "market": "JP",
+      "date": "2027-12-20",
+      "status": "open",
+      "reason": "정상 개장",
+      "open_at": "2027-12-20T09:00:00+09:00",
+      "close_at": "2027-12-20T15:30:00+09:00",
+      "sources": [
+       "https://www.jpx.co.jp/english/corporate/about-jpx/calendar/"
+      ],
+      "confirmed": true
+     },
+     {
+      "market": "KR",
+      "date": "2027-12-20",
+      "status": "open",
+      "reason": "정상 개장",
+      "open_at": "2027-12-20T09:00:00+09:00",
+      "close_at": "2027-12-20T15:30:00+09:00",
+      "sources": [
+       "https://open.krx.co.kr/contents/MKD/01/0110/01100305/MKD01100305.jsp"
+      ],
+      "confirmed": true
+     },
+     {
+      "market": "US",
+      "date": "2027-12-20",
+      "status": "open",
+      "reason": "정상 개장",
+      "open_at": "2027-12-20T09:30:00-05:00",
+      "close_at": "2027-12-20T16:00:00-05:00",
+      "sources": [
+       "https://www.nyse.com/trade/hours-calendars"
+      ],
+      "confirmed": true
      }
     ],
     "sources": [
@@ -16437,14 +16416,14 @@
      "KR"
     ],
     "failed_scopes": [],
-    "coverage_start": "2026-10-30",
-    "coverage_end": "2027-12-19",
-    "fetched_at": "2026-11-14T09:00:24.203346+00:00"
+    "coverage_start": "2026-10-31",
+    "coverage_end": "2027-12-20",
+    "fetched_at": "2026-11-14T20:00:33.836311+00:00"
    }
   },
   {
    "provider": "monetary",
-   "updated_at": "2026-11-14T09:00:56.079078+00:00",
+   "updated_at": "2026-11-14T20:01:07.836451+00:00",
    "payload": {
     "provider": "monetary",
     "events": [
@@ -16774,14 +16753,14 @@
     "failed_scopes": [
      "bok"
     ],
-    "coverage_start": "2026-10-30",
-    "coverage_end": "2027-12-19",
-    "fetched_at": "2026-11-14T09:00:26.395963+00:00"
+    "coverage_start": "2026-10-31",
+    "coverage_end": "2027-12-20",
+    "fetched_at": "2026-11-14T20:00:36.490939+00:00"
    }
   },
   {
    "provider": "options",
-   "updated_at": "2026-11-14T09:01:02.519653+00:00",
+   "updated_at": "2026-11-14T20:01:14.446395+00:00",
    "payload": {
     "provider": "options",
     "events": [
@@ -17576,14 +17555,14 @@
     "failed_scopes": [
      "us_options"
     ],
-    "coverage_start": "2026-10-30",
-    "coverage_end": "2027-12-19",
-    "fetched_at": "2026-11-14T09:00:56.080564+00:00"
+    "coverage_start": "2026-10-31",
+    "coverage_end": "2027-12-20",
+    "fetched_at": "2026-11-14T20:01:07.837638+00:00"
    }
   },
   {
    "provider": "rebalances",
-   "updated_at": "2026-11-14T09:01:13.938484+00:00",
+   "updated_at": "2026-11-14T20:01:29.244207+00:00",
    "payload": {
     "provider": "rebalances",
     "events": [
@@ -17965,7 +17944,7 @@
     ],
     "coverage_start": null,
     "coverage_end": null,
-    "fetched_at": "2026-11-14T09:01:02.523761+00:00"
+    "fetched_at": "2026-11-14T20:01:14.447681+00:00"
    }
   }
  ],
@@ -18561,6 +18540,14 @@
   {
    "idempotency_key": "2026-11-14:evening",
    "sent_at": "2026-11-14T12:00:02.828956+00:00"
+  },
+  {
+   "idempotency_key": "2026-11-15:morning",
+   "sent_at": "2026-11-14T23:00:01.482229+00:00"
+  },
+  {
+   "idempotency_key": "2026-11-15:week-image",
+   "sent_at": "2026-11-14T23:00:04.458561+00:00"
   }
  ],
  "changes": []
