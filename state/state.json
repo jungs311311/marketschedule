@@ -1,10 +1,10 @@
 {
  "version": 1,
- "exported_at": "2026-11-25T12:00:02.256962+00:00",
+ "exported_at": "2026-11-24T23:00:03.131161+00:00",
  "provider_cache": [
   {
    "provider": "indicators",
-   "updated_at": "2026-11-25T09:01:50.413431+00:00",
+   "updated_at": "2026-11-24T20:02:12.120980+00:00",
    "payload": {
     "provider": "indicators",
     "events": [
@@ -834,12 +834,12 @@
     "failed_scopes": [],
     "coverage_start": "2026-11-10",
     "coverage_end": "2027-12-30",
-    "fetched_at": "2026-11-25T09:01:17.974903+00:00"
+    "fetched_at": "2026-11-24T20:01:50.445842+00:00"
    }
   },
   {
    "provider": "markets",
-   "updated_at": "2026-11-25T09:00:26.751461+00:00",
+   "updated_at": "2026-11-24T20:00:58.955861+00:00",
    "payload": {
     "provider": "markets",
     "events": [],
@@ -16363,11 +16363,11 @@
     ],
     "sources": [
      "https://www.nyse.com/trade/hours-calendars",
+     "https://www.nasdaqtrader.com/Trader.aspx?id=Calendar",
      "https://www.jpx.co.jp/english/corporate/about-jpx/calendar/",
      "https://open.krx.co.kr/contents/MKD/01/0110/01100305/MKD01100305.jsp"
     ],
     "warnings": [
-     "Nasdaq 교차검증 실패: ValueError: Nasdaq 휴장 표 없음",
      "현재 확인 실패 항목 48개에 이전의 공식 확인값을 유지했습니다."
     ],
     "successful_scopes": [
@@ -16378,12 +16378,12 @@
     "failed_scopes": [],
     "coverage_start": "2026-11-10",
     "coverage_end": "2027-12-30",
-    "fetched_at": "2026-11-25T09:00:23.085033+00:00"
+    "fetched_at": "2026-11-24T20:00:56.351903+00:00"
    }
   },
   {
    "provider": "monetary",
-   "updated_at": "2026-11-25T09:00:56.729657+00:00",
+   "updated_at": "2026-11-24T20:01:30.233022+00:00",
    "payload": {
     "provider": "monetary",
     "events": [
@@ -16692,12 +16692,12 @@
     ],
     "coverage_start": "2026-11-10",
     "coverage_end": "2027-12-30",
-    "fetched_at": "2026-11-25T09:00:26.762366+00:00"
+    "fetched_at": "2026-11-24T20:00:58.966242+00:00"
    }
   },
   {
    "provider": "options",
-   "updated_at": "2026-11-25T09:01:03.688563+00:00",
+   "updated_at": "2026-11-24T20:01:36.350170+00:00",
    "payload": {
     "provider": "options",
     "events": [
@@ -17494,12 +17494,12 @@
     ],
     "coverage_start": "2026-11-10",
     "coverage_end": "2027-12-30",
-    "fetched_at": "2026-11-25T09:00:56.731379+00:00"
+    "fetched_at": "2026-11-24T20:01:30.234221+00:00"
    }
   },
   {
    "provider": "rebalances",
-   "updated_at": "2026-11-25T09:01:17.973893+00:00",
+   "updated_at": "2026-11-24T20:01:50.444759+00:00",
    "payload": {
     "provider": "rebalances",
     "events": [
@@ -17781,7 +17781,7 @@
     ],
     "coverage_start": null,
     "coverage_end": null,
-    "fetched_at": "2026-11-25T09:01:03.690342+00:00"
+    "fetched_at": "2026-11-24T20:01:36.351512+00:00"
    }
   }
  ],
@@ -18501,10 +18501,6 @@
   {
    "idempotency_key": "2026-11-25:week-image",
    "sent_at": "2026-11-24T23:00:03.129961+00:00"
-  },
-  {
-   "idempotency_key": "2026-11-25:evening",
-   "sent_at": "2026-11-25T12:00:02.255479+00:00"
   }
  ],
  "changes": []
