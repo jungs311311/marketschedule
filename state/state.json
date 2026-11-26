@@ -1,53 +1,13 @@
 {
  "version": 1,
- "exported_at": "2026-11-25T12:00:02.256962+00:00",
+ "exported_at": "2026-11-25T23:00:02.763684+00:00",
  "provider_cache": [
   {
    "provider": "indicators",
-   "updated_at": "2026-11-25T09:01:50.413431+00:00",
+   "updated_at": "2026-11-25T20:01:41.128515+00:00",
    "payload": {
     "provider": "indicators",
     "events": [
-     {
-      "id": "us_cpi:2026-11-10",
-      "category": "us_cpi",
-      "title": "미국 CPI(소비자물가) 발표",
-      "market": "US",
-      "trade_date": "2026-11-10",
-      "slot": "evening",
-      "phase": "release",
-      "occurs_at": "2026-11-10T22:30:00+09:00",
-      "details": [
-       "오늘 22:30 KST (08:30 ET) 발표 · 10월분"
-      ],
-      "sources": [
-       "https://www.bls.gov/schedule/news_release/cpi.htm"
-      ],
-      "confirmed": true,
-      "announcement_date": null,
-      "implementation_date": null,
-      "effective_date": null
-     },
-     {
-      "id": "us_pce:2026-11-25",
-      "category": "us_pce",
-      "title": "미국 PCE(개인소비지출 물가) 발표",
-      "market": "US",
-      "trade_date": "2026-11-25",
-      "slot": "evening",
-      "phase": "release",
-      "occurs_at": "2026-11-25T22:30:00+09:00",
-      "details": [
-       "오늘 22:30 KST (08:30 ET) 발표 · 10월분"
-      ],
-      "sources": [
-       "https://www.bea.gov/news/schedule"
-      ],
-      "confirmed": true,
-      "announcement_date": null,
-      "implementation_date": null,
-      "effective_date": null
-     },
      {
       "id": "kr_cpi:2026-12-02",
       "category": "kr_cpi",
@@ -832,54 +792,18 @@
      "kr_cpi"
     ],
     "failed_scopes": [],
-    "coverage_start": "2026-11-10",
-    "coverage_end": "2027-12-30",
-    "fetched_at": "2026-11-25T09:01:17.974903+00:00"
+    "coverage_start": "2026-11-11",
+    "coverage_end": "2027-12-31",
+    "fetched_at": "2026-11-25T20:01:19.022967+00:00"
    }
   },
   {
    "provider": "markets",
-   "updated_at": "2026-11-25T09:00:26.751461+00:00",
+   "updated_at": "2026-11-25T20:00:25.460179+00:00",
    "payload": {
     "provider": "markets",
     "events": [],
     "sessions": [
-     {
-      "market": "JP",
-      "date": "2026-10-26",
-      "status": "open",
-      "reason": "정상 개장",
-      "open_at": "2026-10-26T09:00:00+09:00",
-      "close_at": "2026-10-26T15:30:00+09:00",
-      "sources": [
-       "https://www.jpx.co.jp/english/corporate/about-jpx/calendar/"
-      ],
-      "confirmed": true
-     },
-     {
-      "market": "KR",
-      "date": "2026-10-26",
-      "status": "open",
-      "reason": "정상 개장",
-      "open_at": "2026-10-26T09:00:00+09:00",
-      "close_at": "2026-10-26T15:30:00+09:00",
-      "sources": [
-       "https://open.krx.co.kr/contents/MKD/01/0110/01100305/MKD01100305.jsp"
-      ],
-      "confirmed": true
-     },
-     {
-      "market": "US",
-      "date": "2026-10-26",
-      "status": "open",
-      "reason": "정상 개장",
-      "open_at": "2026-10-26T09:30:00-04:00",
-      "close_at": "2026-10-26T16:00:00-04:00",
-      "sources": [
-       "https://www.nyse.com/trade/hours-calendars"
-      ],
-      "confirmed": true
-     },
      {
       "market": "JP",
       "date": "2026-10-27",
@@ -16359,6 +16283,42 @@
        "https://www.nyse.com/trade/hours-calendars"
       ],
       "confirmed": true
+     },
+     {
+      "market": "JP",
+      "date": "2027-12-31",
+      "status": "closed",
+      "reason": "Market Holiday",
+      "open_at": null,
+      "close_at": null,
+      "sources": [
+       "https://www.jpx.co.jp/english/corporate/about-jpx/calendar/"
+      ],
+      "confirmed": true
+     },
+     {
+      "market": "KR",
+      "date": "2027-12-31",
+      "status": "closed",
+      "reason": "연말휴장일",
+      "open_at": null,
+      "close_at": null,
+      "sources": [
+       "https://open.krx.co.kr/contents/MKD/01/0110/01100305/MKD01100305.jsp"
+      ],
+      "confirmed": true
+     },
+     {
+      "market": "US",
+      "date": "2027-12-31",
+      "status": "open",
+      "reason": "정상 개장",
+      "open_at": "2027-12-31T09:30:00-05:00",
+      "close_at": "2027-12-31T16:00:00-05:00",
+      "sources": [
+       "https://www.nyse.com/trade/hours-calendars"
+      ],
+      "confirmed": true
      }
     ],
     "sources": [
@@ -16376,14 +16336,14 @@
      "KR"
     ],
     "failed_scopes": [],
-    "coverage_start": "2026-11-10",
-    "coverage_end": "2027-12-30",
-    "fetched_at": "2026-11-25T09:00:23.085033+00:00"
+    "coverage_start": "2026-11-11",
+    "coverage_end": "2027-12-31",
+    "fetched_at": "2026-11-25T20:00:23.359379+00:00"
    }
   },
   {
    "provider": "monetary",
-   "updated_at": "2026-11-25T09:00:56.729657+00:00",
+   "updated_at": "2026-11-25T20:00:56.116851+00:00",
    "payload": {
     "provider": "monetary",
     "events": [
@@ -16690,14 +16650,14 @@
     "failed_scopes": [
      "bok"
     ],
-    "coverage_start": "2026-11-10",
-    "coverage_end": "2027-12-30",
-    "fetched_at": "2026-11-25T09:00:26.762366+00:00"
+    "coverage_start": "2026-11-11",
+    "coverage_end": "2027-12-31",
+    "fetched_at": "2026-11-25T20:00:25.470693+00:00"
    }
   },
   {
    "provider": "options",
-   "updated_at": "2026-11-25T09:01:03.688563+00:00",
+   "updated_at": "2026-11-25T20:01:05.114714+00:00",
    "payload": {
     "provider": "options",
     "events": [
@@ -17492,14 +17452,14 @@
     "failed_scopes": [
      "us_options"
     ],
-    "coverage_start": "2026-11-10",
-    "coverage_end": "2027-12-30",
-    "fetched_at": "2026-11-25T09:00:56.731379+00:00"
+    "coverage_start": "2026-11-11",
+    "coverage_end": "2027-12-31",
+    "fetched_at": "2026-11-25T20:00:56.117965+00:00"
    }
   },
   {
    "provider": "rebalances",
-   "updated_at": "2026-11-25T09:01:17.973893+00:00",
+   "updated_at": "2026-11-25T20:01:19.022119+00:00",
    "payload": {
     "provider": "rebalances",
     "events": [
@@ -17781,7 +17741,7 @@
     ],
     "coverage_start": null,
     "coverage_end": null,
-    "fetched_at": "2026-11-25T09:01:03.690342+00:00"
+    "fetched_at": "2026-11-25T20:01:05.116064+00:00"
    }
   }
  ],
@@ -18505,6 +18465,14 @@
   {
    "idempotency_key": "2026-11-25:evening",
    "sent_at": "2026-11-25T12:00:02.255479+00:00"
+  },
+  {
+   "idempotency_key": "2026-11-26:morning",
+   "sent_at": "2026-11-25T23:00:01.172434+00:00"
+  },
+  {
+   "idempotency_key": "2026-11-26:week-image",
+   "sent_at": "2026-11-25T23:00:02.762526+00:00"
   }
  ],
  "changes": []
