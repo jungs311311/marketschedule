@@ -1,10 +1,10 @@
 {
  "version": 1,
- "exported_at": "2026-11-28T12:00:02.018421+00:00",
+ "exported_at": "2026-11-27T23:00:05.609961+00:00",
  "provider_cache": [
   {
    "provider": "indicators",
-   "updated_at": "2026-11-28T09:02:25.273846+00:00",
+   "updated_at": "2026-11-27T20:02:21.669353+00:00",
    "payload": {
     "provider": "indicators",
     "events": [
@@ -775,34 +775,32 @@
     ],
     "sessions": [],
     "sources": [
+     "https://www.bls.gov/schedule/news_release/cpi.htm",
+     "https://www.bls.gov/schedule/news_release/empsit.htm",
      "https://www.bea.gov/news/schedule",
      "https://www.boj.or.jp/en/mopo/mpmsche_minu/index.htm",
      "https://kostat.go.kr/ansk/file/schedule_2026.pdf"
     ],
     "warnings": [
-     "미국 CPI(소비자물가) 발표 일정 수집 실패: FetchError: Source request failed (HTTPError)",
-     "미국 고용보고서 발표 일정 수집 실패: FetchError: Source request failed (HTTPError)",
      "통계청 2027년 공표일정 아직 확인 안 됨 (FetchError)",
-     "통계청 2028년 공표일정 아직 확인 안 됨 (FetchError)",
-     "현재 확인 실패 항목 26개에 이전의 공식 확인값을 유지했습니다."
+     "통계청 2028년 공표일정 아직 확인 안 됨 (FetchError)"
     ],
     "successful_scopes": [
+     "us_cpi",
+     "us_jobs",
      "us_pce",
      "boj",
      "kr_cpi"
     ],
-    "failed_scopes": [
-     "us_cpi",
-     "us_jobs"
-    ],
+    "failed_scopes": [],
     "coverage_start": "2026-11-13",
     "coverage_end": "2028-01-02",
-    "fetched_at": "2026-11-28T09:01:32.094644+00:00"
+    "fetched_at": "2026-11-27T20:01:35.586009+00:00"
    }
   },
   {
    "provider": "markets",
-   "updated_at": "2026-11-28T09:00:27.395787+00:00",
+   "updated_at": "2026-11-27T20:00:31.356822+00:00",
    "payload": {
     "provider": "markets",
     "events": [],
@@ -16342,12 +16340,12 @@
     ],
     "coverage_start": "2026-11-13",
     "coverage_end": "2028-01-02",
-    "fetched_at": "2026-11-28T09:00:21.981513+00:00"
+    "fetched_at": "2026-11-27T20:00:26.150861+00:00"
    }
   },
   {
    "provider": "monetary",
-   "updated_at": "2026-11-28T09:00:59.330004+00:00",
+   "updated_at": "2026-11-27T20:01:03.220398+00:00",
    "payload": {
     "provider": "monetary",
     "events": [
@@ -16658,12 +16656,12 @@
     ],
     "coverage_start": "2026-11-13",
     "coverage_end": "2028-01-02",
-    "fetched_at": "2026-11-28T09:00:27.402222+00:00"
+    "fetched_at": "2026-11-27T20:00:31.367152+00:00"
    }
   },
   {
    "provider": "options",
-   "updated_at": "2026-11-28T09:01:13.391583+00:00",
+   "updated_at": "2026-11-27T20:01:14.189309+00:00",
    "payload": {
     "provider": "options",
     "events": [
@@ -17439,12 +17437,12 @@
     ],
     "coverage_start": "2026-11-13",
     "coverage_end": "2028-01-02",
-    "fetched_at": "2026-11-28T09:00:59.330899+00:00"
+    "fetched_at": "2026-11-27T20:01:03.221219+00:00"
    }
   },
   {
    "provider": "rebalances",
-   "updated_at": "2026-11-28T09:01:32.093858+00:00",
+   "updated_at": "2026-11-27T20:01:35.585171+00:00",
    "payload": {
     "provider": "rebalances",
     "events": [
@@ -17691,16 +17689,29 @@
      "https://www.msci.com/eqb/pressreleases/archive/MSCI_Nov25_QIRPR.pdf",
      "https://www.msci.com/eqb/pressreleases/archive/MSCI_Aug25_QIRPR.pdf",
      "https://www.msci.com/eqb/pressreleases/archive/MSCI_May25_QIRPR.pdf",
-     "https://www.msci.com/eqb/pressreleases/archive/MSCI_Feb25_QIRPR.pdf"
+     "https://www.msci.com/eqb/pressreleases/archive/MSCI_Feb25_QIRPR.pdf",
+     "https://ir.nasdaq.com/rss/news-releases.xml",
+     "https://ir.nasdaq.com/news-and-events/press-releases",
+     "https://ir.nasdaq.com/news-and-events/press-releases?page=0",
+     "https://ir.nasdaq.com/news-and-events/press-releases?page=1",
+     "https://ir.nasdaq.com/news-and-events/press-releases?page=2",
+     "https://ir.nasdaq.com/news-releases/news-release-details/nasdaq-100-indexr-june-2026-quarterly-changes",
+     "https://press.spglobal.com/",
+     "https://press.spglobal.com/index.php?s=2429&o=10",
+     "https://press.spglobal.com/index.php?s=2429&o=20",
+     "https://press.spglobal.com/index.php?s=2429&o=30"
     ],
     "warnings": [
      "nasdaq 방법론: 수집 또는 해석 실패 (FetchError). 일정 없음으로 판단할 수 없습니다.",
      "sp500 방법론: 수집 또는 해석 실패 (FetchError). 일정 없음으로 판단할 수 없습니다.",
-     "Nasdaq 공식 뉴스 RSS: 수집 또는 해석 실패 (FetchError). 일정 없음으로 판단할 수 없습니다.",
-     "nasdaq 공식 공지 목록: 수집 또는 해석 실패 (FetchError). 일정 없음으로 판단할 수 없습니다.",
-     "nasdaq: 공개 뉴스 목록에서 대상 공지를 찾지 못했습니다. 수시 편출입·특별 리밸런싱 부재를 확인한 것은 아닙니다.",
-     "sp500 공식 공지 목록: 수집 또는 해석 실패 (FetchError). 일정 없음으로 판단할 수 없습니다.",
-     "sp500: 공개 뉴스 목록에서 대상 공지를 찾지 못했습니다. 수시 편출입·특별 리밸런싱 부재를 확인한 것은 아닙니다.",
+     "nasdaq 개별 공지 pdf: 수집 또는 해석 실패 (ValueError). 일정 없음으로 판단할 수 없습니다.",
+     "nasdaq 개별 공지 moderna-inc-join-nasdaq-100-indexr-beginning-october-9-2026: 수집 또는 해석 실패 (ValueError). 일정 없음으로 판단할 수 없습니다.",
+     "nasdaq 개별 공지 pdf: 수집 또는 해석 실패 (ValueError). 일정 없음으로 판단할 수 없습니다.",
+     "nasdaq 개별 공지 space-exploration-technologies-corporation-join-nasdaq-100: 수집 또는 해석 실패 (ValueError). 일정 없음으로 판단할 수 없습니다.",
+     "nasdaq 개별 공지 pdf: 수집 또는 해석 실패 (ValueError). 일정 없음으로 판단할 수 없습니다.",
+     "sp500 개별 공지 2026-11-23-SharkNinja-Set-to-Join-S-P-500-Others-to-Join-S-P-MidCap-400-and-S-P-SmallCap-6: 수집 또는 해석 실패 (ValueError). 일정 없음으로 판단할 수 없습니다.",
+     "sp500 개별 공지 2026-10-30-Okta-Set-to-Join-S-P-500-Others-to-Join-S-P-MidCap-400-and-S-P-SmallCap-600: 수집 또는 해석 실패 (ValueError). 일정 없음으로 판단할 수 없습니다.",
+     "sp500 개별 공지 2026-10-01-Vylor-Added-to-the-S-P-500-Twilio-Set-to-Join-S-P-500-Others-to-Join-S-P-MidCap: 수집 또는 해석 실패 (ValueError). 일정 없음으로 판단할 수 없습니다.",
      "리밸런싱 확인범위: MSCI 공개 정기 리뷰 자료와 Nasdaq/S&P 공개 최신 뉴스 및 최대 3개 추가 페이지입니다. 향후 미발표 일정·수시 편출입·특별 변경 전체의 부재는 보장하지 않습니다.",
      "현재 확인 실패 항목 1개에 이전의 공식 확인값을 유지했습니다."
     ],
@@ -17713,7 +17724,7 @@
     ],
     "coverage_start": null,
     "coverage_end": null,
-    "fetched_at": "2026-11-28T09:01:13.392537+00:00"
+    "fetched_at": "2026-11-27T20:01:14.190545+00:00"
    }
   }
  ],
@@ -18469,10 +18480,6 @@
   {
    "idempotency_key": "2026-11-28:week-image",
    "sent_at": "2026-11-27T23:00:05.609000+00:00"
-  },
-  {
-   "idempotency_key": "2026-11-28:evening",
-   "sent_at": "2026-11-28T12:00:02.017498+00:00"
   }
  ],
  "changes": []
